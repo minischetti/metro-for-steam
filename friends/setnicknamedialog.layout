@@ -1,0 +1,78 @@
+"friends/setnicknamedialog.layout"
+{
+	controls
+	{
+		FriendAliasesDialog
+		{
+			title			"#friends_setnickname_title"
+			wide			"388"
+			tall			"148"
+		}
+
+		CloseButton
+		{
+			ControlName 	"Button"
+			labelText		"#vgui_close"
+			Command			"Close"
+		}
+
+		OKButton
+		{
+			ControlName 	"Button"
+			labelText		"#vgui_ok"
+			Command			"Apply"
+			default			"1"
+		}
+
+		Details
+		{
+			ControlName		"Label"
+			labelText		"#friends_setnickname_info"
+			wrap			"1"
+		}
+		
+		NicknameEdit
+		{
+			ControlName		"TextEntry"
+			tabposition		"1"
+			unicode			"1"
+		}
+		
+	}
+	
+	styles
+	{
+		CSetNicknameDialog
+		{
+			minimum-width=348
+			minimum-height=197
+			bgcolor=ClientBG
+			render_bg
+			{
+				//Top
+				0="fill( x0, y0, x1, y0+91, FrameBorder )"
+				1="fill( x0, y0, x1, y0+90, Header_Dark )"
+				//Title
+				2="image(x0+16,y0+16,x1,y1, graphics/metro/labels/nickname/nickname)"
+			}
+		}
+	}
+
+	layout
+	{
+		place { control="frame_minimize,frame_maximize,frame_close" align=right width=40 height=40 margin-right=1 }
+		place { control="frame_captiongrip" width=max height=76 }
+		
+		//Title
+		place { control=Details x=16 y=44 width=max }
+
+		//Content
+		place { control="NickNameEdit" y=91 margin-top=16 dir=down x=16 width=max height=30 margin-right=16 spacing=8 }
+
+		//Footer
+		region { name=bottom align=bottom height=44 margin=8 }
+		place {	control="OKButton,CloseButton" region=bottom align=right spacing=8 height=28 width=84 }
+
+	}
+}
+

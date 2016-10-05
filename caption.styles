@@ -1,0 +1,143 @@
+"caption.styles"
+{
+	styles
+	{
+		//Default Style
+
+    FrameMinimizeButton
+    {
+      render_bg
+			{
+        0="image(x0+15,y0+24,x1,y1,graphics/metro/icons/caption/minimize)"
+      }
+    }
+
+    FrameMinimizeButton:framefocus
+    {
+      render_bg
+			{
+        0="image(x0+15,y0+24,x1,y1,graphics/metro/icons/caption/minimize)"
+      }
+    }
+
+    FrameMinimizeButton:hover
+    {
+      render_bg
+			{
+        0="image(x0+15,y0+24,x1,y1,graphics/metro/icons/caption/minimize_h)"
+				1="fill(x0,y0,x1,y1-1,White05)"
+      }
+    }
+
+    FrameMinimizeButton:active
+    {
+      render_bg
+			{
+        0="image(x0+15,y0+24,x1,y1,graphics/metro/icons/caption/minimize_p)"
+				1="fill(x0,y0,x1,y1-1,White10)"
+      }
+    }
+
+    FrameMaximizeButton
+    {
+      render_bg
+			{
+        0="image(x0+15,y0+15,x1,y1,graphics/metro/icons/caption/maximize)"
+      }
+    }
+
+    FrameMaximizeButton:framefocus
+    {
+      render_bg
+			{
+        0="image(x0+15,y0+15,x1,y1,graphics/metro/icons/caption/maximize)"
+      }
+    }
+
+		FrameMaximizeButton:hover
+    {
+      render_bg
+			{
+        0="image(x0+15,y0+15,x1,y1,graphics/metro/icons/caption/maximize_h)"
+				1="fill(x0,y0,x1,y1-1,White05)"
+      }
+    }
+
+		FrameMaximizeButton:active
+    {
+      render_bg
+			{
+        0="image(x0+15,y0+15,x1,y1,graphics/metro/icons/caption/maximize_p)"
+				1="fill(x0,y0,x1,y1-1,White10)"
+      }
+    }
+
+    FrameRestoreButton
+    {
+      render_bg
+			{
+        0="image(x0+15,y0+15,x1,y1,graphics/metro/icons/caption/restore)"
+      }
+    }
+
+    FrameRestoreButton:framefocus
+    {
+      render_bg
+			{
+        0="image(x0+15,y0+15,x1,y1,graphics/metro/icons/caption/restore)"
+      }
+    }
+
+		FrameRestoreButton:hover
+    {
+      render_bg
+			{
+        0="image(x0+15,y0+15,x1,y1,graphics/metro/icons/caption/restore_h)"
+				1="fill(x0,y0,x1,y1-1,White05)"
+      }
+    }
+
+		FrameRestoreButton:active
+    {
+      render_bg
+			{
+        0="image(x0+15,y0+15,x1,y1,graphics/metro/icons/caption/restore_p)"
+				1="fill(x0,y0,x1,y1-1,White10)"
+      }
+    }
+
+		FrameCloseButton
+    {
+      render_bg
+			{
+        0="image(x0+15,y0+15,x1,y1,graphics/metro/icons/caption/close)"
+      }
+    }
+
+		FrameCloseButton:framefocus
+    {
+      render_bg
+			{
+        0="image(x0+15,y0+15,x1,y1,graphics/metro/icons/caption/close)"
+      }
+    }
+
+		FrameCloseButton:hover
+    {
+      render_bg
+			{
+        0="image(x0+15,y0+15,x1,y1,graphics/metro/icons/caption/close_h)"
+				1="fill(x0,y0,x1,y1-1,White05)"
+      }
+    }
+
+		FrameCloseButton:active
+    {
+      render_bg
+			{
+        0="image(x0+15,y0+15,x1,y1,graphics/metro/icons/caption/close_p)"
+				1="fill(x0,y0,x1,y1-1,White10)"
+      }
+    }
+	}
+}

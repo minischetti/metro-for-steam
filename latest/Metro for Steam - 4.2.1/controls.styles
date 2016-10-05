@@ -1,0 +1,88 @@
+"controls.styles"
+{
+	styles
+	{
+    Button
+    {     
+			bgcolor=white12
+			font-family=basefont
+			font-size=16
+			textcolor="White"
+    }
+  
+		Button:hover
+    {   
+			bgcolor=white24
+    }
+		
+		Button:active
+		{
+			bgcolor=focus
+		}
+		
+		Button:disabled
+		{
+			textcolor=White45
+		}
+		
+		ToggleButton:selected
+		{
+			bgcolor=focus
+		}
+		
+		//Check
+		 
+		//Text Boxes
+
+        TextEntry
+        {
+            font-family=basefont
+            font-size=16
+            bgcolor="TextEntry"
+            textcolor=White
+            shadowtextcolor=white
+            selectedtextcolor=White
+            selectedbgcolor="Focus"
+            inset-left=6
+        }
+        
+		TextEntry:empty
+		{
+			textcolor=none
+		}
+		
+		//Chat Emoticon Button
+		
+		CEmoticonButton
+		{
+			padding-left=4
+			image="graphics/metro/icons/more"
+			bgcolor=TextEntry
+		}
+
+		CEmoticonButton:hover
+		{
+			image="graphics/metro/icons/more_h"
+		}
+
+		CEmoticonButton:selected
+		{
+			image="graphics/metro/icons/more_h"
+		}
+
+		EmoticonMenuItemStyle
+		{
+			inset-left=-5
+			inset-top=-5
+			font-size=24
+			textcolor=White45
+			bgcolor=none
+			render_bg{}
+		}
+		
+		EmoticonMenuItemStyle:hover
+		{
+			textcolor=white
+		}
+	}
+}

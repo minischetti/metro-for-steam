@@ -1,0 +1,27 @@
+"steam/cached/tradedialog.layout"
+{
+	controls
+	{
+		charityquestiondialog { title="#steam_tradedialog_title" wide=1164 tall=964 }
+	}
+	
+	styles
+	{
+		CTradeDialog
+		{
+			render_bg
+			{
+				0="fill( x0, y0, x1, y0+40, FrameBorder )"
+				1="fill( x0, y0, x1, y0+39, Header_Dark )"
+			}
+		}
+	}
+	
+	layout
+	{
+		place { control="frame_captiongrip" height=40 }
+		place { control="frame_minimize,frame_maximize,frame_close" align=right width=40 height=40 margin-right=1 }
+
+		place { controls="HTML" width=max height=max margin-top=40 }
+	}
+}
