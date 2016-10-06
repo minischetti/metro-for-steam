@@ -66,7 +66,8 @@
 		place { controls="ManageSharingLabel" start=AuthorizedDeviceCheck y=8 spacing=8 dir=down width=192 height=28 }
 
 		//Borrowers List
-		place { controls="BorrowersLabel" start=ManageSharingButton y=8 spacing=8 dir=down width=max }
+		place { controls="ShowNotificationsCheck" start=ManageSharingLabel y=8 spacing=8 dir=down width=max }
+		place { controls="BorrowersLabel" start=ShowNotificationsCheck y=8 spacing=8 dir=down width=max }
 		place { controls="BorrowersList" start=BorrowersLabel y=8 spacing=8 dir=down width=max height=max margin-bottom=16 }
 
 		//Hidden
