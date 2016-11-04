@@ -42,5 +42,6 @@
     ClientBG="26 26 26 255"
 		ClientBGTransparent="43 43 43 191.25"
 		Red="255 0 0 255"
+		Green="0 138 23 255"
 	}
 }

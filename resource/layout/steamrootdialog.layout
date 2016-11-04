@@ -174,7 +174,7 @@
 			bgcolor="none"
 			render_bg
 			{
-				0="image( x0+8, y0+13, x1, y1, graphics/metro/icons/navbar/friends )"
+				0="image(x0+8,y0+13,x1,y1,graphics/metro/icons/navbar/friends)"
 			}
 		}
 
@@ -311,12 +311,13 @@
 
 		parental_lock_button
 		{
-			image="resource/familyview"
+			minimum-width=29
 			bgcolor=none
 			padding-right=4
 			render_bg
 			{
-				1="fill(x0,y1-2,x1,y1,red)"
+				0="image(x0+9,y0+13,x1,y1,graphics/metro/icons/navbar/parent_unlocked)"
+				1="fill(x0,y1,x1,y1+1,red)"
 			}
 		}
 
@@ -334,7 +335,8 @@
 		{
 			render_bg
 			{
-				1="fill(x0,y1-2,x1,y1,green)"
+				0="image(x0+9,y0+13,x1,y1,graphics/metro/icons/navbar/parent_locked"
+				1="fill(x0,y1,x1,y1+1,green)"
 			}
 		}
 	}
