@@ -171,6 +171,14 @@ steam.styles
         4="fill( x0, y1-40, x1, y1, Header_Dark )"
       }
 		}
+    GameItem_Updating
+    {
+      alpha 255
+      render
+      {
+        0="image(x1-18,y1-26,x1,y1,graphics/metro/icons/grid/downloads.tga)"
+      }
+    }
 
     CChatActionsButton
 		{

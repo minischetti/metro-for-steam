@@ -8,8 +8,8 @@
 			style						ChromeBorderItem
 			mouseinputenabled			0
 		}
-		
-		
+
+
 		"launch"
 		{
 			zpos="1"
@@ -19,18 +19,18 @@
 			style						CUILaunchButton
 			command						launch
 		}
-		
-				
+
+
 		"divider"
 		{
 			zpos="1"
-			// 
+			//
 			ControlName					Label
 			labelText					"|"
 			style						GridNavDivider
 
 		}
-		
+
 		"details"
 		{
 			zpos="1"
@@ -43,10 +43,11 @@
 
 	styles
 	{
-		
+
 		ChromeBorderItem
 		{
-			bgcolor=Black75
+			alpha=63.75
+			bgcolor=focus
 		}
 
 		GridNavDivider
@@ -54,81 +55,17 @@
 			textcolor=none
 			bgcolor=none
 		}
-		
-		"GameItem_Uninstalled CUILaunchButton"
-		{
-			image=graphics/install
-		}
-		
-		"GameItem_Uninstalled CUILaunchButton:hover"
-		{
-			image=graphics/install_h
-		}
-		
-		"GameItem_Uninstalled CUILaunchButton:active"
-		{
-			image=graphics/install_p
-		}
-		
-		"GameItem_Uninstalled CUILaunchButton:disabled"
-		{
-			image=graphics/install_d
-		}
-		
+
 		CUILaunchButton
 		{
-			image=graphics/play     
-		}
-
-		CUILaunchButton:hover
-		{   
-			image=graphics/play_h
-		}
-		
-		CUILaunchButton:active
-		{ 
-			image=graphics/play_p
-		}
-		
-		CUILaunchButton:disabled
-		{   
-			image=graphics/play_d
-		}
-		
-			CUIDetailsButton
-		{     
-			image=graphics/details
-		}
-		
-		CUIDetailsButton:hover
-		{   
-			image=graphics/details_h
-
-		}
-		
-		CUIDetailsButton:active
-		{   
-			image=graphics/details_a
-		}
-		
-		CUIDetailsButton:disabled
-		{   
-			image=graphics/details_d
-		}
-
-		"GameItem_Updating CUINavButton:hover"
-		{
-			textcolor="White"
+		textcolor=none
 		}
 	}
 
-	
+
 	layout
 	{
-		place { control=chromeborder height=56 align=left-center width=max height=max }
-
-		place { control="launch,details" align=top-center spacing=16 margin-top=0 height=max width=40 }
-		
-		place { control=divider width=0 height=0 }
+		place { control=chromeborder width=max height=max }
+		place { control=launch,details,divider width=0 height=0 }
 	}
 }

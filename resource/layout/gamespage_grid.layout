@@ -4,7 +4,7 @@
 	{
 		"grid"
 		{
-			"alignment"						"justify"		// left, right, justify 
+			"alignment"						"justify"		// left, right, justify
 			"interiorspacing"				18				// minimum interitem spacing, used for both x and y
 			"wheelpct"						50				// mouse wheel -> scroll this percent of an item's dy
 			"tabposition"					1
@@ -16,6 +16,7 @@
 	// random/generic settings go in "colors"
 	colors
 	{
+		ClientBGT="26 26 26 191.25"
 		// values defining the aspect ratio of the images in the grid view
 		GridView.OriginalImageWidth "460"
 		//GridView.OriginalImageHeight "225"
@@ -39,7 +40,7 @@
 			bgcolor="none"
 			render {}
 			render_bg {}
-		}	
+		}
 
 		emptylisttext
 		{
@@ -47,7 +48,7 @@
 			font-size="15"
 			render_bg {}
 		}
-		
+
 
 		// GameItem_whatever suffix is computed on the fly. (not case sensitive.) possible values:
 		// shortcut
@@ -60,15 +61,16 @@
 		// notinstalled (yes there are two)
 		GameItem_installed
 		{
-			alpha		255
+			alpha	255
 		}
-		GameItem_unInstalled
+		GameItem_Uninstalled
 		{
-			//alpha		127.5
-		}
-		GameItem_Updating
-		{
-			alpha		255
+			alpha 84.15 // 33%
+			render
+			{
+				//0="fill(x0-5,y0-5,x1+5,y1+5,ClientBGT)"
+				//0="image(x1-18,y1-26,x1,y1,graphics/metro/icons/grid_uninstalled)"
+			}
 		}
 	}
 
@@ -76,10 +78,9 @@
 	{
 		place
 		{
-			control = grid					 x=0 y=1 width=max height=max 
+			control=grid x=0 y=1 width=max height=max
 		}
 
 		place	{ control=emptylisttext x=0 y=0 margin=10 margin-top=9 width=max height=max }
 	}
 }
-
