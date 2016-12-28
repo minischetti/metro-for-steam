@@ -140,7 +140,7 @@
 		{
 			font-family=basefont
 			font-size=16
-            alpha=191.25
+      //alpha=191.25
 		}
 
 		controlPanelLinkStyle

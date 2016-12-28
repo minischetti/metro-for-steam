@@ -112,36 +112,36 @@ Scheme
 
 			frame_minimize
 			{
-				xpos	r45
-				xpos	22 [$OSX]
-				ypos	7
-				ypos	3 [$OSX]
-				wide	20
-				tall	20
+				xpos	r80
+				xpos	r80 [$OSX]
+				ypos	0
+				ypos	0 [$OSX]
+				wide	40
+				tall	40
 				PinCorner	1
 				PinCorner	0 [$OSX]
 			}
 
 			frame_maximize
 			{
-				xpos	r59
-				xpos	43 [$OSX]
-				ypos	7
-				ypos	3 [$OSX]
-				wide	20
-				tall	20
+				xpos	r80
+				xpos	r80 [$OSX]
+				ypos	0
+				ypos	0 [$OSX]
+				wide	40
+				tall	40
 				visible 0 [!$OSX]
 				PinCorner	1
 				PinCorner	0 [$OSX]
-			}			
+			}
 			frame_close
 			{
-				xpos	r29
-				xpos	1 [$OSX]
-				ypos	7
-				ypos	3 [$OSX]
-				wide	20
-				tall	20
+				xpos	r40
+				xpos	r40 [$OSX]
+				ypos	0
+				ypos	0 [$OSX]
+				wide	40
+				tall	40
 				PinCorner	1
 				PinCorner	0 [$OSX]
 			}
@@ -171,25 +171,25 @@ Scheme
 			ApplyButton
 			{
 				xpos	r101
-				ypos	r36
+				ypos	r38
 				wide	92
-				tall	24
+				tall	28
 			}
 
 			CancelButton
 			{
 				xpos	r203
-				ypos	r36
+				ypos	r38
 				wide	92
-				tall	24
+				tall	28
 			}
 
 			OKButton
 			{
 				xpos	r304
-				ypos	r36
+				ypos	r38
 				wide	92
-				tall	24
+				tall	28
 			}
 		}
 
@@ -207,33 +207,33 @@ Scheme
 			PrevButton
 			{
 				xpos	r306
-				ypos	r36
+				ypos	r38
 				wide	92
-				tall	24
+				tall	28
 				PinCorner	3
 			}
 			NextButton
 			{
 				xpos	r204
-				ypos	r36
+				ypos	r38
 				wide	92
-				tall	24
+				tall	28
 				PinCorner	3
 			}
 			CancelButton
 			{
 				xpos	r102
-				ypos	r36
+				ypos	r38
 				wide	92
-				tall	24
+				tall	28
 				PinCorner	3
 			}
 			FinishButton
 			{
 				xpos	r102
-				ypos	r36
+				ypos	r38
 				wide	92
-				tall	24
+				tall	28
 				PinCorner	3
 			}
 		}

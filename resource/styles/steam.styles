@@ -8,6 +8,7 @@ steam.styles
 	colors
 	{
 		ScrollBar.Wide "16"
+		ClientBGT="26 26 26 191.25"
 	}
   styles
   {
@@ -171,14 +172,6 @@ steam.styles
         4="fill( x0, y1-40, x1, y1, Header_Dark )"
       }
 		}
-    GameItem_Updating
-    {
-      alpha 255
-      render
-      {
-        0="image(x1-18,y1-26,x1,y1,graphics/metro/icons/grid/downloads.tga)"
-      }
-    }
 
     CChatActionsButton
 		{
@@ -890,6 +883,18 @@ steam.styles
     	textcolor="Focus"
     	selectedtextcolor="White"
     }
+    GameItem_Updating
+    {
+      alpha 255
+
+    }
+    "GameItem_Uninstalled GamesGridImage"
+    {
+    }
+    "GameItem_Updating GamesGridImage"
+    {
+    }
+
 
     "GameItem_Updating:hover"
     {

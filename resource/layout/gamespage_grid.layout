@@ -65,7 +65,7 @@
 		}
 		GameItem_Uninstalled
 		{
-			alpha 84.15 // 33%
+			//alpha 84.15 // 33%
 			render
 			{
 				//0="fill(x0-5,y0-5,x1+5,y1+5,ClientBGT)"
