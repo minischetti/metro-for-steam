@@ -105,8 +105,8 @@ Scheme
 			{
 				xpos	4
 				ypos	4
-				wide	r20
-				tall	60
+				wide	r4
+				tall	40
 				AutoResize	1
 			}
 
@@ -197,9 +197,9 @@ Scheme
 		{
 			subpanel
 			{
-				xpos	10
-				ypos	28
-				wide	r10
+				xpos	8
+				ypos	40
+				wide	r8
 				tall	r48
 				AutoResize	3
 			}
