@@ -890,9 +890,16 @@ steam.styles
     }
     "GameItem_Uninstalled GamesGridImage"
     {
+      alpha 84.15 // 33%
     }
     "GameItem_Updating GamesGridImage"
     {
+      alpha 255
+      render
+      {
+        0="image(x1-18,y1-26,x1,y1,graphics/metro/icons/grid/downloads)"
+        0="fill(x0,y0,x1,y1,focusT)" //generate translucent focus color value for this
+      }
     }
 
 
