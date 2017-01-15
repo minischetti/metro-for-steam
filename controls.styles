@@ -3,35 +3,35 @@
 	styles
 	{
     Button
-    {     
+    {
 			bgcolor=white12
 			font-family=basefont
 			font-size=16
 			textcolor="White"
     }
-  
+
 		Button:hover
-    {   
+    {
 			bgcolor=white24
     }
-		
+
 		Button:active
 		{
 			bgcolor=focus
 		}
-		
+
 		Button:disabled
 		{
 			textcolor=White45
 		}
-		
+
 		ToggleButton:selected
 		{
 			bgcolor=focus
 		}
-		
+
 		//Check
-		 
+
 		//Text Boxes
 
         TextEntry
@@ -45,14 +45,14 @@
             selectedbgcolor="Focus"
             inset-left=6
         }
-        
+
 		TextEntry:empty
 		{
 			textcolor=none
 		}
-		
+
 		//Chat Emoticon Button
-		
+
 		CEmoticonButton
 		{
 			padding-left=4
@@ -79,7 +79,7 @@
 			bgcolor=none
 			render_bg{}
 		}
-		
+
 		EmoticonMenuItemStyle:hover
 		{
 			textcolor=white

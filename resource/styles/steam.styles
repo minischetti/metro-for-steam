@@ -882,12 +882,9 @@ steam.styles
     {
     	textcolor="Focus"
     	selectedtextcolor="White"
-    }
-    GameItem_Updating
-    {
       alpha 255
-
     }
+
     "GameItem_Uninstalled GamesGridImage"
     {
       alpha 84.15 // 33%
