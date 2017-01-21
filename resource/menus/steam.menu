@@ -4,7 +4,7 @@
 	{
 		text=""
 		text = [$OSX]	"#SteamRootAccount"
-		SkinVersion			{	text="Metro For Steam - 4.2.4"		shellcmd="" }
+		SkinVersion			{	text="Metro For Steam - 4.3"		shellcmd="" }
 		Website			{	text="Official Website"		shellcmd="steam://openurl/http://metroforsteam.com/" }
 		Group			{	text="Steam Community Group"		shellcmd="steam://openurl/http://steamcommunity.com/groups/metroforsteam" }
 		Donate			{	text="Donate via Patreon or PayPal!"		shellcmd="steam://openurl/http://metroforsteam.com/#donate" }
@@ -165,7 +165,7 @@
 		SystemInfo						{	text="#steam_menu_systeminfo"			command="SystemInfo" }
 		About							{	text="#steam_about"						command="About" }
 		Divider							{}
-		SkinVersion			{	text="Metro For Steam - 4.2.4"		shellcmd="" }
+		SkinVersion			{	text="Metro For Steam - 4.3"		shellcmd="" }
 		Website			{	text="Official Website"		shellcmd="steam://openurl/http://metroforsteam.com/" }
 		Group			{	text="Steam Community Group"		shellcmd="steam://openurl/http://steamcommunity.com/groups/metroforsteam" }
 		Donate			{	text="Donate via Patreon or PayPal!"		shellcmd="steam://openurl/http://metroforsteam.com/#donate" }

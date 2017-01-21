@@ -51,7 +51,7 @@
 		"textAlignment"		"west"
 		"wrap"		"0"
 	}
-	
+
 	"BackupButton"
 	{
 		"ControlName"		"Button"
@@ -169,6 +169,6 @@
 	layout
 	{
 		place { control="BuildIDLabel,DiskUsageLabel" x=16 y=36 margin-top=24 dir=down spacing=8 }
-		place { control="BackupButton,DeleteButton,VerifyButton,DefragButton,OpenInstallFolder" start="DiskUsageLabel" y=8 width=200 height=28 dir=down spacing=8 }
+		place { control="BackupButton,DeleteButton,VerifyButton,DefragButton,OpenInstallFolder,MoveInstallFolder" start="DiskUsageLabel" y=8 width=200 height=28 dir=down spacing=8 }
 	}
 }
