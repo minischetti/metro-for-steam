@@ -5,8 +5,8 @@
 		screenshotsdetails { controlname="CGamesPage_Details_Screenshots" style="screenshotsdetails" }
 
 		headerlabel { controlname="Label" style="gamedetails-headerlabel" labeltext="#Steam_Screenshots" }
-		
-		screenshotsarea { controlname="CScreenshotsPanel" }	
+
+		screenshotsarea { controlname="CScreenshotsPanel" }
 
 		viewall	{ controlname="Button" labeltext="#Steam_ViewAllScreenshots" command="ViewAllScreenshots" }
 	}
@@ -17,7 +17,7 @@
 		GameDetailsScreenshots.ExtraVerticalSpacing "0"
 
 		RichText.InsetX "0"
-		RichText.InsetY "4" 
+		RichText.InsetY "4"
 	}
 
 	styles
@@ -25,18 +25,18 @@
 		Button
 		{
 			bgcolor=none
-			image=graphics/metro/overlay/icons/screenshots
+			image=graphics/metro/icons/screenshots
 			inset-left=-6
 		}
 		
 		Button:hover
 		{
-			image=graphics/metro/overlay/icons/screenshots_h		
+			image=graphics/metro/icons/screenshots_h
 		}
-	
+
 		Button:active
 		{
-			image=graphics/metro/overlay/icons/screenshots_p		
+			image=graphics/metro/icons/screenshots_p
 		}
 	}
 

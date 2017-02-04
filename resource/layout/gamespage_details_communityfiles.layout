@@ -12,31 +12,31 @@
 		GameDetailsCommunityFiles.ExtraVerticalSpacing "-40"
 		GameDetailsCommunityFiles.PanelSpacing "0"
 		RichText.InsetX "0"
-		RichText.InsetY "3" 
+		RichText.InsetY "3"
 	}
 
 	styles
-	{		
+	{
 		infolabel
 		{
 			font-size=16
 			textcolor="White45"
-		}	
+		}
 		button
 		{
 			bgcolor=none
-			image=graphics/metro/details/workshop
+			image=graphics/metro/icons/workshop
 			inset-left=-6
 		}
 
 		button:hover
 		{
-			image=graphics/metro/details/workshop_h
+			image=graphics/metro/icons/workshop_h
 		}
 
 		button:active
 		{
-			image=graphics/metro/details/workshop_p
+			image=graphics/metro/icons/workshop_p
 		}
 	}
 
@@ -48,8 +48,8 @@
 		place { control=headerlabel width=0 height=0 }
 		place { control=viewall x=16 y=16 width=36 height=36 align=left margin-right=16 }
 
-		
+
 		place { control=*communityfile x=68 y=0 margin-right=0 height=108 spacing=1 }
-		
+
 	}
 }

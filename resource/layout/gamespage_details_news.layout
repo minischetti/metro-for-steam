@@ -18,29 +18,29 @@
 	}
 
 	styles
-	{		
+	{
 		Button
 		{
 			bgcolor=none
-			image=graphics/metro/details/news
+			image=graphics/metro/icons/news
 			inset-left=-6
 		}
-		
+
 		Button:hover
 		{
-			image=graphics/metro/details/news_h
+			image=graphics/metro/icons/news_h
 		}
-	
+
 		Button:active
 		{
-			image=graphics/metro/details/news_p
+			image=graphics/metro/icons/news_p
 		}
 	}
 
 	layout
 	{
 		region { name=body width=max height=max }
-		
+
 		place { control=headerlabel width=0 height=0 }
 		place { control=viewall x=16 y=16 width=36 height=36 align=left margin-right=16 }
 
