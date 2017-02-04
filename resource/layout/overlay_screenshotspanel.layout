@@ -2,9 +2,9 @@
 {
 	controls
 	{
-		ScreenshotsDetailPanel 
-		{ 
-			controlname="COverlay_Screenshots_Panel" 
+		ScreenshotsDetailPanel
+		{
+			controlname="COverlay_Screenshots_Panel"
 			style=detailsbox
 		}
 		TitleText { controlname="label" labeltext="#Overlay_Screenshots_Panel_Title" style=detailsboxtitle }
@@ -20,41 +20,41 @@
 		SetShortcut { controlname="Button" labeltext="#Overlay_Set_Shortcut" command="setshortcut" }
 
 	}
-	
+
 	colors
 	{
 
-	}	
-	
+	}
+
 	styles
 	{
 		Button
 		{
 			bgcolor=none
-			image=graphics/metro/overlay/icons/screenshots
+			image=graphics/metro/icons/screenshots
 			inset-left=-6
 		}
-		
+
 		Button:hover
 		{
-			image=graphics/metro/overlay/icons/screenshots_h		
+			image=graphics/metro/icons/screenshots_h
 		}
-	
+
 		Button:active
 		{
-			image=graphics/metro/overlay/icons/screenshots_p		
+			image=graphics/metro/icons/screenshots_p
 		}
 	}
-	
+
 	layout
-	{			
+	{
 		//Left
 		place { controls=ViewScreenshots x=16 y=16 width=36 height=36 }
 
 		//Right
 		place { control="TitleText" x=68 y=11 }
 		place { control="InstructionText" x=68 y=37 }
-		
+
 		//Hidden
 		place { control=DarkRegion,SS0,SS1,SS2,SetShortcut height=0 }
 	}
