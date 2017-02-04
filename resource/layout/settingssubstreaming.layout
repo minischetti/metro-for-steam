@@ -29,7 +29,7 @@
 			labelText="#Steam_Settings_Streaming_StreamingSupport"
 			URLText="https://support.valvesoftware.com/kb_article.php?ref=3629-RIAV-1617"
 		}
-		
+
 		"BandwidthLabel" { ControlName="Label" associate="BandwidthLimit" labelText="#Steam_Settings_Streaming_Bandwidth" }
 		"BandwidthLimit" { ControlName="ComboBox" fieldName="BandwidthLimit" style="BandwidthLimit" }
 
@@ -41,7 +41,7 @@
 
 		"HwAccelDisable" { ControlName="CheckButton" fieldName="HwAccelDisable" labelText="#Steam_Settings_Streaming_DisableHardwareDecoding" }
 	}
-	
+
 	styles
 	{
 		CSettingsSubStreaming
@@ -67,17 +67,18 @@
 			padding-left=8
 		}
 	}
-	
+
 	layout
-	{		
+	{
 		place { control="RemoteClientList" height=160 }
 		place { control="DescriptionLabel,RemoteClientList,EnableStreaming" dir=down align=top width=max y=33 spacing=8 }
 
-		place { control="HostDivider,HostLabel" start=EnableStreaming dir=down width=max spacing=8 }
+		place { control="SetPIN" start=EnableStreaming y=8 dir=down height=28 }
+		place { control="HostDivider,HostLabel" y=16 start=SetPIN dir=down width=max spacing=16 }
 		place { control="AdvancedHostOptions" y=8 dir=down start=HostLabel height=28 }
-		place { control="UnsupportedPlatform" y=8 dir=down start=HostLabel height=28 }
+		place { control="UnsupportedPlatform" y=8 dir=down start=SetPIN height=28 }
 
-		place { control="ClientDivider,ClientLabel" y=8 start=AdvancedHostOptions dir=down width=max spacing=8 }
+		place { control="ClientDivider,ClientLabel" y=16 start=AdvancedHostOptions dir=down width=max spacing=8 }
 
 		place { control="QualityFast" y=8 start="ClientLabel" dir=down }
 		place { control="QualityBalanced" x=8 start="QualityFast" }
