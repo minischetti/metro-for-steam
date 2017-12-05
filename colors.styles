@@ -3,6 +3,8 @@
 	colors
   {
     none="0 0 0 0"
+    accent="0 197 255 255"
+    accentTransparent="0 197 255 38.25"
 		Focus_T="0 114 198 30.6"
     white03="255 255 255 7.65"
 		white05="255 255 255 12.75"
@@ -29,7 +31,7 @@
     black45="0 0 0 114.75"
     black50="0 0 0 127.5"
     black75="0 0 0 191.25"
-    Black="0 0 0 255"
+    black="0 0 0 255"
     FrameBorder="15 15 15 255"
 		DetailsBackground=Black45
 		TextEntry="39 39 39 255"

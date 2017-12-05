@@ -242,7 +242,7 @@
 		{
 			font-family=basefont
 			textcolor=none
-            inset-left=-999
+			inset-left=-999
 			bgcolor=TextEntry
 			render_bg
 			{
@@ -268,12 +268,12 @@
 
 		downarrow
 		{
-		  image=none
+		image=none
 		}
 
 		downarrow:hover
 		{
-		  image=none
+		image=none
 		}
 
 		grouper
@@ -461,53 +461,28 @@
 
 		CUINavButton
 		{
-			textcolor="White50"
+			textcolor="white50"
 			bgcolor="none"
-			font-family=semibold
+			font-family=basefont
 			font-weight=400
-			font-size=16
+			font-size=18
 			font-style="uppercase"
-			padding-left=8
-			padding-right=8
+			padding-left=10
+			padding-right=10
 		}
 
 		CUINavButton:hover
 		{
-			textcolor="White75"
-			render_bg
-			{
-				0="fill(x0,y0,x1,y1-1,white05)"
-			}
+			textcolor="white"
 		}
 
 		CUINavButton:selected
 		{
-			textcolor="White"
+			textcolor="accent"
 			render_bg
 			{
-				0="fill(x0,y0,x1,y1-1,white05)"
-				1="fill(x0, y1-1, x1, y1, focus)"
+				1="fill(x0, y0, x1, y0+1, accent)"
 			}
-		}
-
-		CUINavButton2
-		{
-			textcolor="White45"
-			bgcolor="none"
-			font-family=basefont
-			font-size=14
-			font-style="regular"
-			padding="8"
-		}
-
-		CUINavButton2:hover
-		{
-			textcolor="White75"
-		}
-
-		CUINavButton2:selected
-		{
-			textcolor="White"
 		}
 
 		MusicPlayerIcon
@@ -546,7 +521,7 @@
 		//Header
 		region { name=top align=top y=40 height=40 x=0 margin-right=0 }
 		place { control="back,forward" x=39 y=1 height=38 width=40 margin-left=0 spacing=0 }
-		place { control="label_store,label_library,label_news,label_friends,label_community,label_me,label_console" x=120 y=0 spacing=1 height=40 }
+		place { control="label_store,label_library,label_news,label_friends,label_community,label_me,label_console" x=120 y=0 spacing=1 height=60 }
 
 		//URLBar
 		place { control="URLBar" region=top align=left height=38 width=max end-right=PageLoadThrobber }
@@ -559,7 +534,7 @@
 		//Search
 		place { control="label_search_icon" region=top height=38 width=38 }
 		place { control="library_search" region=top margin-left=38 height=38 width=186 }
-    	place { control="library_filters" region=top margin-left=224 height=38 width=38 start=DownloadsPage }
+		place { control="library_filters" region=top margin-left=224 height=38 width=38 start=DownloadsPage }
 
 		//Filters
 		place { control="library_zoom" region=top align=right end-right="library_filters_list" y=10 height=26 width=100 margin-right=8 }
@@ -567,11 +542,11 @@
 		place { control="library_music_player_icon" region=top align=right y=7 height=24 spacing=1 width=24 }
 		place { control="library_music_add_button,library_music_menu" region=top align=right end-right=library_Music_player_icon y=7 height=24 margin-right=0 }
 
- 	  	place { control=emailreminderbar align=bottom margin-bottom=1 width=max height=40 }
- 	  	place { control=phonereminderbar align=bottom margin-bottom=1width=max height=40 }
+		place { control=emailreminderbar align=bottom margin-bottom=1 width=max height=40 }
+		place { control=phonereminderbar align=bottom margin-bottom=1width=max height=40 }
 
 		// content pages - these are all pushed down by the email reminder bar (above) if it's visible
-    	place { control=DownloadsPage       width=max height=max margin-top=80 margin-left=0 margin-right=0 margin-bottom=1 dir=down }
+		place { control=DownloadsPage       width=max height=max margin-top=80 margin-left=0 margin-right=0 margin-bottom=1 dir=down }
 		place { control=GamesPage_List 		width=max height=max margin-top=80 margin-left=0 margin-right=0 margin-bottom=1 dir=down }
 		place { control=GamesPage_Details 		width=max height=max margin-top=80 margin-left=0 margin-right=0 margin-bottom=1 dir=down }
 		place { control=GamesPage_Grid 		width=max height=max margin-top=80 margin-left=0 margin-right=0 margin-bottom=0 dir=down }
@@ -589,7 +564,7 @@
 		place { control=BroadcastPageMin		width=300 height=168 margin-top=0 margin-left=0 margin-right=30 margin-bottom=26 dir=down align=bottom-right }
 		place { control=BroadcastPageMinHoriz	width=300 height=168 margin-top=0 margin-left=0 margin-right=30 margin-bottom=40 dir=down align=bottom-right }
 
-    //Hidden
+	//Hidden
 		place { control="fullscreen,EVCert,BetaFlagBigPicture,URLStatusImage,label_community_new,subnavgroup_library,label_library_zoom,label_zoom_separator,label_library_view" height=0 width=0 }
 	}
 	layout [$OSX||$LINUX] //Both OSX and Linux use OS provided menu bar, so this moves top elements left to hide the blank space
@@ -598,7 +573,7 @@
 		//Header
 		region { name=top align=top y=40 height=40 x=0 margin-right=0 }
 		place { control="back,forward" x=0 y=1 height=38 width=40 margin-left=0 spacing=0 }
-		place { control="label_store,label_library,label_news,label_friends,label_community,label_me,label_console" x=81 y=0 spacing=1 height=40 }
+		place { control="label_store,label_library,label_news,label_friends,label_community,label_me,label_console" x=81 y=0 spacing=1 height=60 }
 
 		//URLBar
 		place { control="URLBar" region=top align=left height=38 width=max end-right=PageLoadThrobber }
@@ -619,15 +594,16 @@
 		place { control="library_music_player_icon" region=top align=right y=7 height=24 spacing=1 width=24 }
 		place { control="library_music_add_button,library_music_menu" region=top align=right end-right=library_Music_player_icon y=7 height=24 margin-right=0 }
 
- 	  	place { control=emailreminderbar margin-top=79 width=max height=40 }
- 	  	place { control=phonereminderbar margin-top=79 width=max height=40 }
+		place { control=emailreminderbar margin-top=79 width=max height=40 }
+		place { control=phonereminderbar margin-top=79 width=max height=40 }
 
-		// content pages - these are all pushed down by the email reminder bar (above) if it's visible
-		place { control=DownloadsPage 		width=max height=max margin-top=0 margin-left=0 margin-right=0 margin-bottom=1 dir=down }
-		place { control=GamesPage_List 		width=max height=max margin-top=0 margin-left=0 margin-right=0 margin-bottom=1 dir=down }
-		place { control=GamesPage_Details 		width=max height=max margin-top=1 margin-left=0 margin-right=0 margin-bottom=1 dir=down }
-		place { control=GamesPage_Grid 		width=max height=max margin-top=0 margin-left=0 margin-right=0 margin-bottom=0 dir=down }
-		place { control=WebPanel			width=max height=max margin-left=0 margin-bottom=1 y=0 start=URLBar dir=down }
+		//Content Pages
+		region { name=content y=60 width=max height=max }
+		place { control=DownloadsPage region=content width=max height=max }
+		place { control=GamesPage_Details region=content width=max height=max }
+		place { control=GamesPage_Grid region=content width=max height=max }
+		place { control=GamesPage_List region=content width=max height=max }
+		place { control=WebPanel region=content width=max height=max }
 
 		place { control=MusicPage_Details width=max height=max margin-top=1 margin-left=0 margin-right=-1 margin-bottom=1 dir=down }
 		place { control=ScreenshotsPage width=max height=max margin-top=1 margin-left=0 margin-right=-1 margin-bottom=1 dir=down }
@@ -641,7 +617,7 @@
 		place { control=BroadcastPageMin		width=300 height=168 margin-top=0 margin-left=0 margin-right=30 margin-bottom=26 dir=down align=bottom-right }
 		place { control=BroadcastPageMinHoriz	width=300 height=168 margin-top=0 margin-left=0 margin-right=30 margin-bottom=40 dir=down align=bottom-right }
 
-    //Hidden
+	//Hidden
 		place { control="fullscreen,EVCert,BetaFlagBigPicture,URLStatusImage,label_community_new,subnavgroup_library,label_library_zoom,label_zoom_separator,label_library_view" height=0 width=0 }
 	}
 }
