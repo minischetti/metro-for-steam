@@ -368,7 +368,7 @@
 		region { name=bottom height=6 align=bottom }
 
 		//Caption Buttons
-		place { control="frame_minimize,frame_maximize,frame_close" align=right width=40 height=40 margin-right=1 }
+		place { control="frame_minimize,frame_maximize,frame_close" align=right width=40 height=60 margin-right=1 }
 
 		//Frame Grips
 		place { control="frame_captiongrip" width=max height=40 }

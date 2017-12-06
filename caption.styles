@@ -1,143 +1,135 @@
 "caption.styles"
 {
-	styles
-	{
-		//Default Style
+  styles
+  {
+    //Default Style
 
     FrameMinimizeButton
     {
       render_bg
-			{
-        0="image(x0+15,y0+24,x1,y1,graphics/metro/icons/caption/minimize)"
+      {
+        0="image(x0+15,y0+33,x1,y1,graphics/metro/icons/caption/minimize)"
       }
     }
 
     FrameMinimizeButton:framefocus
     {
       render_bg
-			{
-        0="image(x0+15,y0+24,x1,y1,graphics/metro/icons/caption/minimize)"
+      {
+        0="image(x0+15,y0+33,x1,y1,graphics/metro/icons/caption/minimize)"
       }
     }
 
     FrameMinimizeButton:hover
     {
       render_bg
-			{
-        0="image(x0+15,y0+24,x1,y1,graphics/metro/icons/caption/minimize_h)"
-				1="fill(x0,y0,x1,y1-1,White05)"
+      {
+        0="image(x0+15,y0+33,x1,y1,graphics/metro/icons/caption/minimize_h)"
       }
     }
 
     FrameMinimizeButton:active
     {
       render_bg
-			{
-        0="image(x0+15,y0+24,x1,y1,graphics/metro/icons/caption/minimize_p)"
-				1="fill(x0,y0,x1,y1-1,White10)"
+      {
+        0="image(x0+15,y0+33,x1,y1,graphics/metro/icons/caption/minimize_p)"
       }
     }
 
     FrameMaximizeButton
     {
       render_bg
-			{
-        0="image(x0+15,y0+15,x1,y1,graphics/metro/icons/caption/maximize)"
+      {
+        0="image(x0+15,y0+23,x1,y1,graphics/metro/icons/caption/maximize)"
       }
     }
 
     FrameMaximizeButton:framefocus
     {
       render_bg
-			{
-        0="image(x0+15,y0+15,x1,y1,graphics/metro/icons/caption/maximize)"
+      {
+        0="image(x0+15,y0+23,x1,y1,graphics/metro/icons/caption/maximize)"
       }
     }
 
-		FrameMaximizeButton:hover
+    FrameMaximizeButton:hover
     {
       render_bg
-			{
-        0="image(x0+15,y0+15,x1,y1,graphics/metro/icons/caption/maximize_h)"
-				1="fill(x0,y0,x1,y1-1,White05)"
+      {
+        0="image(x0+15,y0+23,x1,y1,graphics/metro/icons/caption/maximize_h)"
       }
     }
 
-		FrameMaximizeButton:active
+    FrameMaximizeButton:active
     {
       render_bg
-			{
-        0="image(x0+15,y0+15,x1,y1,graphics/metro/icons/caption/maximize_p)"
-				1="fill(x0,y0,x1,y1-1,White10)"
+      {
+        0="image(x0+15,y0+23,x1,y1,graphics/metro/icons/caption/maximize_p)"
       }
     }
 
     FrameRestoreButton
     {
       render_bg
-			{
-        0="image(x0+15,y0+15,x1,y1,graphics/metro/icons/caption/restore)"
+      {
+        0="image(x0+15,y0+23,x1,y1,graphics/metro/icons/caption/restore)"
       }
     }
 
     FrameRestoreButton:framefocus
     {
       render_bg
-			{
-        0="image(x0+15,y0+15,x1,y1,graphics/metro/icons/caption/restore)"
+      {
+        0="image(x0+15,y0+23,x1,y1,graphics/metro/icons/caption/restore)"
       }
     }
 
-		FrameRestoreButton:hover
+    FrameRestoreButton:hover
     {
       render_bg
-			{
-        0="image(x0+15,y0+15,x1,y1,graphics/metro/icons/caption/restore_h)"
-				1="fill(x0,y0,x1,y1-1,White05)"
+      {
+        0="image(x0+15,y0+23,x1,y1,graphics/metro/icons/caption/restore_h)"
       }
     }
 
-		FrameRestoreButton:active
+    FrameRestoreButton:active
     {
       render_bg
-			{
-        0="image(x0+15,y0+15,x1,y1,graphics/metro/icons/caption/restore_p)"
-				1="fill(x0,y0,x1,y1-1,White10)"
+      {
+        0="image(x0+15,y0+23,x1,y1,graphics/metro/icons/caption/restore_p)"
       }
     }
 
-		FrameCloseButton
+    FrameCloseButton
     {
       render_bg
-			{
-        0="image(x0+15,y0+15,x1,y1,graphics/metro/icons/caption/close)"
+      {
+        0="image(x0+15,y0+23,x1,y1,graphics/metro/icons/caption/close)"
       }
     }
 
-		FrameCloseButton:framefocus
+    FrameCloseButton:framefocus
     {
       render_bg
-			{
-        0="image(x0+15,y0+15,x1,y1,graphics/metro/icons/caption/close)"
+      {
+        0="image(x0+15,y0+23,x1,y1,graphics/metro/icons/caption/close)"
       }
     }
 
-		FrameCloseButton:hover
+    FrameCloseButton:hover
     {
       render_bg
-			{
-        0="image(x0+15,y0+15,x1,y1,graphics/metro/icons/caption/close_h)"
-				1="fill(x0,y0,x1,y1-1,White05)"
+      {
+        0="image(x0+15,y0+23,x1,y1,graphics/metro/icons/caption/close_h)"
       }
     }
 
-		FrameCloseButton:active
+    FrameCloseButton:active
     {
       render_bg
-			{
-        0="image(x0+15,y0+15,x1,y1,graphics/metro/icons/caption/close_p)"
-				1="fill(x0,y0,x1,y1-1,White10)"
+      {
+        0="image(x0+15,y0+23,x1,y1,graphics/metro/icons/caption/close_p)"
       }
     }
-	}
+  }
 }
