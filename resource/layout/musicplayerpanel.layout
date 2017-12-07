@@ -30,7 +30,7 @@
 	{
 		CMusicPlayerPanel
 		{
-			bgcolor=ClientBG
+			bgcolor=black
 
 			minimum-width = 460
 			minimum-height = 92

@@ -75,7 +75,7 @@
 	{
 		ConsolePage
 		{
-			bgcolor=ClientBG
+			bgcolor=black
 		}
 
 		CConsoleHistory

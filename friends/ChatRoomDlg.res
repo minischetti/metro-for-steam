@@ -81,11 +81,11 @@
 		{
 		font-size=14
 		textcolor=White45
-		bgcolor=ClientBG
+		bgcolor=black
 		font-style=uppercase
 		render_bg
 		{
-      0="fill( x0,y0,x1,y1, ClientBG )"
+      0="fill( x0,y0,x1,y1, black )"
       1="fill( x0, y0-1, x1, y0+1, Black25 )"
 		}
 		}

@@ -193,7 +193,7 @@
 	{
 		SimpleDialog
 		{
-			bgcolor=ClientBG
+			bgcolor=black
 			render_bg
 			{
 				0="image(x0+62,y0+44,x1,y1, graphics/metro/labels/linkwarning)"

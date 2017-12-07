@@ -14,7 +14,7 @@
 		
 		PageDragPanel
 		{
-			bgcolor="ClientBG"
+			bgcolor="black"
 		}
 	}
 		

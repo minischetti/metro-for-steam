@@ -41,8 +41,6 @@
     Grey2="48 48 48 255"
     Grey3="75 75 75 255"
     Header_Dark="20 20 20 255"
-    ClientBG="26 26 26 255"
-		ClientBGTransparent="43 43 43 191.25"
 		Red="255 0 0 255"
 		Green="0 138 23 255"
 	}

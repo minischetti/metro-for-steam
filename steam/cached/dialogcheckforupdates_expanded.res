@@ -144,7 +144,7 @@
 	{
 		CDialogCheckForUpdates
 		{
-			bgcolor=ClientBG
+			bgcolor=black
 			render_bg
 			{}
 		}

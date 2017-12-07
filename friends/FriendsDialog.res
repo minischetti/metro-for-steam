@@ -151,7 +151,7 @@
 	{
 		CFriendsDialog
 		{
-			bgcolor=ClientBG
+			bgcolor=black
 			render_bg
 			{
 				0="fill( x0, y0, x1, y0+40, FrameBorder )"

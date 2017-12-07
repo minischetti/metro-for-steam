@@ -121,7 +121,7 @@
 		
 		CGameLaunchParametersDialog
 		{
-			bgcolor=ClientBG
+			bgcolor=black
 			render_bg
 			{
 				//Top

@@ -176,10 +176,10 @@ styles
         {
         0="fill( x0, y0-1, x1, y0, FrameBorder )"
         1="fill( x0, y0, x1, y0+47, FrameBorder )"
-        2="fill( x0, y0, x1, y0+46, ClientBG )"
+        2="fill( x0, y0, x1, y0+46, black )"
 
         5="fill( x0, y1-61, x1, y1-60, Black25 )"
-        5="fill( x0, y1-60, x1, y1, ClientBG )"
+        5="fill( x0, y1-60, x1, y1, black )"
 
         4="fill( x0, y1-41, x1, y1, FrameBorder )"
         4="fill( x0, y1-40, x1, y1, Header_Dark )"
@@ -214,7 +214,7 @@ styles
 
     SimpleDialog
     {
-        bgcolor=ClientBG
+        bgcolor=black
         render_bg
         {
             0="fill( x0, y1-44, x1, y1, FrameBorder )"
@@ -312,7 +312,7 @@ styles
     }
     CEditTagsDialog
     {
-        bgcolor=ClientBG
+        bgcolor=black
         render_bg
         {
             //Top
@@ -328,7 +328,7 @@ styles
     }
     CFavoriteGames
     {
-        bgcolor=ClientBG
+        bgcolor=black
         render_bg
         {
             0="fill( x0, y1-44, x1, y1, FrameBorder )"
@@ -337,7 +337,7 @@ styles
     }
     CHistoryGames
     {
-        bgcolor=ClientBG
+        bgcolor=black
         render_bg
         {
             0="fill( x0, y1-44, x1, y1, FrameBorder )"
@@ -346,7 +346,7 @@ styles
     }
     CLanGames
     {
-        bgcolor=ClientBG
+        bgcolor=black
         render_bg
         {
             0="fill( x0, y1-44, x1, y1, FrameBorder )"
@@ -355,7 +355,7 @@ styles
     }
     CFriendsGames
     {
-        bgcolor=ClientBG
+        bgcolor=black
         render_bg
         {
             0="fill( x0, y1-44, x1, y1, FrameBorder )"
@@ -364,7 +364,7 @@ styles
     }
     Frame
     {
-        bgcolor="ClientBG"
+        bgcolor="black"
         render
         {
             0="fill( x0 + 0, y0 + 0, x1 + 0, y0 + 1, FrameBorder )"	// Top
@@ -376,20 +376,20 @@ styles
 
     CDialogSettings
     {
-        bgcolor=ClientBG
+        bgcolor=black
         render_bg
         {
-            0="fill( x0, y0, x1, y1, ClientBG )"
+            0="fill( x0, y0, x1, y1, black )"
         }
     }
 
     COverlaySettingsDialog
     {
         minimum-height=630
-        bgcolor=ClientBG
+        bgcolor=black
         render_bg
         {
-            0="fill( x0, y0, x1, y1, ClientBG )"
+            0="fill( x0, y0, x1, y1, black )"
             2="fill( x0, y0, x1, y0+54, FrameBorder )"
             3="fill( x0, y0, x1, y0+53, Header_Dark )"
             5="fill( x0, y1-44, x1, y1, FrameBorder )"
@@ -404,10 +404,10 @@ styles
 
     COverlayFriendsDialog
     {
-        bgcolor=ClientBG
+        bgcolor=black
         render_bg
         {
-            0="fill( x0, y0, x1, y1, ClientBG )"
+            0="fill( x0, y0, x1, y1, black )"
             2="fill( x0, y0, x1, y0+54, FrameBorder )"
             3="fill( x0, y0, x1, y0+53, Header_Dark )"
             5="fill( x0, y1-44, x1, y1, FrameBorder )"
@@ -417,10 +417,10 @@ styles
 
     COverlayViewFriendsDialog
     {
-        bgcolor=ClientBG
+        bgcolor=black
         render_bg
         {
-            0="fill( x0, y0, x1, y1, ClientBG )"
+            0="fill( x0, y0, x1, y1, black )"
             2="fill( x0, y0, x1, y0+54, FrameBorder )"
             3="fill( x0, y0, x1, y0+53, Header_Dark )"
             5="fill( x0, y1-44, x1, y1, FrameBorder )"
@@ -461,7 +461,7 @@ styles
 
     CInstallAppWizard
     {
-        bgcolor=ClientBG
+        bgcolor=black
         render_bg
         {
             5="fill( x0, y1-48, x1, y1, FrameBorder )"
@@ -471,7 +471,7 @@ styles
 
     CRegisterCDKeyWizard
     {
-        bgcolor=ClientBG
+        bgcolor=black
         render_bg
         {
             5="fill( x0, y1-48, x1, y1, FrameBorder )"
@@ -483,7 +483,7 @@ styles
     {
         render_bg
         {
-            0="fill( x0, y0, x1, y1, ClientBG )"
+            0="fill( x0, y0, x1, y1, black )"
             1="fill( x0, y0, x1, y0+54, FrameBorder )"
             2="fill( x0, y0, x1, y0+53, Header_Dark )"
             3="fill( x0, y1-44, x1, y1, FrameBorder )"
@@ -493,11 +493,11 @@ styles
 
     ZooDialog
     {
-        bgcolor=ClientBG
+        bgcolor=black
         render{}
         render_bg
         {
-            0="fill( x0, y0, x1, y1, ClientBG )"
+            0="fill( x0, y0, x1, y1, black )"
             2="fill( x0, y0, x1, y0+60, FrameBorder )"
             3="fill( x0, y0, x1, y0+59, Header_Dark )"
         }
@@ -505,7 +505,7 @@ styles
 
     CLaunchOptionsDialog
     {
-        bgcolor=ClientBG
+        bgcolor=black
         render_bg
         {
             5="fill( x0, y1-42, x1, y1, FrameBorder )"
@@ -634,7 +634,7 @@ styles
 
     RadioButtonList
     {
-        bgcolor="ClientBG"
+        bgcolor="black"
         inset="-2 0 0 0"
 
         render_bg
@@ -1106,7 +1106,7 @@ styles
 
         Menu
     {
-            bgcolor="ClientBG"
+            bgcolor="black"
             padding-right=0
             inset="0 8 0 8"
             render_bg
@@ -1158,7 +1158,7 @@ styles
 
         SuperNavMenu
         {
-            bgcolor=ClientBG
+            bgcolor=black
             inset="0 8 0 8"
 
             render {}
@@ -1230,7 +1230,7 @@ styles
             font-family=basefont
             font-size=16
             font-weight=400
-            bgcolor=ClientBG
+            bgcolor=black
             render_bg {}
             render
             {
@@ -1331,7 +1331,7 @@ styles
 
     PropertyPage
     {
-            bgcolor="ClientBG"
+            bgcolor="black"
     }
 
     RichText
@@ -1387,7 +1387,7 @@ styles
 
     SectionedListPanel
     {
-        bgcolor="ClientBG"
+        bgcolor="black"
         font-family=basefont
         font-size=16
         font-weight=400
@@ -1457,7 +1457,7 @@ styles
 
     "TooltipWindow"
     {
-            bgcolor=ClientBG
+            bgcolor=black
             //bgcolor="Black"
             //alpha=191.25
             render_bg
@@ -1610,13 +1610,11 @@ styles
         BackButton:hover
         {
             image="graphics/metro/icons/navbar/back_h"
-            bgcolor=white05
         }
 
         BackButton:active
         {
             image="graphics/metro/icons/navbar/back_p"
-            bgcolor=white10
         }
 
         BackButton:disabled
@@ -1659,13 +1657,11 @@ styles
         ForwardButton:hover
         {
             image="graphics/metro/icons/navbar/forward_h"
-            bgcolor=white05
         }
 
         ForwardButton:active
         {
             image="graphics/metro/icons/navbar/forward_p"
-            bgcolor=white10
         }
 
         ForwardButton:disabled
@@ -1843,7 +1839,7 @@ styles
 
     "html-findbar"
     {
-        bgcolor=ClientBG
+        bgcolor=black
         render
         {
             0="fill( x0 + 0, y0 + 0, x1 + 0, y0 + 1, FrameBorder )"	// Top

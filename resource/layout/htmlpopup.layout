@@ -30,10 +30,10 @@
 
 		HTMLPopup
 		{
-			bgcolor=ClientBG
+			bgcolor=black
 			render_bg
 			{
-				0="fill( x0, y0, x1, y1, ClientBG )"
+				0="fill( x0, y0, x1, y1, black )"
 				2="fill( x0, y0, x1, y0+69, FrameBorder )"
 				3="fill( x0, y0, x1, y0+68, Header_Dark )"
 				5="fill( x0, y1-26, x1, y1, FrameBorder )"

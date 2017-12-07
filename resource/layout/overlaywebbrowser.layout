@@ -49,11 +49,11 @@
 
 		COverlayWebBrowser
 		{
-			bgcolor=ClientBG
+			bgcolor=black
 			render_bg
 			{
 				0="fill( x0, y0, x1, y0+40, FrameBorder )"
-				1="fill( x0, y0, x1, y0+39, ClientBG )"
+				1="fill( x0, y0, x1, y0+39, black )"
 				2="fill( x0, y1-26, x1, y1, FrameBorder )"
 				3="fill( x0, y1-25, x1, y1, Header_Dark )"
 			}

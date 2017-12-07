@@ -24,7 +24,7 @@
 		"ypos"		"74"
 		"wide"		"238"
 		"tall"		"23"
-		"fillcolor"	"ClientBG"
+		"fillcolor"	"black"
 		"zpos"		"-1"
 	}
 	"AchievementIcon"

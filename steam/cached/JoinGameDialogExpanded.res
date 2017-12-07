@@ -207,7 +207,7 @@
 	{
 		CJoinGameDialog
 		{
-			bgcolor=ClientBG
+			bgcolor=black
 			render_bg
 			{
 				0="fill( x0, y1-44, x1, y1, FrameBorder )"

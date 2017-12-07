@@ -42,7 +42,7 @@
 			bgcolor=white05
 			render_bg
 			{
-				0="fill(x0,y0,x1,y0+1,ClientBG)"
+				0="fill(x0,y0,x1,y0+1,black)"
 				1="image(x0+232,y0+10,x1,y1,graphics/metro/downloads/labels/progress)"
 				2="image(x0+232,y0+48,x1,y1,graphics/metro/downloads/labels/initiated)"
 				3="image(x0+232,y0+86,x1,y1,graphics/metro/downloads/labels/remaining)"

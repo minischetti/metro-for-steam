@@ -33,7 +33,7 @@
 			ListPanel.SelectedBgColor     Focus
 			ListPanel.SelectedOutOfFocusgColor   Focus
 			ListPanel.DisabledTextColor     White45
-			ListPanel.DisabledSelectedTextColor   ClientBG
+			ListPanel.DisabledSelectedTextColor   black
 			ListPanel.EmptyListInfoTextColor    Label
 			ListPanel.PerPixelScrolling     1
 			ListPanel.PostSectionLeading	0
@@ -81,7 +81,7 @@
 			Friends.GoldenColor       "255 255 99 255"
 			Friends.PanelDefault      "White75"
 			Friends.PanelOver       "White"
-			Friends.PanelSelected     "ClientBG"
+			Friends.PanelSelected     "black"
 			Friends.SectionHeader     "White75"
 			Friends.NoAvatarOver      "White"
 			Friends.IgnoredColor      "Red"

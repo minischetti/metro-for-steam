@@ -109,7 +109,7 @@
 		{
 			render_bg
 			{
-				0="fill( x0, y0, x1, y1, ClientBG )"
+				0="fill( x0, y0, x1, y1, black )"
 			}
 		}
 		

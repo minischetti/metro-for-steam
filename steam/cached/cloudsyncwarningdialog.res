@@ -121,7 +121,7 @@
 	{
 		CSyncFailureDialog
 		{
-			bgcolor=ClientBG
+			bgcolor=black
 			render_bg
 			{
 				0="image(x0+38,y0+44,x1,y1, graphics/cloudsync)"

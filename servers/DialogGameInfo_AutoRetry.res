@@ -471,7 +471,7 @@
 			inset-right=0
 			render
 			{
-				0="fill(x0+8,y1-1,x1-8,y1,ClientBG)"
+				0="fill(x0+8,y1-1,x1-8,y1,black)"
 			}
 		}
 		ListPanelInterior:scrollbar

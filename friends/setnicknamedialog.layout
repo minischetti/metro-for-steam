@@ -46,7 +46,7 @@
 		{
 			minimum-width=348
 			minimum-height=197
-			bgcolor=ClientBG
+			bgcolor=black
 			render_bg
 			{
 				//Top

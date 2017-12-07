@@ -4,7 +4,7 @@ gameoverlay.styles
 	
 	colors 
 	{
-		//TextEntry="ClientBG"
+		//TextEntry="black"
 		//mostly_black "0 0 0 240"
 		mostly_black "0 0 0 0"
 		semi_black "0 0 0 128"
