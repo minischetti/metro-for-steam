@@ -254,7 +254,7 @@
 
         CWebPanel
         {
-        bgcolor=none
+            bgcolor=none
         }
 
         TextEntryURL
@@ -266,11 +266,7 @@
 
         CUINavButton
         {
-            textcolor="white50"
-            bgcolor="none"
-            font-family=basefont
-            font-weight=400
-            font-size=18
+            font-size=22
             font-style="uppercase"
             padding-left=10
             padding-right=10
@@ -286,7 +282,7 @@
             textcolor="accent"
             render_bg
             {
-                1="fill(x0, y0, x1, y0+1, accent)"
+                1="fill(x0, y0, x1, y0-1, accent)"
             }
         }
 

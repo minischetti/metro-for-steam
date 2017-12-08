@@ -13,24 +13,19 @@
 
 	styles
 	{
-		CDetailsGameTitleHeaderPanel
-		{
-			bgcolor=none
-		}
 
 		headertextlarge
 		{
+			font-family=boldfont
+			font-style=uppercase
 			font-size=42
-			textcolor=White
-			font-family=light
-			font-weight=100
-			bgcolor=none
+			textcolor=white
 		}
 	}
 
 	layout
 	{
-		place { control=gametitlelabel align=left-center }
+		place { control=gametitlelabel x=40 align=left-center }
 
 		place { control="iconimage" width=0 height=0 }
 	}

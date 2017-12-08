@@ -831,7 +831,7 @@ styles
     ListPanel
     {
         font-family=basefont
-        font-size=16
+        font-size=18
         font-weight=400
         padding-left=5
         padding-right=5
@@ -1289,49 +1289,49 @@ styles
         font-style=""
     }
 
-        TabCloseButton
+    TabCloseButton
     {
-            image="graphics/metro/icons/caption/sm/close_sm"
-            inset-left=-5
-            inset-top=-1
-            render_bg {}
+        image="graphics/metro/icons/caption/sm/close_sm"
+        inset-left=-5
+        inset-top=-1
+        render_bg {}
     }
 
-        TabCloseButton:hover
+    TabCloseButton:hover
     {
-            image="graphics/metro/icons/caption/sm/close_sm_h"
+        image="graphics/metro/icons/caption/sm/close_sm_h"
     }
 
-        TabCloseButton:active
-        {
-            image="graphics/metro/icons/caption/sm/close_sm_p"
-        }
+    TabCloseButton:active
+    {
+        image="graphics/metro/icons/caption/sm/close_sm_p"
+    }
 
     Panel
-        {
-            font-family=basefont
-            font-size=16
-            font-weight=400
-            textcolor="white"
-            bgcolor="none"
+    {
+        font-family=basefont
+        font-size=16
+        font-weight=400
+        textcolor="white"
+        bgcolor="none"
     }
 
     ProgressBar
     {
-            textcolor="Focus"
-            bgcolor="none"
-            render
-            {
-                1="fill( x0, y0, x1, y0 + 1, White10 )"  // top
-                2="fill( x0, y1 - 1, x1, y1, White10 )"  // bottom
-                3="fill( x0, y0+1, x0+1, y1-1, White10 )"  // left
-                4="fill( x1-1, y0+1, x1, y1-1, White10 )"  // right
-            }
+        textcolor="Focus"
+        bgcolor="none"
+        render
+        {
+            1="fill( x0, y0, x1, y0 + 1, White10 )"  // top
+            2="fill( x0, y1 - 1, x1, y1, White10 )"  // bottom
+            3="fill( x0, y0+1, x0+1, y1-1, White10 )"  // left
+            4="fill( x1-1, y0+1, x1, y1-1, White10 )"  // right
         }
+    }
 
     PropertyPage
     {
-            bgcolor="black"
+        bgcolor="black"
     }
 
     RichText
@@ -1347,43 +1347,43 @@ styles
     }
 
     RichTextInterior
-        {
-            bgcolor=none
+    {
+        bgcolor=none
     }
 
-        "RichText url"
-        {
-            font-size=16
-            textcolor="White50"
-            selectedtextcolor="White50"
-            font-style=underline
-        }
-
-        "RichText url:hover"
-        {
-            textcolor="White75"
-        }
-
-
-        "CFriendPanel RichText URL"
-        {
-        textcolor="white"
+    "RichText url"
+    {
+        font-size=16
+        textcolor="White50"
+        selectedtextcolor="White50"
         font-style=underline
-        font-size=14
-        }
+    }
 
-        // style of bold White in a rich White control
-        "RichText bold"
-        {
-            font-size=16
-            font-family=semibold
-        }
+    "RichText url:hover"
+    {
+        textcolor="White75"
+    }
 
-        "RichText emphasis"
-        {
-            font-size=16
-            font-style=italic
-        }
+
+    "CFriendPanel RichText URL"
+    {
+    textcolor="white"
+    font-style=underline
+    font-size=14
+    }
+
+    // style of bold White in a rich White control
+    "RichText bold"
+    {
+        font-size=16
+        font-family=semibold
+    }
+
+    "RichText emphasis"
+    {
+        font-size=16
+        font-style=italic
+    }
 
     SectionedListPanel
     {
@@ -1438,150 +1438,149 @@ styles
 
     SectionHeaderStyleLabel
     {
-    font-style=uppercase
+        font-style=uppercase
     }
 
     StatusLabel
     {
-    font-family=basefont
-    font-size=14
-    font-weight=400
-    textcolor="White50"
-    font-style=uppercase
+        font-family=basefont
+        font-size=14
+        font-weight=400
+        textcolor="White50"
+        font-style=uppercase
     }
 
     StatusLabel:hover
     {
-    textcolor="white"
+        textcolor="white"
     }
 
     "TooltipWindow"
     {
-            bgcolor=black
-            //bgcolor="Black"
-            //alpha=191.25
-            render_bg
-    {
-        0="fill( x0 + 0, y0 + 0, x1 + 0, y0 + 1, FrameBorder )"	// Top
-        1="fill( x0 + 1, y1 - 1, x1 + 0, y1 + 0, FrameBorder )"	// Bottom
-        2="fill( x0 + 0, y0 + 1, x0 + 1, y1 + 0, FrameBorder )"	// Left
-        3="fill( x1 - 1, y0 + 1, x1 + 0, y1 - 1, FrameBorder )"	// Right
-            }
+        bgcolor=black
+        //bgcolor="Black"
+        //alpha=191.25
+        render_bg
+        {
+            0="fill( x0 + 0, y0 + 0, x1 + 0, y0 + 1, FrameBorder )"	// Top
+            1="fill( x0 + 1, y1 - 1, x1 + 0, y1 + 0, FrameBorder )"	// Bottom
+            2="fill( x0 + 0, y0 + 1, x0 + 1, y1 + 0, FrameBorder )"	// Left
+            3="fill( x1 - 1, y0 + 1, x1 + 0, y1 - 1, FrameBorder )"	// Right
+        }
     }
 
     tooltip_headline
     {
-            font-family=basefont
-            font-size=18
+        font-family=basefont
+        font-size=18
         textcolor="White"
         padding-left=8
-            padding-right=8
-            padding-top=2
-            padding-bottom=2
+        padding-right=8
+        padding-top=2
+        padding-bottom=2
     }
 
     "TooltipWindow Label"
     {
-    textcolor="White50"
+        textcolor="White50"
         padding-left=8
-            padding-right=8
-            padding-top=2
-            padding-bottom=4
+        padding-right=8
+        padding-top=2
+        padding-bottom=4
     }
 
     TreeNode
     {
-    bgcolor=none
+        bgcolor=none
     render_bg {}
     }
 
     TreeNodeImage
     {
-    bgcolor=none
+        bgcolor=none
     }
 
     TreeViewSubPanel
     {
-    bgcolor=none
+        bgcolor=none
     }
 
     TreeNodeText
     {
-    font-family=basefont
-    font-size=13
-    textcolor="white"
-    selectedtextcolor="White"
-    selectedbgcolor="Focus"
-    bgcolor=none
-    render {}
-    render_bg {}
+        font-family=basefont
+        font-size=13
+        textcolor="white"
+        selectedtextcolor="White"
+        selectedbgcolor="Focus"
+        bgcolor=none
+        render {}
+        render_bg {}
     }
 
     TreeView
     {
-    render_bg{}
+        render_bg{}
     }
 
     URLLabel
     {
-    textcolor="White50"
-    selectedtextcolor="white"
-    bgcolor="none"
-    font-family=basefont
-    font-size=16
-    font-weight=400
-    font-style=underline
+        textcolor="White50"
+        selectedtextcolor="white"
+        bgcolor="none"
+        font-family=basefont
+        font-size=16
+        font-weight=400
+        font-style=underline
     }
 
-        URLLabel:Hover
-        {
-            textcolor="White75"
-        }
-
-        URLLabelSimple
+    URLLabel:Hover
     {
-    textcolor="White50"
-    selectedtextcolor="white"
-    bgcolor="none"
-    font-family=basefont
-    font-size=14
-    font-weight=400
-    font-style=regular
+        textcolor="White75"
+    }
+
+    URLLabelSimple
+    {
+        textcolor="White50"
+        selectedtextcolor="white"
+        bgcolor="none"
+        font-family=basefont
+        font-size=14
+        font-weight=400
+        font-style=regular
     }
 
     URLLabelSimple:Hover
     {
-    font-style=underline
-    textcolor="White75"
+        font-style=underline
+        textcolor="White75"
     }
 
     GameColumnHeaderFavorites
     {
-            inset-left=0
-    image="steam/cached/fav_remove"
-
+        inset-left=0
+        image="steam/cached/fav_remove"
     }
 
     CGamesListFavoritesToggle
     {
-            minimum-width=27
-            inset-left=3
-    image="steam/cached/fav_addTo"
+        minimum-width=27
+        inset-left=3
+        image="steam/cached/fav_addTo"
     }
 
     CGamesListFavoritesToggle:hover
     {
-    image="steam/cached/fav_addTo_ovr"
+        image="steam/cached/fav_addTo_ovr"
     }
 
     CGamesListFavoritesToggle:selected
     {
-    image="steam/cached/fav_remove"
+        image="steam/cached/fav_remove"
     }
 
     CGamesListFavoritesToggle:selected:hover
     {
-    image="steam/cached/fav_remove_ovr"
+        image="steam/cached/fav_remove_ovr"
     }
 
     WrapPanel
