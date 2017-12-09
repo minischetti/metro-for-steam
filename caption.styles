@@ -10,19 +10,11 @@
             }
         }
 
-        FrameCloseButton:framefocus
-        {
-            render_bg
-            {
-                0="image(x0+10,y0,x1,y1,graphics/metro/icons/caption/close)"
-            }
-        }
-
         FrameCloseButton:hover
         {
             render_bg
             {
-                0="image(x0+10,y0,x1,y1,graphics/metro/icons/caption/close-hover)"
+                0="image(x0+10,y0,x1,y1,graphics/metro/icons/caption/close_hover)"
             }
         }
 
@@ -30,11 +22,11 @@
         {
             render_bg
             {
-                0="image(x0+10,y0,x1,y1,graphics/metro/icons/caption/close-pressed)"
+                0="image(x0+10,y0,x1,y1,graphics/metro/icons/caption/close_pressed)"
             }
         }
 
-        FrameMinimizeButton
+        FrameButton
         {
             render_bg
             {
@@ -42,91 +34,19 @@
             }
         }
 
-        FrameMinimizeButton:framefocus
+        FrameButton:hover
         {
             render_bg
             {
-                0="image(x0+10,y0,x1,y1,graphics/metro/icons/caption/button)"
+                0="image(x0+10,y0,x1,y1,graphics/metro/icons/caption/button_hover)"
             }
         }
 
-        FrameMinimizeButton:hover
+        FrameButton:active
         {
             render_bg
             {
-                0="image(x0+10,y0,x1,y1,graphics/metro/icons/caption/button-hover)"
-            }
-        }
-
-        FrameMinimizeButton:active
-        {
-            render_bg
-            {
-                0="image(x0+10,y0,x1,y1,graphics/metro/icons/caption/button-pressed)"
-            }
-        }
-
-        FrameMaximizeButton
-        {
-            render_bg
-            {
-                0="image(x0+10,y0,x1,y1,graphics/metro/icons/caption/button)"
-            }
-        }
-
-        FrameMaximizeButton:framefocus
-        {
-            render_bg
-            {
-                0="image(x0+10,y0,x1,y1,graphics/metro/icons/caption/button)"
-            }
-        }
-
-        FrameMaximizeButton:hover
-        {
-            render_bg
-            {
-                0="image(x0+10,y0,x1,y1,graphics/metro/icons/caption/button-hover)"
-            }
-        }
-
-        FrameMaximizeButton:active
-        {
-            render_bg
-            {
-                0="image(x0+10,y0,x1,y1,graphics/metro/icons/caption/button-pressed)"
-            }
-        }
-
-        FrameRestoreButton
-        {
-            render_bg
-            {
-                0="image(x0+10,y0,x1,y1,graphics/metro/icons/caption/button)"
-            }
-        }
-
-        FrameRestoreButton:framefocus
-        {
-            render_bg
-            {
-                0="image(x0+10,y0,x1,y1,graphics/metro/icons/caption/button)"
-            }
-        }
-
-        FrameRestoreButton:hover
-        {
-            render_bg
-            {
-                0="image(x0+10,y0,x1,y1,graphics/metro/icons/caption/button-hover)"
-            }
-        }
-
-        FrameRestoreButton:active
-        {
-            render_bg
-            {
-                0="image(x0+10,y0,x1,y1,graphics/metro/icons/caption/button-pressed)"
+                0="image(x0+10,y0,x1,y1,graphics/metro/icons/caption/button_pressed)"
             }
         }
     }

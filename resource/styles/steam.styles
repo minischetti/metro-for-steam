@@ -831,7 +831,7 @@ styles
     ListPanel
     {
         font-family=basefont
-        font-size=18
+        font-size=16
         font-weight=400
         padding-left=5
         padding-right=5
@@ -954,9 +954,10 @@ styles
 
     ListPanelColumnheader
     {
-            font-family=semibold
+            font-family=basefont
             font-size=14
-            textcolor="White"
+            font-weight=800
+            textcolor=white50
             font-style="Uppercase"
             bgcolor="none"
             render_bg
@@ -967,7 +968,7 @@ styles
 
         ListPanelColumnHeader:hover
         {
-            textcolor="White75"
+            textcolor=white75
         }
 
         "CSteamRootDialog ListPanelColumnHeader"

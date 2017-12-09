@@ -3,8 +3,8 @@
 colors
 {
     Focus="102 36 226 255"
-    basefont="Source Sans Pro Regular"
-    boldfont="Source Sans Pro Bold"
+    basefont="Roboto"
+    boldfont="Roboto"
     semibold="Source Sans Pro Regular"
     semilight="Source Sans Pro Regular"
     light="Source Sans Pro Regular"
