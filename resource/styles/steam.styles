@@ -158,7 +158,7 @@ styles
     highlight
     {
         font-size=28
-        font-family=semilight
+        font-family=basefont
         font-weight=300
         textcolor=white
     }
@@ -526,7 +526,7 @@ styles
         inset="0 0 0 10"
         textcolor=none
         font-size=28
-        font-family=light
+        lightfont
         font-weight=300
     }
 
@@ -588,7 +588,7 @@ styles
         textcolor="White"
         font-style="uppercase"
         font-size=16
-        font-family=semibold
+        font-family=basefont
         render_bg {}
     }
 
@@ -955,80 +955,79 @@ styles
 
     ListPanelColumnheader
     {
-            font-family=basefont
-            font-size=14
-            font-weight=800
-            textcolor=white50
-            font-style="Uppercase"
-            bgcolor="none"
-            render_bg
-            {
-                0="fill(x0,y1,x1,y1+1,Black25)"
-            }
-        }
-
-        ListPanelColumnHeader:hover
+        font-family=boldfont
+        font-size=14
+        textcolor=white50
+        font-style="Uppercase"
+        bgcolor="none"
+        render_bg
         {
-            textcolor=white75
+            0="fill(x0,y1,x1,y1+1,Black25)"
         }
+    }
 
-        "CSteamRootDialog ListPanelColumnHeader"
-        {
-            render_bg {}
-        }
-
-        ListPanelColumnSelectButton // the games list column chooser
+    ListPanelColumnHeader:hover
     {
-            render
-            {
-                0="image(x0+8,y0+4,x1,y1,graphics/metro/icons/plus)"
-            }
+        textcolor=white75
+    }
+
+    "CSteamRootDialog ListPanelColumnHeader"
+    {
+        render_bg {}
+    }
+
+    ListPanelColumnSelectButton
+    {
+        render
+        {
+            0="image(x0+8,y0+4,x1,y1,graphics/metro/icons/plus)"
         }
+    }
 
     ListPanelColumnSelectButton:hover
+    {
+        render
         {
-            render
-            {
-                0="image(x0+8,y0+4,x1,y1,graphics/metro/icons/plus_h)"
-            }
+            0="image(x0+8,y0+4,x1,y1,graphics/metro/icons/plus_h)"
         }
+    }
 
     ListPanelColumnSelectButton:selected
     {
-            render
-            {
-                0="image(x0+8,y0+4,x1,y1,graphics/metro/icons/plus_p)"
-            }
-        }
-
-        ListPanelDragger
+        render
         {
-            bgcolor="none"
-            render
-            {
-                0="fill( x0, y0+0, x1-5, y1-0, Black25 )"
-            }
+            0="image(x0+8,y0+4,x1,y1,graphics/metro/icons/plus_p)"
         }
+    }
 
-        ListPanelInterior
+    ListPanelDragger
+    {
+        bgcolor="none"
+        render
         {
-            font-size=16
-            textcolor="White"
+            0="fill( x0, y0+0, x1-5, y1-0, Black25 )"
         }
+    }
 
-        ListPanelSectionHeader
+    ListPanelInterior
+    {
+        font-size=16
+        textcolor="White"
+    }
+
+    ListPanelSectionHeader
+    {
+        minimum-height=30
+        font-family=basefont
+        font-style=uppercase
+        font-weight=400
+        font-size="16"
+        textcolor=accent
+        render_bg
         {
-            minimum-height=30
-            font-family=semibold
-            font-style=uppercase
-            font-weight=400
-            font-size="18"
-            textcolor=accent
-            render_bg
-            {
-                //0="fill(x0,y1-1,x1,y1,white10)"
-            }
+            //0="fill(x0,y1-1,x1,y1,white10)"
         }
+    }
 
     ListPanelSectionCollapser
     {
@@ -1257,7 +1256,7 @@ styles
 
     PageTab
     {
-        font-family=semibold
+        font-family=basefont
         font-size=13
         textcolor="White50"
         bgcolor=none
@@ -1378,7 +1377,7 @@ styles
     "RichText bold"
     {
         font-size=16
-        font-family=semibold
+        font-family=basefont
     }
 
     "RichText emphasis"
@@ -1784,7 +1783,7 @@ styles
 
     gamedetails-headerlabel
     {
-        font-family=semibold
+        font-family=basefont
         font-style=uppercase
         font-weight=300
         font-size="18"
@@ -1798,7 +1797,7 @@ styles
 
     gamedetails-headerlabel-red
     {
-        font-family=semibold
+        font-family=basefont
         font-style=uppercase
         font-weight=300
         font-size="18"
@@ -1812,7 +1811,7 @@ styles
 
     gamedetails-headerlabel-green
     {
-        font-family=semibold
+        font-family=basefont
         font-style=uppercase
         font-weight=300
         font-size="18"
@@ -1826,7 +1825,7 @@ styles
 
     gamedetails-headerlabel-blue
     {
-        font-family=semibold
+        font-family=basefont
         font-style=uppercase
         font-weight=300
         font-size="18"
@@ -1901,14 +1900,14 @@ styles
         selectedtextcolor="White"
         selectedbgcolor=accent
         font-style=uppercase
-        font-family=semibold
+        font-family=basefont
 
     }
 
     //Your Status Changes/Connection/Game
     friends_chat_bright_event
     {
-        font-family=semibold
+        font-family=basefont
         textcolor=accent
         selectedtextcolor="White"
         selectedbgcolor=accent
@@ -1961,7 +1960,7 @@ styles
     friends_chat_securitylink
     {
         textcolor="White75"
-        font-family=semibold
+        font-family=basefont
         font-size=16
         font-style=uppercase
         selectedtextcolor="White"

@@ -60,7 +60,7 @@
 		{
 			textcolor="White75"
 			bgcolor="none"
-			font-family=semibold
+			font-family=basefont
 			font-size=16 
 			font-style=uppercase
 		}

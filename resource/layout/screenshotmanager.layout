@@ -179,14 +179,14 @@
 		LargeSelectionCount
 		{
 			font-size=60
-			font-family=light
+			lightfont
 			font-weight=300
 		}
 
 		NoSelectionTitle
 		{
 			font-size=32
-			font-family=light
+			lightfont
 			font-weight=300
 			textcolor=white
 		}

@@ -172,7 +172,7 @@
 	{
 		Label
 		{
-			font-family=semilight
+			font-family=basefont
 			font-size=28
 			textcolor=white
 		}

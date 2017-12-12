@@ -65,7 +65,7 @@
 		{
 			textcolor="White"
 			bgcolor="none"
-			font-family=semibold
+			font-family=basefont
 			font-size=18
 			font-weight=400
 			font-style=regular,uppercase

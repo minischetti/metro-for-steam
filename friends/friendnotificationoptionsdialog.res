@@ -237,7 +237,7 @@
 		
 		Label
 		{
-			font-family=semibold
+			font-family=basefont
 			font-style=uppercase
 			font-size=14
 			textcolor=white

@@ -106,7 +106,7 @@
 
 		topbar
 		{
-			font-family=light
+			lightfont
 			font-size=32
 			textcolor=White
 			font-style=regular
@@ -114,7 +114,7 @@
 
 		clocksuffix
 		{
-			font-family=light
+			lightfont
 			font-size=32
 			textcolor=White
 			font-style=regular

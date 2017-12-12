@@ -399,7 +399,7 @@
 	{
 		Label
 		{
-			font-family=semilight
+			font-family=basefont
 			font-size=24
 			textcolor=white
 		}

@@ -67,7 +67,7 @@
 
         rightcolumnheadertext
         {
-            font-family=semibold
+            font-family=basefont
             font-style=uppercase
             font-weight=400
             font-size="18"
@@ -76,7 +76,7 @@
         
         rightcolumnheadertext-red
         {
-            font-family=semibold
+            font-family=basefont
             font-style=uppercase
             font-weight=400
             font-size="18"
@@ -85,7 +85,7 @@
 
         rightcolumnheadertext-green
         {
-            font-family=semibold
+            font-family=basefont
             font-style=uppercase
             font-weight=400
             font-size="18"
@@ -94,7 +94,7 @@
 
         rightcolumnheadertext-blue
         {
-            font-family=semibold
+            font-family=basefont
             font-style=uppercase
             font-weight=400
             font-size="18"
@@ -134,7 +134,7 @@
             textcolor="White45"
             padding-left=0
             padding-top=0
-            font-family=semibold
+            font-family=basefont
             padding-bottom=0
         }
         

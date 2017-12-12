@@ -217,7 +217,7 @@
 		
 		Label
 		{
-			font-family=light
+			lightfont
 			font-weight=300
 			textcolor=white
 			font-size=32

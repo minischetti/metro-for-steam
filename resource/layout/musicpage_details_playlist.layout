@@ -43,7 +43,7 @@
 		{
 			font-size=36
 			textcolor=White
-			font-family=light
+			lightfont
 			font-weight=400
 		}
 

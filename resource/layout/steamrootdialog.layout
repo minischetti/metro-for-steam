@@ -43,7 +43,7 @@
         support_alert
         {
             bgcolor=none
-            font-family=light
+            lightfont
             font-weight=300
             font-size=24
             textcolor=white
@@ -74,7 +74,6 @@
 
         inboxmenuitem
         {
-            padding-left=7
             textcolor=white45
         }
 

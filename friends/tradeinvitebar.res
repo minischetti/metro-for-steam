@@ -53,7 +53,7 @@
 		Label
 		{
 			textcolor=white
-			font-family=semibold
+			font-family=basefont
 			font-style=regular
 		}
 	}

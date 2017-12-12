@@ -52,7 +52,7 @@
 		ListPanelSectionHeader
 		{
 			font-size=24
-			font-family=semilight
+			font-family=basefont
 			textcolor=none
 			bgcolor=none
 			render

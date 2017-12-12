@@ -96,7 +96,7 @@
 	{
 		Label
 		{
-			font-family=light
+			lightfont
 			font-weight=300
 			font-size=30
 			textcolor=white

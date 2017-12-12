@@ -119,7 +119,7 @@
 		"RichText url"
 		{
 			font-style=uppercase
-			font-family=semibold
+			font-family=basefont
 		}
 	}
 

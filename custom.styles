@@ -1,13 +1,10 @@
 "custom.styles"
 {
-colors
-{
-    Focus="102 36 226 255"
-    basefont="Roboto"
-    boldfont="Roboto"
-    semibold="Source Sans Pro Regular"
-    semilight="Source Sans Pro Regular"
-    light="Source Sans Pro Regular"
+    colors
+    {
+        Focus="102 36 226 255"
+        basefont="Roboto"
+        boldfont="Roboto Bold"
+        lightfont="Roboto Light"
+    }
 }
-
-styles{"CSteamRootDialog"{bgcolor=black render_bg{ 0="fill( x0, y0, x1, y1, black )" 8="image( x1 - 821, y1 - 375, x1, y1, none)" 98="fill( x0, y0, x1, y0+40, black)" 99="fill( x0, y0, x1, y0+39, Header_Dark )"}} }}

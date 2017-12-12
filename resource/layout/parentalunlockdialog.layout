@@ -29,7 +29,7 @@
 
 			minimum-height=50
 			font-size=40
-			font-family=semibold
+			font-family=basefont
 			bgcolor="Header_Dark"
 
 		}
@@ -37,7 +37,7 @@
 		Hey
 		{
 			font-size=24
-			font-family=semilight
+			font-family=basefont
 			textcolor="White"
 		}
 

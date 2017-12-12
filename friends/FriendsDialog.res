@@ -177,7 +177,6 @@
 			inset-left=-100
 			bgcolor="none"
 			font-size=0
-			font-family=none
 			render_bg
 			{
 				1="image( x0+7, y0+12, x1, y1, graphics/metro/icons/navbar/friends_add )"
@@ -198,7 +197,7 @@
 		PageTab
 		{
 			inset-left=2
-			font-family=semibold
+			font-family=basefont
 			font-size=14
 			textcolor="White45"
 			font-style="Uppercase"

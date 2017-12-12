@@ -37,7 +37,7 @@
 		titlelabel
 		{
 			font-size=36
-			font-family=light
+			lightfont
 			textcolor=White
 		}	
 		

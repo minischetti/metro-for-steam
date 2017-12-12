@@ -21,7 +21,7 @@
         Label
         {
             font-family=basefont
-            font-size=14
+            font-size=16
             textcolor=white
             font-style=uppercase
         }
@@ -80,14 +80,14 @@
 
         bigtextHeader
         {
-            font-family=semilight
+            font-family=basefont
             font-size=24
             textcolor=white
         }
 
         bigTextNumbers
         {
-            font-family=semilight
+            font-family=basefont
             font-size=24
             textcolor=white
         }

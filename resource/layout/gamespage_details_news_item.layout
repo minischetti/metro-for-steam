@@ -23,7 +23,7 @@
 		title_label
 		{
 			textcolor="White"
-			font-family=semibold
+			font-family=basefont
 			font-size=18
 		}
 
@@ -48,7 +48,7 @@
 		
 		"newsitem_body bold"
 		{
-			font-family=semibold
+			font-family=basefont
 			textcolor=accent
 		}
 		

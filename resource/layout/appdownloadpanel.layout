@@ -82,7 +82,7 @@
 		label2
 		{
 			textcolor=white
-			font-family=semibold
+			font-family=basefont
 			font-size=14
 			font-style=uppercase
 		}

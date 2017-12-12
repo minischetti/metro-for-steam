@@ -41,7 +41,7 @@
 		highlight
 		{
 			font-size=28
-			font-family=semilight
+			font-family=basefont
 			font-weight=300
 			textcolor=white
 		}

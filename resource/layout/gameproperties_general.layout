@@ -101,7 +101,7 @@
 		Label
 		{
 			font-size=24
-			font-family=semilight
+			font-family=basefont
 			textcolor=white
 		}
 		LabelDull

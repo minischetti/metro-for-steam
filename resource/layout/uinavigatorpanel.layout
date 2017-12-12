@@ -266,6 +266,7 @@
 
         CUINavButton
         {
+            font-family=lightfont
             font-size=22
             font-style="uppercase"
             padding-left=10

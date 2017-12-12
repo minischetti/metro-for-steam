@@ -16,10 +16,9 @@
 
 		headertextlarge
 		{
-			font-family=basefont
+			font-family=boldfont
 			font-style=uppercase
 			font-size=42
-			font-weight=800
 			textcolor=white
 		}
 	}

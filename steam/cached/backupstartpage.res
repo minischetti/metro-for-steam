@@ -86,7 +86,7 @@
 	    {
 		  textcolor=white
 		  font-size=32
-		  font-family=light
+		  lightfont
 			font-weight=300
 	    }
 	}

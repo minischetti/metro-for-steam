@@ -62,7 +62,7 @@ gameoverlay.styles
 
     detailsboxtitle
     {
-      font-family=semibold
+      font-family=basefont
 			font-weight=400
       font-size="18"
       textcolor="White"
