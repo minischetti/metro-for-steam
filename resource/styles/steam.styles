@@ -837,20 +837,26 @@ styles
         padding-right=5
         textcolor="white50"
         selectedtextcolor="accent"
-        shadowtextcolor="White50" // the color of disabled line items
+        shadowtextcolor="white50" // the color of disabled line items
         render {}
         render_bg {}
     }
 
     "GameItem_Updating"
     {
-        textcolor="Focus"
+        textcolor="accent"
     }
 
     "GameItem_Uninstalled"
     {
       textcolor="white50"
     }
+
+    "GameItem_Installed"
+    {
+        textcolor="accent"
+    }
+
     "GameItem_Uninstalled:hover"
     {
       textcolor="white75"
@@ -863,7 +869,7 @@ styles
     
     "GameItem_Running"
     {
-      textcolor="focus"
+      textcolor="accent"
     }
     
     "GameItem_Shortcut"
@@ -880,11 +886,6 @@ styles
     "GameItem_Mod:hover"
     {
         textcolor="white75"
-    }
-
-    "GameItem_Updating"
-    {
-    	textcolor="focus"
     }
 
     "GameItem_Decrypting:hover"
@@ -904,16 +905,17 @@ styles
 
     "GameItem_Uninstalled GamesGridImage"
     {
-    alpha 84.15 // 33%
+        alpha=84.15 // 33%
     }
+
     "GameItem_Updating GamesGridImage"
     {
-    alpha 255
-    render
-    {
-        0="image(x1-18,y1-26,x1,y1,graphics/metro/icons/grid/downloads)"
-        0="fill(x0,y0,x1,y1,focusT)" //generate translucent focus color value for this
-    }
+        alpha=255
+        render
+        {
+            0="image(x1-18,y1-26,x1,y1,graphics/metro/icons/grid/downloads)"
+            0="fill(x0,y0,x1,y1,focusT)" //generate translucent focus color value for this
+        }
     }
 
 
@@ -1319,7 +1321,7 @@ styles
 
     ProgressBar
     {
-        textcolor="Focus"
+        textcolor=accent
         bgcolor="none"
         render
         {

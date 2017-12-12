@@ -183,14 +183,13 @@
         place { control="UINavigatorPanel" width=max height=max x=1 margin-right=1 }
 
         //Avatar
-        place { control="ParentalLockButton,account_balance,InboxButton,view_friends" align=right y=15 width=30 height=30 margin-right=30 spacing=10 }
+        place { control="ParentalLockButton,account_balance,UIStatusPanel,InboxButton,view_friends" align=right y=15 width=30 height=30 margin-right=30 spacing=10 }
 
         //Controls
-        place { control="UIStatusPanel" region=top align=right end-right=frame_minimize margin-right=1 width=0 height=0 }
         place { control="MenuBar" region=top height=38 width=38 x=1 y=1 }
 
-        //Support Banner
-        place { control="SupportAlert" align=top-center height=39 width=305 }
+        // Support Alert
+        place { control="SupportAlert" align=bottom width=max height=40 }
 
         // Hidden
         place { control="FriendPanel,friends_list,startvr,exitvr,fullscreen,account_URL,add_game,BigPictureBG,account_balance_seperator,universe_label,online_friends,New,ImageLogo" width=0 height=0 }
