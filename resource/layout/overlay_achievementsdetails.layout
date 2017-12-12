@@ -19,7 +19,7 @@
 		progressbarimage { controlname="ImagePanel" style="progressbarimage" }
 
 
-		ProgressTextEarned { controlname=label style=Focus labeltext="#Overlay_Achievement_Progress" }
+		ProgressTextEarned { controlname=label style=accent labeltext="#Overlay_Achievement_Progress" }
 
 	}
 

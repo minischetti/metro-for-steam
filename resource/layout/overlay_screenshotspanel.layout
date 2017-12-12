@@ -8,7 +8,7 @@
 			style=detailsbox
 		}
 		TitleText { controlname="label" labeltext="#Overlay_Screenshots_Panel_Title" style=detailsboxtitle }
-		InstructionText { controlname="label" labeltext="#Overlay_Screenshots_Press_Hotkey"  style=Focus }
+		InstructionText { controlname="label" labeltext="#Overlay_Screenshots_Press_Hotkey"  style=accent }
 
 		DarkRegion { controlname="ImagePanel" style=DarkRegion visible=0 }
 

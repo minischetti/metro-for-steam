@@ -22,7 +22,7 @@
 
 		TitleText { controlname="label" labeltext="#Overlay_Taskbar_Friends" style=detailsboxtitle }
 
-		TextThisManyFriends { controlname=label style=Focus labeltext="#Overlay_Friends_ThisManyOnline" }
+		TextThisManyFriends { controlname=label style=accent labeltext="#Overlay_Friends_ThisManyOnline" }
 
 		grid
 		{

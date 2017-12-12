@@ -49,7 +49,7 @@
 		"newsitem_body bold"
 		{
 			font-family=semibold
-			textcolor=focus
+			textcolor=accent
 		}
 		
 		more_link

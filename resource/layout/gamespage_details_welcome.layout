@@ -22,7 +22,7 @@
 	{
 		nonsteamdetails 
 		{ 
-			bgcolor=DetailsBackground
+			bgcolor=black45
 		}
 
 		"RichText url"

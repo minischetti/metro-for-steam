@@ -174,14 +174,14 @@ styles
         bgcolor="none"
         render_bg
         {
-        0="fill( x0, y0-1, x1, y0, FrameBorder )"
-        1="fill( x0, y0, x1, y0+47, FrameBorder )"
+        0="fill( x0, y0-1, x1, y0, black )"
+        1="fill( x0, y0, x1, y0+47, black )"
         2="fill( x0, y0, x1, y0+46, black )"
 
         5="fill( x0, y1-61, x1, y1-60, Black25 )"
         5="fill( x0, y1-60, x1, y1, black )"
 
-        4="fill( x0, y1-41, x1, y1, FrameBorder )"
+        4="fill( x0, y1-41, x1, y1, black )"
         4="fill( x0, y1-40, x1, y1, Header_Dark )"
         }
     }
@@ -217,7 +217,7 @@ styles
         bgcolor=black
         render_bg
         {
-            0="fill( x0, y1-44, x1, y1, FrameBorder )"
+            0="fill( x0, y1-44, x1, y1, black )"
             1="fill( x0, y1-43, x1, y1, Header_Dark )"
         }
     }
@@ -227,11 +227,11 @@ styles
         render_bg
         {
             //Top
-            0="fill( x0, y0, x1, y0+90, FrameBorder )"
+            0="fill( x0, y0, x1, y0+90, black )"
             1="fill( x0, y0, x1, y0+89, Header_Dark )"
 
             //Bottom
-            3="fill( x0, y1-44, x1, y1, FrameBorder )"
+            3="fill( x0, y1-44, x1, y1, black )"
             4="fill( x0, y1-43, x1, y1, Header_Dark )"
         }
     }
@@ -246,7 +246,7 @@ styles
     {
         render_bg
         {
-            0="fill(x0+4,y0,x1-4,y1,white12)"
+            0="fill(x0+4,y0,x1-4,y1,white10)"
         }
     }
 
@@ -258,7 +258,7 @@ styles
 
     "TextEntryClearButton:hover"
     {
-        bgcolor=white12
+        bgcolor=white10
     }
 
     LabelEVCert
@@ -294,11 +294,11 @@ styles
     {
         render_bg
         {
-            0="fill(x0,y0,x1,y0+54,FrameBorder)"
+            0="fill(x0,y0,x1,y0+54,black)"
             1="fill(x0,y0,x1,y0+53,Header_Dark)"
 
             //Bottom
-            3="fill( x0, y1-44, x1, y1, FrameBorder )"
+            3="fill( x0, y1-44, x1, y1, black )"
             4="fill( x0, y1-43, x1, y1, Header_Dark )"
         }
     }
@@ -316,13 +316,13 @@ styles
         render_bg
         {
             //Top
-            0="fill( x0, y0, x1, y0+76, FrameBorder )"
+            0="fill( x0, y0, x1, y0+76, black )"
             1="fill( x0, y0, x1, y0+75, Header_Dark )"
             //Title
             2="image(x0+16,y0+16,x1,y1, graphics/metro/labels/games/categories)"
 
             //Bottom
-            3="fill( x0, y1-44, x1, y1, FrameBorder )"
+            3="fill( x0, y1-44, x1, y1, black )"
             4="fill( x0, y1-43, x1, y1, Header_Dark )"
         }
     }
@@ -331,7 +331,7 @@ styles
         bgcolor=black
         render_bg
         {
-            0="fill( x0, y1-44, x1, y1, FrameBorder )"
+            0="fill( x0, y1-44, x1, y1, black )"
             1="fill( x0, y1-43, x1, y1, Header_Dark )"
         }
     }
@@ -340,7 +340,7 @@ styles
         bgcolor=black
         render_bg
         {
-            0="fill( x0, y1-44, x1, y1, FrameBorder )"
+            0="fill( x0, y1-44, x1, y1, black )"
             1="fill( x0, y1-43, x1, y1, Header_Dark )"
         }
     }
@@ -349,7 +349,7 @@ styles
         bgcolor=black
         render_bg
         {
-            0="fill( x0, y1-44, x1, y1, FrameBorder )"
+            0="fill( x0, y1-44, x1, y1, black )"
             1="fill( x0, y1-43, x1, y1, Header_Dark )"
         }
     }
@@ -358,7 +358,7 @@ styles
         bgcolor=black
         render_bg
         {
-            0="fill( x0, y1-44, x1, y1, FrameBorder )"
+            0="fill( x0, y1-44, x1, y1, black )"
             1="fill( x0, y1-43, x1, y1, Header_Dark )"
         }
     }
@@ -367,10 +367,10 @@ styles
         bgcolor="black"
         render
         {
-            0="fill( x0 + 0, y0 + 0, x1 + 0, y0 + 1, FrameBorder )"	// Top
-            1="fill( x0 + 1, y1 - 1, x1 + 0, y1 + 0, FrameBorder )"	// Bottom
-            2="fill( x0 + 0, y0 + 1, x0 + 1, y1 + 0, FrameBorder )"	// Left
-            3="fill( x1 - 1, y0 + 1, x1 + 0, y1 - 1, FrameBorder )"	// Right
+            0="fill( x0 + 0, y0 + 0, x1 + 0, y0 + 1, black )"	// Top
+            1="fill( x0 + 1, y1 - 1, x1 + 0, y1 + 0, black )"	// Bottom
+            2="fill( x0 + 0, y0 + 1, x0 + 1, y1 + 0, black )"	// Left
+            3="fill( x1 - 1, y0 + 1, x1 + 0, y1 - 1, black )"	// Right
         }
     }
 
@@ -390,9 +390,9 @@ styles
         render_bg
         {
             0="fill( x0, y0, x1, y1, black )"
-            2="fill( x0, y0, x1, y0+54, FrameBorder )"
+            2="fill( x0, y0, x1, y0+54, black )"
             3="fill( x0, y0, x1, y0+53, Header_Dark )"
-            5="fill( x0, y1-44, x1, y1, FrameBorder )"
+            5="fill( x0, y1-44, x1, y1, black )"
             6="fill( x0, y1-43, x1, y1, Header_Dark )"
         }
     }
@@ -408,9 +408,9 @@ styles
         render_bg
         {
             0="fill( x0, y0, x1, y1, black )"
-            2="fill( x0, y0, x1, y0+54, FrameBorder )"
+            2="fill( x0, y0, x1, y0+54, black )"
             3="fill( x0, y0, x1, y0+53, Header_Dark )"
-            5="fill( x0, y1-44, x1, y1, FrameBorder )"
+            5="fill( x0, y1-44, x1, y1, black )"
             6="fill( x0, y1-43, x1, y1, Header_Dark )"
         }
     }
@@ -421,9 +421,9 @@ styles
         render_bg
         {
             0="fill( x0, y0, x1, y1, black )"
-            2="fill( x0, y0, x1, y0+54, FrameBorder )"
+            2="fill( x0, y0, x1, y0+54, black )"
             3="fill( x0, y0, x1, y0+53, Header_Dark )"
-            5="fill( x0, y1-44, x1, y1, FrameBorder )"
+            5="fill( x0, y1-44, x1, y1, black )"
             6="fill( x0, y1-43, x1, y1, Header_Dark )"
         }
     }
@@ -464,7 +464,7 @@ styles
         bgcolor=black
         render_bg
         {
-            5="fill( x0, y1-48, x1, y1, FrameBorder )"
+            5="fill( x0, y1-48, x1, y1, black )"
             6="fill( x0, y1-47, x1, y1, Header_Dark )"
         }
     }
@@ -474,7 +474,7 @@ styles
         bgcolor=black
         render_bg
         {
-            5="fill( x0, y1-48, x1, y1, FrameBorder )"
+            5="fill( x0, y1-48, x1, y1, black )"
             6="fill( x0, y1-47, x1, y1, Header_Dark )"
         }
     }
@@ -484,9 +484,9 @@ styles
         render_bg
         {
             0="fill( x0, y0, x1, y1, black )"
-            1="fill( x0, y0, x1, y0+54, FrameBorder )"
+            1="fill( x0, y0, x1, y0+54, black )"
             2="fill( x0, y0, x1, y0+53, Header_Dark )"
-            3="fill( x0, y1-44, x1, y1, FrameBorder )"
+            3="fill( x0, y1-44, x1, y1, black )"
             4="fill( x0, y1-43, x1, y1, Header_Dark )"
         }
     }
@@ -498,7 +498,7 @@ styles
         render_bg
         {
             0="fill( x0, y0, x1, y1, black )"
-            2="fill( x0, y0, x1, y0+60, FrameBorder )"
+            2="fill( x0, y0, x1, y0+60, black )"
             3="fill( x0, y0, x1, y0+59, Header_Dark )"
         }
     }
@@ -508,14 +508,14 @@ styles
         bgcolor=black
         render_bg
         {
-            5="fill( x0, y1-42, x1, y1, FrameBorder )"
+            5="fill( x0, y1-42, x1, y1, black )"
             6="fill( x0, y1-41, x1, y1, Header_Dark )"
         }
     }
 
     ProgressBox
     {
-        //bgcolor=focus
+        //bgcolor=accent
         render
         {
             1="image(x0+153,y0+24,x1,y0,graphics/login_logo)"
@@ -678,7 +678,7 @@ styles
 
     CheckButton:disabled
     {
-        textcolor="White24"
+        textcolor="white20"
         bgcolor=none
         image=graphics/check_d
     }
@@ -723,7 +723,7 @@ styles
         bgcolor="none"
         render_bg
         {
-            0="fill( x0+1, y0, x1-1, y1, white12 )"
+            0="fill( x0+1, y0, x1-1, y1, white10 )"
         }
     }
 
@@ -737,10 +737,10 @@ styles
         bgcolor=none
         render_bg
         {
-            1="fill(x0,y0,x1,y0+1,white12)"  // top
-            2="fill(x0,y1-1,x1,y1,white12)"  // bottom
-            3="fill(x0,y0+1,x0+1,y1-1,white12)"  // left
-            4="fill(x1-1,y0+1,x1,y1-1,white12)"  // right
+            1="fill(x0,y0,x1,y0+1,white10)"  // top
+            2="fill(x0,y1-1,x1,y1,white10)"  // bottom
+            3="fill(x0,y0+1,x0+1,y1-1,white10)"  // left
+            4="fill(x1-1,y0+1,x1,y1-1,white10)"  // right
         }
     }
 
@@ -748,10 +748,10 @@ styles
     {
         render_bg
         {
-            1="fill(x0,y0,x1,y0+1,white24)"  // top
-            2="fill(x0,y1-1,x1,y1,white24)"  // bottom
-            3="fill(x0,y0+1,x0+1,y1-1,white24)"  // left
-            4="fill(x1-1,y0+1,x1,y1-1,white24)"  // right
+            1="fill(x0,y0,x1,y0+1,white20)"  // top
+            2="fill(x0,y1-1,x1,y1,white20)"  // bottom
+            3="fill(x0,y0+1,x0+1,y1-1,white20)"  // left
+            4="fill(x1-1,y0+1,x1,y1-1,white20)"  // right
         }
     }
 
@@ -760,10 +760,10 @@ styles
         textcolor="White50"
         render_bg
         {
-            1="fill(x0,y0,x1,y0+1,white12)"  // top
-            2="fill(x0,y1-1,x1,y1,white12)"  // bottom
-            3="fill(x0,y0+1,x0+1,y1-1,white12)"  // left
-            4="fill(x1-1,y0+1,x1,y1-1,white12)"  // right
+            1="fill(x0,y0,x1,y0+1,white10)"  // top
+            2="fill(x0,y1-1,x1,y1,white10)"  // bottom
+            3="fill(x0,y0+1,x0+1,y1-1,white10)"  // left
+            4="fill(x1-1,y0+1,x1,y1-1,white10)"  // right
         }
     }
 
@@ -800,7 +800,7 @@ styles
 
     GraphPanel
     {
-        textcolor=Focus
+        textcolor=accent
         bgcolor=none
         inset="0 -3 0 0"
         render_bg
@@ -914,36 +914,35 @@ styles
         render
         {
             0="image(x1-18,y1-26,x1,y1,graphics/metro/icons/grid/downloads)"
-            0="fill(x0,y0,x1,y1,focusT)" //generate translucent focus color value for this
         }
     }
 
 
     "GameItem_Updating:hover"
     {
-        textcolor="Focus"
+        textcolor=accent
     }
 
     "GameItem_Decrypting"
     {
-        textcolor="Focus"
+        textcolor=accent
         selectedtextcolor="White"
     }
 
     "GameItem_Decrypting:hover"
     {
-        textcolor="Focus"
+        textcolor=accent
     }
 
         "GameItem_Syncing"
     {
-        textcolor="Focus"
+        textcolor=accent
         selectedtextcolor="White"
     }
 
     "GameItem_Syncing:hover"
     {
-        textcolor="Focus"
+        textcolor=accent
     }
 
     "GameColumn_BigText"
@@ -1024,10 +1023,10 @@ styles
             font-style=uppercase
             font-weight=400
             font-size="18"
-            textcolor="Focus"
+            textcolor=accent
             render_bg
             {
-                //0="fill(x0,y1-1,x1,y1,White12)"
+                //0="fill(x0,y1-1,x1,y1,white10)"
             }
         }
 
@@ -1114,10 +1113,10 @@ styles
             inset="0 8 0 8"
             render_bg
             {
-                0="fill( x0 + 0, y0 + 0, x1 + 0, y0 + 1, FrameBorder )"	// Top
-                1="fill( x0 + 1, y1 - 1, x1 + 0, y1 + 0, FrameBorder )"	// Bottom
-                2="fill( x0 + 0, y0 + 1, x0 + 1, y1 + 0, FrameBorder )"	// Left
-                3="fill( x1 - 1, y0 + 1, x1 + 0, y1 - 1, FrameBorder )"	// Right
+                0="fill( x0 + 0, y0 + 0, x1 + 0, y0 + 1, black )"	// Top
+                1="fill( x0 + 1, y1 - 1, x1 + 0, y1 + 0, black )"	// Bottom
+                2="fill( x0 + 0, y0 + 1, x0 + 1, y1 + 0, black )"	// Left
+                3="fill( x1 - 1, y0 + 1, x1 + 0, y1 - 1, black )"	// Right
             }
             render {}
             corner_rounding=0
@@ -1168,10 +1167,10 @@ styles
 
             render_bg
             {
-                0="fill( x0, y0, x0+1, y1, FrameBorder )"
-                1="fill( x1-1, y0, x1, y1, FrameBorder )"
-                2="fill( x0, y0, x1, y0+1, FrameBorder )"
-                3="fill( x0, y1-1, x1, y1, FrameBorder )"
+                0="fill( x0, y0, x0+1, y1, black )"
+                1="fill( x1-1, y0, x1, y1, black )"
+                2="fill( x0, y0, x1, y0+1, black )"
+                3="fill( x0, y1-1, x1, y1, black )"
             }
         }
 
@@ -1241,10 +1240,10 @@ styles
                 //0="fill( x0+1, y0+73, x1+0, y0+74, Black )"
 
                 //Border
-                1="fill( x0 + 0, y0 + 0, x1 + 0, y0 + 1, FrameBorder )"	// Top
-                //2="fill( x0 + 1, y1 - 1, x1 + 0, y1 + 0, FrameBorder )"	// Bottom
-                3="fill( x0 + 0, y0 + 1, x0 + 1, y1 + 0, FrameBorder )"	// Left
-                //4="fill( x1 - 1, y0 + 1, x1 + 0, y1 - 1, FrameBorder )"	// Right
+                1="fill( x0 + 0, y0 + 0, x1 + 0, y0 + 1, black )"	// Top
+                //2="fill( x0 + 1, y1 - 1, x1 + 0, y1 + 0, black )"	// Bottom
+                3="fill( x0 + 0, y0 + 1, x0 + 1, y1 + 0, black )"	// Left
+                //4="fill( x1 - 1, y0 + 1, x1 + 0, y1 - 1, black )"	// Right
             }
             corner_rounding=0
     }
@@ -1282,7 +1281,7 @@ styles
         render_bg
         {
             0="fill(x0+1,y0,x1-1,y1-1,white05)"
-            1="fill(x0+1, y1-1, x1-1, y1, focus)"
+            1="fill(x0+1, y1-1, x1-1, y1, accent)"
         }
     }
 
@@ -1341,7 +1340,7 @@ styles
     {
         textcolor="White"
         selectedtextcolor="White"
-        selectedbgcolor="Focus"
+        selectedbgcolor=accent
         font-family=basefont
         font-size=16
         font-weight=400
@@ -1396,7 +1395,7 @@ styles
         font-weight=400
         textcolor="white"
         selectedtextcolor="White"
-        selectedbgcolor="Focus"
+        selectedbgcolor=accent
         bgcolor="none"
         inset="0 0 0 0"
         render_bg {}
@@ -1465,10 +1464,10 @@ styles
         //alpha=191.25
         render_bg
         {
-            0="fill( x0 + 0, y0 + 0, x1 + 0, y0 + 1, FrameBorder )"	// Top
-            1="fill( x0 + 1, y1 - 1, x1 + 0, y1 + 0, FrameBorder )"	// Bottom
-            2="fill( x0 + 0, y0 + 1, x0 + 1, y1 + 0, FrameBorder )"	// Left
-            3="fill( x1 - 1, y0 + 1, x1 + 0, y1 - 1, FrameBorder )"	// Right
+            0="fill( x0 + 0, y0 + 0, x1 + 0, y0 + 1, black )"	// Top
+            1="fill( x0 + 1, y1 - 1, x1 + 0, y1 + 0, black )"	// Bottom
+            2="fill( x0 + 0, y0 + 1, x0 + 1, y1 + 0, black )"	// Left
+            3="fill( x1 - 1, y0 + 1, x1 + 0, y1 - 1, black )"	// Right
         }
     }
 
@@ -1514,7 +1513,7 @@ styles
         font-size=13
         textcolor="white"
         selectedtextcolor="White"
-        selectedbgcolor="Focus"
+        selectedbgcolor=accent
         bgcolor=none
         render {}
         render_bg {}
@@ -1594,7 +1593,7 @@ styles
     font-weight=400
     textcolor="white"
     selectedtextcolor="White"
-    selectedbgcolor="Focus"
+    selectedbgcolor=accent
     bgcolor=none
     render_bg {}
         inset="1 -1 1 1"
@@ -1708,7 +1707,7 @@ styles
         HomeButton:active
         {
             image=graphics/metro/urlbar/home_p
-            bgcolor=focus
+            bgcolor=accent
         }
 
         ReloadButton
@@ -1793,7 +1792,7 @@ styles
         padding-left=0
         render_bg
         {
-            //0="fill(x0,y1-2,x1,y1,focus)"
+            //0="fill(x0,y1-2,x1,y1,accent)"
         }
     }
 
@@ -1807,7 +1806,7 @@ styles
         padding-left=0
         render_bg
         {
-            //0="fill(x0,y1-2,x1,y1,focus)"
+            //0="fill(x0,y1-2,x1,y1,accent)"
         }
     }
 
@@ -1821,7 +1820,7 @@ styles
         padding-left=0
         render_bg
         {
-            //0="fill(x0,y1-2,x1,y1,focus)"
+            //0="fill(x0,y1-2,x1,y1,accent)"
         }
     }
 
@@ -1835,7 +1834,7 @@ styles
         padding-left=0
         render_bg
         {
-            //0="fill(x0,y1-2,x1,y1,focus)"
+            //0="fill(x0,y1-2,x1,y1,accent)"
         }
     }
 
@@ -1844,10 +1843,10 @@ styles
         bgcolor=black
         render
         {
-            0="fill( x0 + 0, y0 + 0, x1 + 0, y0 + 1, FrameBorder )"	// Top
-            1="fill( x0 + 1, y1 - 1, x1 + 0, y1 + 0, FrameBorder )"	// Bottom
-            2="fill( x0 + 0, y0 + 1, x0 + 1, y1 + 0, FrameBorder )"	// Left
-            3="fill( x1 - 1, y0 + 1, x1 + 0, y1 - 1, FrameBorder )"	// Right
+            0="fill( x0 + 0, y0 + 0, x1 + 0, y0 + 1, black )"	// Top
+            1="fill( x0 + 1, y1 - 1, x1 + 0, y1 + 0, black )"	// Bottom
+            2="fill( x0 + 0, y0 + 1, x0 + 1, y1 + 0, black )"	// Left
+            3="fill( x1 - 1, y0 + 1, x1 + 0, y1 - 1, black )"	// Right
         }
     }
 
@@ -1855,10 +1854,10 @@ styles
 
     console_text_error
     {
-        textcolor="Focus"
+        textcolor=accent
         font-size=16
         selectedtextcolor="White"
-        selectedbgcolor="Focus"
+        selectedbgcolor=accent
     }
 
     console_text
@@ -1867,14 +1866,14 @@ styles
         font-size=16
         textcolor="white75"
         selectedtextcolor="White"
-        selectedbgcolor="Focus"
+        selectedbgcolor=accent
     }
 
     friends_chat_text
     {
         textcolor="white75"
         selectedtextcolor="white"
-        selectedbgcolor="focus"
+        selectedbgcolor=accent
         font-size=16
     }
 
@@ -1882,7 +1881,7 @@ styles
     {
         textcolor="White50"
         selectedtextcolor="White"
-        selectedbgcolor="focus"
+        selectedbgcolor=accent
         font-size=16
     }
 
@@ -1890,7 +1889,7 @@ styles
     {
         textcolor="White50"
         selectedtextcolor="White"
-        selectedbgcolor="focus"
+        selectedbgcolor=accent
         font-size=16
     }
 
@@ -1900,7 +1899,7 @@ styles
         textcolor="White50"
         font-size=16
         selectedtextcolor="White"
-        selectedbgcolor="Focus"
+        selectedbgcolor=accent
         font-style=uppercase
         font-family=semibold
 
@@ -1910,9 +1909,9 @@ styles
     friends_chat_bright_event
     {
         font-family=semibold
-        textcolor="Focus"
+        textcolor=accent
         selectedtextcolor="White"
-        selectedbgcolor="Focus"
+        selectedbgcolor=accent
         font-style=uppercase
         font-size=16
     }
@@ -1920,7 +1919,7 @@ styles
     friends_chat_url
     {
         textcolor="White75"
-        SelectedBgColor="focus"
+        SelectedBgColor=accent
         font-style=underline
         font-size=16
         selectedtextcolor="White"
@@ -1930,7 +1929,7 @@ styles
     {
         textcolor="Friends.InGameColor"
         selectedtextcolor="White"
-        selectedbgcolor="focus"
+        selectedbgcolor=accent
         font-size=16
 
     }
@@ -1939,7 +1938,7 @@ styles
     {
         textcolor="Friends.OnlineColor"
         selectedtextcolor="White"
-        selectedbgcolor="focus"
+        selectedbgcolor=accent
         font-size=16
     }
 
@@ -1947,14 +1946,14 @@ styles
     {
         textcolor="Friends.OnlineColor"
         selectedtextcolor="White"
-        selectedbgcolor="focus"
+        selectedbgcolor=accent
         font-size=16
     }
 
     friends_chat_accountid
     {
         selectedtextcolor="White"
-        selectedbgcolor="focus"
+        selectedbgcolor=accent
         textcolor="white"
         font-size=16
     }
@@ -1966,7 +1965,7 @@ styles
         font-size=16
         font-style=uppercase
         selectedtextcolor="White"
-        selectedbgcolor="Focus"
+        selectedbgcolor=accent
     }
 
     // used in friends tooltip and friends list for overriding regular styles with custom colors

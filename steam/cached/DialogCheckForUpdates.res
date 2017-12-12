@@ -131,7 +131,7 @@
 		"CDialogCheckForUpdates FrameCloseButton:active"
 			{
 			render_bg {
-				0="fill( x0, y0, x1, y1, focus )"
+				0="fill( x0, y0, x1, y1, accent )"
 				1="image( x0-7, y0-4, x1, y1, graphics/win32_win_close )"
 			}
 			}
@@ -153,7 +153,7 @@
 		"CDialogCheckForUpdates FrameMinimizeButton:active"
 			{
 			render_bg {
-				0="fill( x0, y0, x1, y1, focus )"
+				0="fill( x0, y0, x1, y1, accent )"
 				1="image( x0-7, y0-4, x1, y1, graphics/win32_win_min )"
 			}
 			}

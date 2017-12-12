@@ -230,7 +230,7 @@
 			render_bg
 			{
 				//Top
-				0="fill( x0, y0, x1, y0+39, FrameBorder )"
+				0="fill( x0, y0, x1, y0+39, black )"
 				1="fill( x0, y0, x1, y0+40, Header_Dark )"
 			}
 		}

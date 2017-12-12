@@ -63,7 +63,7 @@
 			render_bg
 			{
 				//Top
-				0="fill( x0, y0, x1, y0+76, FrameBorder )"
+				0="fill( x0, y0, x1, y0+76, black )"
 				1="fill( x0, y0, x1, y0+75, Header_Dark )"
 				//Title
 				2="image(x0+16,y0+16,x1,y1, graphics/metro/labels/aliases/aliases)"

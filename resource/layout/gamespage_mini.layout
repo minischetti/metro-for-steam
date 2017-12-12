@@ -63,7 +63,7 @@
 				textcolor=White
 				shadowtextcolor=white
 	      selectedtextcolor=White
-	      selectedbgcolor="Focus"
+	      selectedbgcolor=accent
 	      inset-left=6
 	    }
 
@@ -82,16 +82,16 @@
 			bgcolor=black
 			render_bg
 			{
-				0="fill( x0, y0, x1, y0+40, FrameBorder )"
+				0="fill( x0, y0, x1, y0+40, black )"
 				1="fill( x0, y0, x1, y0+39, Header_Dark )"
 			}
 			render
 			{
 				//Frame Border
-        0="fill( x0 + 0, y0 + 0, x1 + 0, y0 + 1, FrameBorder )"	// Top
-        1="fill( x0 + 1, y1 - 1, x1 + 0, y1 + 0, FrameBorder )"	// Bottom
-        2="fill( x0 + 0, y0 + 1, x0 + 1, y1 + 0, FrameBorder )"	// Left
-        3="fill( x1 - 1, y0 + 1, x1 + 0, y1 - 1, FrameBorder )"	// Right
+        0="fill( x0 + 0, y0 + 0, x1 + 0, y0 + 1, black )"	// Top
+        1="fill( x0 + 1, y1 - 1, x1 + 0, y1 + 0, black )"	// Bottom
+        2="fill( x0 + 0, y0 + 1, x0 + 1, y1 + 0, black )"	// Left
+        3="fill( x1 - 1, y0 + 1, x1 + 0, y1 - 1, black )"	// Right
 
 				0="fill( x0, y0+80, x1, y0+81, Header_Dark )"
 			}

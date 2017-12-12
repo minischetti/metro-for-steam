@@ -101,7 +101,7 @@
     {
 			render_bg 
 			{
-        0="fill( x0, y0+1, x1-1, y1, white12 )"
+        0="fill( x0, y0+1, x1-1, y1, white10 )"
 				1="image( x0+3, y0+5, x1, y1, graphics/win32_win_close )"
 			}
     }
@@ -110,7 +110,7 @@
     {
 			render_bg 
 			{
-        0="fill( x0, y0+1, x1-1, y1, white24 )"
+        0="fill( x0, y0+1, x1-1, y1, white20 )"
 				1="image( x0+3, y0+5, x1, y1, graphics/win32_win_close )"
 			}
     }

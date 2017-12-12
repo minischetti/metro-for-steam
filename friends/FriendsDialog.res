@@ -154,7 +154,7 @@
 			bgcolor=black
 			render_bg
 			{
-				0="fill( x0, y0, x1, y0+40, FrameBorder )"
+				0="fill( x0, y0, x1, y0+40, black )"
 				1="fill( x0, y0, x1, y0+39, Header_Dark )"
 			}
 			render
@@ -164,10 +164,10 @@
 				//1="fill( x0, y0+117, x1, y0+118, Header_Dark )"
 
 				//Frame Border
-        2="fill( x0 + 0, y0 + 0, x1 + 0, y0 + 1, FrameBorder )"	// Top
-        3="fill( x0 + 1, y1 - 1, x1 + 0, y1 + 0, FrameBorder )"	// Bottom
-        4="fill( x0 + 0, y0 + 1, x0 + 1, y1 + 0, FrameBorder )"	// Left
-        5="fill( x1 - 1, y0 + 1, x1 + 0, y1 - 1, FrameBorder )"	// Right
+        2="fill( x0 + 0, y0 + 0, x1 + 0, y0 + 1, black )"	// Top
+        3="fill( x0 + 1, y1 - 1, x1 + 0, y1 + 0, black )"	// Bottom
+        4="fill( x0 + 0, y0 + 1, x0 + 1, y1 + 0, black )"	// Left
+        5="fill( x1 - 1, y0 + 1, x1 + 0, y1 - 1, black )"	// Right
 			}
 		}
 

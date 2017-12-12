@@ -47,7 +47,7 @@
 		ChromeBorderItem
 		{
 			alpha=63.75
-			bgcolor=focus
+			bgcolor=accent
 		}
 
 		GridNavDivider

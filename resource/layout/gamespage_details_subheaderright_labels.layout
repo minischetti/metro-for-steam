@@ -18,7 +18,7 @@
 		{
 			render_bg
 			{
-			0="fill(x0,y0,x0+2,y1,Focus)"
+			0="fill(x0,y0,x0+2,y1,accent)"
 			}
 		}
 		headertext

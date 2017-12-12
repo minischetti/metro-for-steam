@@ -63,19 +63,19 @@
 			bgcolor=none
 			render_bg
 			{
-				0="fill(x0,y0-1,x1,y0,White08)"
+				0="fill(x0,y0-1,x1,y0,white10)"
 			}
 		}
 
 		TrackStyle:hover
 		{
-			bgcolor=white03
+			bgcolor=white05
 		}
 
 		TrackStyle:active
 		{
 			textcolor=white
-			bgcolor=focus
+			bgcolor=accent
 		}
 
 		ActionButtonStyle

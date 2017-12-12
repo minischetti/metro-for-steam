@@ -53,13 +53,13 @@
 	  { 
 			render_bg
 			{
-				0="fill(x0+6,y0+6,x1-6,y1-6,Focus)"
+				0="fill(x0+6,y0+6,x1-6,y1-6,accent)"
 			}
 	  }
 	  
 	  TabMenuItemFlash
 	  {
-	  	textcolor="Focus"
+	  	textcolor=accent
 	  }
 		
 		FrameButton
@@ -70,12 +70,12 @@
     }
 		FrameButton:hover
     {
-			//bgcolor=white12
+			//bgcolor=white10
 		}
 		
 		FrameButton:active
     {
-			//bgcolor=white24
+			//bgcolor=white20
 		}
 		
     FrameMinimizeButton

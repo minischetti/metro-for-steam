@@ -27,7 +27,7 @@
 	{
 		highlight
 		{
-			textcolor=Focus
+			textcolor=accent
 		}	
 	}
 	

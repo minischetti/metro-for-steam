@@ -10,4 +10,4 @@ colors
     light="Source Sans Pro Regular"
 }
 
-styles{"CSteamRootDialog"{bgcolor=black render_bg{ 0="fill( x0, y0, x1, y1, black )" 8="image( x1 - 821, y1 - 375, x1, y1, none)" 98="fill( x0, y0, x1, y0+40, FrameBorder)" 99="fill( x0, y0, x1, y0+39, Header_Dark )"}} }}
+styles{"CSteamRootDialog"{bgcolor=black render_bg{ 0="fill( x0, y0, x1, y1, black )" 8="image( x1 - 821, y1 - 375, x1, y1, none)" 98="fill( x0, y0, x1, y0+40, black)" 99="fill( x0, y0, x1, y0+39, Header_Dark )"}} }}

@@ -49,7 +49,7 @@
 
 		Button:hover
     {
-			bgcolor=White12
+			bgcolor=white10
 			render_bg
 			{
 				0="image(x0,y0,x1,y1,graphics/tab_close_def)"
@@ -58,7 +58,7 @@
 		
 		Button:active
 		{
-			bgcolor=White24
+			bgcolor=white20
 			render_bg
 			{
 				0="image(x0,y0,x1,y1,graphics/tab_close_hov)"

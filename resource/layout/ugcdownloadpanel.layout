@@ -65,7 +65,7 @@
 		font-style=uppercase
 		render
 		{
-			1="fill(x1-1,y0+8,x1,y1-8,white12)"
+			1="fill(x1-1,y0+8,x1,y1-8,white10)"
 		}
 	}
 
@@ -243,7 +243,7 @@
 	SlimProgressBar
 	{
 		alpha=63.75
-		textcolor=focus
+		textcolor=accent
 		render_bg {}
 		render {}
 	}

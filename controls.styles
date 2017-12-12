@@ -4,7 +4,7 @@
 	{
     Button
     {
-			bgcolor=white12
+			bgcolor=white10
 			font-family=basefont
 			font-size=16
 			textcolor="White"
@@ -12,12 +12,12 @@
 
 		Button:hover
     {
-			bgcolor=white24
+			bgcolor=white20
     }
 
 		Button:active
 		{
-			bgcolor=focus
+			bgcolor=accent
 		}
 
 		Button:disabled
@@ -27,7 +27,7 @@
 
 		ToggleButton:selected
 		{
-			bgcolor=focus
+			bgcolor=accent
 		}
 
 		//Check
@@ -42,7 +42,7 @@
             textcolor=White
             shadowtextcolor=white
             selectedtextcolor=White
-            selectedbgcolor="Focus"
+            selectedbgcolor=accent
             inset-left=6
         }
 

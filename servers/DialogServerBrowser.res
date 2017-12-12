@@ -55,7 +55,7 @@
 			render_bg
 			{
 				0="fill( x0, y0, x1, y1, black )"
-				1="fill( x0, y0, x1, y0+40, FrameBorder )"
+				1="fill( x0, y0, x1, y0+40, black )"
 				2="fill( x0, y0, x1, y0+39, Header_Dark )"
 			}
 		}

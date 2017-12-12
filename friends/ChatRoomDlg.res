@@ -69,11 +69,11 @@
 	{
 		CChatSplitter
 		{
-			bgcolor=black24
+			bgcolor=black25
 			render_bg
 			{
-        0="fill( x0-1, y0, x0, y1, FrameBorder )"
-        1="fill( x1, y0, x1+1, y1, FrameBorder )"
+        0="fill( x0-1, y0, x0, y1, black )"
+        1="fill( x1, y0, x1+1, y1, black )"
       }
 		}
 
@@ -111,7 +111,7 @@
 
 		Chat_MenuButton_withChrome:hover
     {
-			bgcolor=White12
+			bgcolor=white10
 			render_bg
 			{
 				0="image(x0,y0,x1,y1,graphics/tab_close_def)"
@@ -120,7 +120,7 @@
 
 		Chat_MenuButton_withChrome:active
 		{
-			bgcolor=White24
+			bgcolor=white20
 			render_bg
 			{
 				0="image(x0,y0,x1,y1,graphics/tab_close_hov)"
