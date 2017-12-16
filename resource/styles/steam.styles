@@ -135,16 +135,6 @@ styles
         }
     }
 
-    LibrarySearchIcon
-    {
-        textcolor=none
-        bgcolor=TextEntry
-        render
-        {
-            0="image(x0+12,y0+12,x1,y1,graphics/search_lg)"
-        }
-    }
-
     FriendsSearchIcon
     {
         textcolor=none
@@ -836,7 +826,7 @@ styles
         padding-left=5
         padding-right=5
         textcolor="white50"
-        selectedtextcolor="accent"
+        selectedtextcolor="white"
         shadowtextcolor="white50" // the color of disabled line items
         render {}
         render_bg {}
