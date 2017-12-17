@@ -34,10 +34,12 @@
 
         view_friends:hover
         {
+            image=graphics/metro/icons/header/friends_h
         }
 
         view_friends:active
         {
+            image=graphics/metro/icons/header/friends_p
         }
 
         support_alert
@@ -106,12 +108,18 @@
 
         inbox_button:hover
         {
-            //bgcolor=white05
+            render_bg
+            {
+                0="image(x0,y0,x1,y1,graphics/metro/icons/header/notifications_h)"
+            }
         }
 
         inbox_button:selected
         {
-            //bgcolor=white10
+            render_bg
+            {
+                0="image(x0,y0,x1,y1,graphics/metro/icons/header/notifications_p)"
+            }
         }
 
         inbox_button_active
@@ -125,12 +133,20 @@
 
         inbox_button_active:hover
         {
-            //bgcolor=white05
+            render_bg
+            {
+                0="image(x0,y0,x1,y1,graphics/metro/icons/header/notifications_h)"
+                1="fill(x0,y1,x1,y1+1,accent)"
+            }
         }
 
         inbox_button_active:selected
         {
-            //bgcolor=white10
+            render_bg
+            {
+                0="image(x0,y0,x1,y1,graphics/metro/icons/header/notifications_p)"
+                1="fill(x0,y1,x1,y1+1,accent)"
+            }
         }
 
         parental_lock_button

@@ -18,9 +18,10 @@ styles
         render_bg
         {
             0="fill(x0, y0, x1, y1, black)"
-            1="gradient(x0, y0, x1, y1, accentTransparent, none)"
+            1="gradient(x0, y0, x1, y0+200, accentTransparent, none)"
             //8="image(x1 - 821, y1 - 375, x1, y1, none)"
-            2="fill(x0, y0+59, x1, y0+60, white10)"
+            2="fill(x0, y0+59, x1, y0+60, white05)"
+            3="fill(x0, y0+100, x1, y0+101, white05)"
             //99="fill(x0, y0, x1, y0+39, Header_Dark)"
         }
     }
@@ -63,6 +64,7 @@ styles
             0="image(x0+7,y0+5,x1,y1,graphics/left_arrow)"
         }
     }
+
     ScrollBarButton.left:hover
     {
         bgcolor=none
@@ -71,6 +73,7 @@ styles
             1="image(x0+7,y0+5,x1,y1,graphics/left_arrow_h)"
         }
     }
+
     ScrollBarButton.right
     {
         bgcolor=none
@@ -79,6 +82,7 @@ styles
             1="image(x0+7,y0+5,x1,y1,graphics/right_arrow)"
         }
     }
+
     ScrollBarButton.right:hover
     {
         bgcolor=none
@@ -87,31 +91,32 @@ styles
             1="image(x0+7,y0+5,x1,y1,graphics/right_arrow_h)"
         }
     }
+
     ScrollBarHandle  //vertical scrollbar thumb
     {
         bgcolor=none
         render_bg
         {
-            // center fill
             0="fill( x0, y0, x1, y1, White05 )"
         }
     }
+
     "ScrollBarHandle:hover"
     {
         render_bg
         {
-            // center fill
             0="fill( x0, y0, x1, y1, White10 )"
         }
     }
+
     "ScrollBarHandle:selected"
     {
         render_bg
         {
-            // center fill
             0="fill( x0, y0, x1-1, y1, White10 )"
         }
     }
+
     "SliderHoriz"  //horizontal scrollbar thumb
     {
         render_bg
@@ -119,6 +124,7 @@ styles
             0="fill( x0, y0+2, x1, y1-3, White05 )"
         }
     }
+
     "SliderHoriz:hover"
     {
         render_bg
@@ -127,6 +133,7 @@ styles
             0="fill( x0, y0+2, x1, y1-3, White10 )"
         }
     }
+
     "SliderHoriz:selected"
     {
         render_bg
@@ -164,15 +171,15 @@ styles
         bgcolor="none"
         render_bg
         {
-        0="fill( x0, y0-1, x1, y0, black )"
-        1="fill( x0, y0, x1, y0+47, black )"
-        2="fill( x0, y0, x1, y0+46, black )"
+            0="fill( x0, y0-1, x1, y0, black )"
+            1="fill( x0, y0, x1, y0+47, black )"
+            2="fill( x0, y0, x1, y0+46, black )"
 
-        5="fill( x0, y1-61, x1, y1-60, Black25 )"
-        5="fill( x0, y1-60, x1, y1, black )"
+            5="fill( x0, y1-61, x1, y1-60, Black25 )"
+            5="fill( x0, y1-60, x1, y1, black )"
 
-        4="fill( x0, y1-41, x1, y1, black )"
-        4="fill( x0, y1-40, x1, y1, Header_Dark )"
+            4="fill( x0, y1-41, x1, y1, black )"
+            4="fill( x0, y1-40, x1, y1, Header_Dark )"
         }
     }
 
@@ -825,72 +832,72 @@ styles
         font-weight=400
         padding-left=5
         padding-right=5
-        textcolor="white50"
-        selectedtextcolor="white"
-        shadowtextcolor="white50" // the color of disabled line items
+        textcolor=white50
+        selectedtextcolor=white75
+        shadowtextcolor=white50 // the color of disabled line items
         render {}
         render_bg {}
     }
 
     "GameItem_Updating"
     {
-        textcolor="accent"
+        textcolor=accent
     }
 
     "GameItem_Uninstalled"
     {
-      textcolor="white50"
+      textcolor=white25
     }
 
     "GameItem_Installed"
     {
-        textcolor="accent"
+        textcolor=accent
     }
 
     "GameItem_Uninstalled:hover"
     {
-      textcolor="white75"
+      textcolor=white50
     }
 
     "GameItem_Installed:hover"
     {
-      textcolor="white"
+      textcolor=white
     }
     
     "GameItem_Running"
     {
-      textcolor="accent"
+      textcolor=accent
     }
     
     "GameItem_Shortcut"
     {
-      textcolor="text"
-      selectedtextcolor="white"
+      textcolor=text
+      selectedtextcolor=white
     }
       
     "GameItem_Shortcut:hover"
     {
-        textcolor="white75"
+        textcolor=white75
     }
 
     "GameItem_Mod:hover"
     {
-        textcolor="white75"
+        textcolor=white75
     }
 
     "GameItem_Decrypting:hover"
     {
-      textcolor="white75"
+      textcolor=white75
     }
     
     "GameItem_Syncing:hover"
     {
-        textcolor="white75"
+        textcolor=white75
     }
 
     "GameItem_LockedSiteLicense:hover"
     {
-      textcolor="white75"
+        textcolor=white75
     }
 
     "GameItem_Uninstalled GamesGridImage"
@@ -943,27 +950,18 @@ styles
             textcolor="white"
     }
 
-    ListPanelColumnheader
+    ListPanelColumnHeader
     {
         font-family=boldfont
         font-size=14
-        textcolor=white50
+        textcolor=white25
         font-style="Uppercase"
         bgcolor="none"
-        render_bg
-        {
-            0="fill(x0,y1,x1,y1+1,Black25)"
-        }
     }
 
     ListPanelColumnHeader:hover
     {
-        textcolor=white75
-    }
-
-    "CSteamRootDialog ListPanelColumnHeader"
-    {
-        render_bg {}
+        textcolor=white50
     }
 
     ListPanelColumnSelectButton
@@ -1084,164 +1082,166 @@ styles
         }
     }
 
-        MainNav
+    MainNav
     {
-            textcolor="White50"
-            selectedtextcolor="white"
-            bgcolor="none"
-            font-family=basefont
-            font-size=21
-            font-weight=700
-            font-style="uppercase"
+        textcolor="White50"
+        selectedtextcolor="white"
+        bgcolor="none"
+        font-family=basefont
+        font-size=21
+        font-weight=700
+        font-style="uppercase"
     }
 
-        Menu
+    Menu
     {
-            bgcolor="black"
-            padding-right=0
-            inset="0 8 0 8"
-            render_bg
-            {
-                0="fill( x0 + 0, y0 + 0, x1 + 0, y0 + 1, black )"	// Top
-                1="fill( x0 + 1, y1 - 1, x1 + 0, y1 + 0, black )"	// Bottom
-                2="fill( x0 + 0, y0 + 1, x0 + 1, y1 + 0, black )"	// Left
-                3="fill( x1 - 1, y0 + 1, x1 + 0, y1 - 1, black )"	// Right
-            }
-            render {}
-            corner_rounding=0
+        bgcolor="black"
+        padding-right=0
+        inset="0 8 0 8"
+        render_bg
+        {
+            0="fill( x0 + 0, y0 + 0, x1 + 0, y0 + 1, black )"	// Top
+            1="fill( x0 + 1, y1 - 1, x1 + 0, y1 + 0, black )"	// Bottom
+            2="fill( x0 + 0, y0 + 1, x0 + 1, y1 + 0, black )"	// Left
+            3="fill( x1 - 1, y0 + 1, x1 + 0, y1 - 1, black )"	// Right
+        }
+        render {}
+        corner_rounding=0
     }
 
-        MenuItem
+    MenuItem
     {
-            font-family=basefont
-            textcolor="White"
-            font-size=16
+        font-family=basefont
+        textcolor="White"
+        font-size=16
     }
 
     MenuItem:hover
     {
-            textcolor="White"
-            render_bg
-            {
-                0="fill( x0+1, y0, x1-1, y1, White05 )"
-            }
+        textcolor="White"
+        render_bg
+        {
+            0="fill( x0+1, y0, x1-1, y1, White05 )"
+        }
     }
 
     MenuItem:disabled
     {
-            textcolor="White50"
+        textcolor="White50"
     }
 
     MenuItem:disabled:hover
     {
-            textcolor="White50"
+        textcolor="White50"
     }
 
     MenuSeparator
     {
-            textcolor=none
-            bgcolor=none
-            render_bg
-            {
+        textcolor=none
+        bgcolor=none
+        render_bg
+        {
             0="fill(x0+9,y0+1,x1-9,y1-1,White05)"
-            }
+        }
     }
 
-        SuperNavMenu
-        {
-            bgcolor=black
-            inset="0 8 0 8"
+    SuperNavMenu
+    {
+        bgcolor=black
+        inset="0 8 0 8"
 
-            render {}
+        render {}
 
-            render_bg
-            {
-                0="fill( x0, y0, x0+1, y1, black )"
-                1="fill( x1-1, y0, x1, y1, black )"
-                2="fill( x0, y0, x1, y0+1, black )"
-                3="fill( x0, y1-1, x1, y1, black )"
-            }
+        render_bg
+        {
+            0="fill( x0, y0, x0+1, y1, black )"
+            1="fill( x1-1, y0, x1, y1, black )"
+            2="fill( x0, y0, x1, y0+1, black )"
+            3="fill( x0, y1-1, x1, y1, black )"
         }
+    }
 
-        SuperNavMenuItem
-        {
-            padding=0
-            font-size=16
-            textcolor=white
-            bgcolor=none
-            font-style="regular"
-        }
-        SuperNavMenuItem:hover
-        {
-            textcolor=white
-        }
-        SuperNavMenuItem:selected
-        {
-            textcolor="white"
-        }
+    SuperNavMenuItem
+    {
+        padding=0
+        font-size=16
+        textcolor=white
+        bgcolor=none
+        font-style="regular"
+    }
 
-        "SuperNavMenuDivider"
-        {
-            textcolor="none"
-            render_bg
-            {
-                0="fill(x0+9,y0+1,x1-9,y1-1,White10)"
-            }
-        }
+    SuperNavMenuItem:hover
+    {
+        textcolor=white
+    }
 
-        "MenuBar MenuButton"
-        {
-            minimum-width=38
-            render_bg
-            {
-                0="image(x0+11,y0+13,x1,y1,graphics/metro/icons/navbar/menu)"
-            }
-            bgcolor=none
-    image=none
-        }
+    SuperNavMenuItem:selected
+    {
+        textcolor="white"
+    }
 
-        "MenuBar MenuButton:hover"
+    "SuperNavMenuDivider"
+    {
+        textcolor="none"
+        render_bg
         {
-            render
-            {
-                0="fill(x0,y0,x1,y1,white05)"
-            }
+            0="fill(x0+9,y0+1,x1-9,y1-1,White10)"
         }
+    }
 
-        "MenuBar MenuButton:selected"
+    "MenuBar MenuButton"
+    {
+        minimum-width=38
+        render_bg
         {
-            render
-            {
-                0="fill(x0,y0,x1,y1,white10)"
-            }
+            0="image(x0+11,y0+13,x1,y1,graphics/metro/icons/navbar/menu)"
         }
+        bgcolor=none
+        image=none
+    }
+
+    "MenuBar MenuButton:hover"
+    {
+        render
+        {
+            0="fill(x0,y0,x1,y1,white05)"
+        }
+    }
+
+    "MenuBar MenuButton:selected"
+    {
+        render
+        {
+            0="fill(x0,y0,x1,y1,white10)"
+        }
+    }
 
     Notification
     {
-            font-family=basefont
-            font-size=16
-            font-weight=400
-            bgcolor=black
-            render_bg {}
-            render
-            {
-                //Hotkey Border
-                //0="fill( x0+1, y0+73, x1+0, y0+74, Black )"
+        font-family=basefont
+        font-size=16
+        font-weight=400
+        bgcolor=black
+        render_bg {}
+        render
+        {
+            //Hotkey Border
+            //0="fill( x0+1, y0+73, x1+0, y0+74, Black )"
 
-                //Border
-                1="fill( x0 + 0, y0 + 0, x1 + 0, y0 + 1, black )"	// Top
-                //2="fill( x0 + 1, y1 - 1, x1 + 0, y1 + 0, black )"	// Bottom
-                3="fill( x0 + 0, y0 + 1, x0 + 1, y1 + 0, black )"	// Left
-                //4="fill( x1 - 1, y0 + 1, x1 + 0, y1 - 1, black )"	// Right
-            }
-            corner_rounding=0
+            //Border
+            1="fill( x0 + 0, y0 + 0, x1 + 0, y0 + 1, black )"	// Top
+            //2="fill( x0 + 1, y1 - 1, x1 + 0, y1 + 0, black )"	// Bottom
+            3="fill( x0 + 0, y0 + 1, x0 + 1, y1 + 0, black )"	// Left
+            //4="fill( x1 - 1, y0 + 1, x1 + 0, y1 - 1, black )"	// Right
+        }
+        corner_rounding=10
     }
 
     Page
     {
-            bgcolor="none"
-            render_bg
-            {}
+        bgcolor="none"
+        render_bg
+        {}
     }
 
     PageTab
@@ -1576,110 +1576,102 @@ styles
 
     WrapPanel
     {
-    inset="0 0 0 0"
-    font-family=basefont
-    font-size=14
-    font-weight=400
-    textcolor="white"
-    selectedtextcolor="White"
-    selectedbgcolor=accent
-    bgcolor=none
-    render_bg {}
-        inset="1 -1 1 1"
+        inset="0 0 0 0"
+        font-family=basefont
+        font-size=14
+        font-weight=400
+        textcolor="white"
+        selectedtextcolor="White"
+        selectedbgcolor=accent
+        bgcolor=none
+        render_bg {}
+            inset="1 -1 1 1"
     }
 
         BackButton
         {
-            inset="-5 0 0 0"
-            render_bg{}
             bgcolor=none
-            image="graphics/metro/icons/navbar/back"
-            padding-left=12
+            image="graphics/metro/icons/header/back"
+            padding-left=10
         }
 
         BackButton:hover
         {
-            image="graphics/metro/icons/navbar/back_h"
+            image="graphics/metro/icons/header/back_h"
         }
 
         BackButton:active
         {
-            image="graphics/metro/icons/navbar/back_p"
+            image="graphics/metro/icons/header/back_p"
         }
 
         BackButton:disabled
         {
-            image="graphics/metro/icons/navbar/back_d"
+            image="graphics/metro/icons/header/back"
         }
 
         BackButtonSm
         {
-            inset="-5 0 0 0"
-            render_bg{}
             bgcolor=none
-            image="graphics/metro/icons/navbar/back"
+            image="graphics/metro/icons/header/back"
         }
 
         BackButtonSm:hover
         {
-            image="graphics/metro/icons/navbar/back_h"
+            image="graphics/metro/icons/header/back_h"
         }
 
         BackButtonSm:active
         {
-            image="graphics/metro/icons/navbar/back_p"
+            image="graphics/metro/icons/header/back_p"
         }
 
         BackButtonSm:disabled
         {
-            image="graphics/metro/icons/navbar/back_d"
+            image="graphics/metro/icons/header/back_d"
         }
 
         ForwardButton
         {
-            inset="-5 0 0 0"
-            render_bg{}
             bgcolor=none
-            image="graphics/metro/icons/navbar/forward"
-            padding-left=12
+            image="graphics/metro/icons/header/forward"
+            padding-left=10
         }
 
         ForwardButton:hover
         {
-            image="graphics/metro/icons/navbar/forward_h"
+            image="graphics/metro/icons/header/forward_h"
         }
 
         ForwardButton:active
         {
-            image="graphics/metro/icons/navbar/forward_p"
+            image="graphics/metro/icons/header/forward_p"
         }
 
         ForwardButton:disabled
         {
-            image="graphics/metro/icons/navbar/forward_d"
+            image="graphics/metro/icons/header/forward"
         }
 
         ForwardButtonSm
         {
-            inset="-5 0 0 0"
-            render_bg{}
             bgcolor=none
-            image="graphics/metro/icons/navbar/forward"
+            image="graphics/metro/icons/header/forward"
         }
 
         ForwardButtonSm:hover
         {
-            image="graphics/metro/icons/navbar/forward_h"
+            image="graphics/metro/icons/header/forward_h"
         }
 
         ForwardButtonSm:active
         {
-            image="graphics/metro/icons/navbar/forward_p"
+            image="graphics/metro/icons/header/forward_p"
         }
 
         ForwardButtonSm:disabled
         {
-            image="graphics/metro/icons/navbar/forward_d"
+            image="graphics/metro/icons/header/forward"
         }
 
         HomeButton

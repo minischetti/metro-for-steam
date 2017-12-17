@@ -50,7 +50,7 @@
             inset-left=-999
             render_bg
             {
-                0="image(x0+14,y0+14,x1,y1,graphics/down_arrow)"
+                0="image(x0+15,y0+15,x1,y1,graphics/metro/icons/secondary_header/filter)"
             }
         }
 
@@ -58,7 +58,7 @@
         {
             render_bg
             {
-                0="image(x0+14,y0+14,x1,y1,graphics/down_arrow_h)"
+                0="image(x0+15,y0+15,x1,y1,graphics/metro/icons/secondary_header/filter_h)"
             }
         }
 
@@ -66,7 +66,7 @@
         {
             render_bg
             {
-                0="image(x0+14,y0+14,x1,y1,graphics/down_arrow_p)"
+                0="image(x0+15,y0+15,x1,y1,graphics/metro/icons/secondary_header/filter_p)"
             }
         }
 
@@ -75,7 +75,7 @@
             textcolor=none
             render
             {
-                0="image(x0+12,y0+12,x1,y1,graphics/search_lg)"
+                0="image(x0+15,y0+15,x1,y1,graphics/metro/icons/secondary_header/search)"
             }
         }
 
@@ -183,7 +183,7 @@
         {
             render_bg
             {
-                0="image(x0+6,y0+13,x1,y1,graphics/list)"
+                0="image(x0+10,y0+15,x1,y1,graphics/metro/icons/secondary_header/list)"
             }
         }
 
@@ -191,7 +191,7 @@
         {
             render_bg
             {
-                0="image(x0+6,y0+13,x1,y1,graphics/list_h)"
+                0="image(x0+10,y0+15,x1,y1,graphics/metro/icons/secondary_header/list_h)"
             }
         }
 
@@ -199,7 +199,7 @@
         {
             render_bg
             {
-                0="image(x0+6,y0+13,x1,y1,graphics/list_p)"
+                0="image(x0+10,y0+15,x1,y1,graphics/metro/icons/secondary_header/list_p)"
             }
         }
 
@@ -207,7 +207,7 @@
         {
             render_bg
             {
-                0="image(x0+6,y0+13,x1,y1,graphics/sort_details)"
+                0="image(x0+10,y0+15,x1,y1,graphics/metro/icons/secondary_header/details)"
             }
         }
 
@@ -215,7 +215,7 @@
         {
             render_bg
             {
-                0="image(x0+6,y0+13,x1,y1,graphics/sort_details_h)"
+                0="image(x0+10,y0+15,x1,y1,graphics/metro/icons/secondary_header/details_h)"
             }
         }
 
@@ -223,7 +223,7 @@
         {
             render_bg
             {
-                0="image(x0+6,y0+13,x1,y1,graphics/sort_details_p)"
+                0="image(x0+10,y0+15,x1,y1,graphics/metro/icons/secondary_header/details_p)"
             }
         }
 
@@ -231,7 +231,7 @@
         {
             render_bg
             {
-                0="image(x0+7,y0+13,x1,y1,graphics/sort_grid)"
+                0="image(x0+10,y0+15,x1,y1,graphics/metro/icons/secondary_header/grid)"
             }
         }
 
@@ -239,7 +239,7 @@
         {
             render_bg
             {
-                0="image(x0+7,y0+13,x1,y1,graphics/sort_grid_h)"
+                0="image(x0+10,y0+15,x1,y1,graphics/metro/icons/secondary_header/grid_h)"
             }
         }
 
@@ -247,7 +247,7 @@
         {
             render_bg
             {
-                0="image(x0+7,y0+13,x1,y1,graphics/sort_grid_p)"
+                0="image(x0+10,y0+15,x1,y1,graphics/metro/icons/secondary_header/grid_p)"
             }
         }
 
@@ -347,7 +347,7 @@
 
         //Filters
         place { control="library_zoom" region=secondary align=right end-right="library_filters_list" y=10 height=26 width=100 margin-right=8 }
-        place { control="library_filters_list,library_filters_details,library_filters_grid,library_music_menu,library_music_player_icon" align=right width=28 height=38 spacing=1 margin-right=1 y=60 }
+        place { control="library_filters_list,library_filters_details,library_filters_grid,library_music_menu,library_music_player_icon" align=right width=30 height=40 y=60 }
         place { control="library_music_player_icon" region=secondary align=right y=7 height=24 spacing=1 width=24 }
         place { control="library_music_add_button,library_music_menu" region=secondary align=right end-right=library_Music_player_icon y=7 height=24 margin-right=0 }
 

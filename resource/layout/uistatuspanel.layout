@@ -22,7 +22,21 @@
         {
             render_bg
             {
-                0="image(x0,y0,x1,y1,graphics/metro/icons/header/notifications)"
+                0="image(x0,y0,x1,y1,graphics/metro/icons/header/downloads)"
+            }
+        }
+        CUIStatusPanel:hover
+        {
+            render_bg
+            {
+                0="image(x0,y0,x1,y1,graphics/metro/icons/header/downloads_h)"
+            }
+        }
+        CUIStatusPanel:active
+        {
+            render_bg
+            {
+                0="image(x0,y0,x1,y1,graphics/metro/icons/header/downloads_p)"
             }
         }
         ProgressBar {
