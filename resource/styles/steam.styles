@@ -425,31 +425,6 @@ styles
         }
     }
 
-    CDownloadsPage
-    {
-        render_bg
-        {
-                0="fill( x0+8, y0-1, x1-8, y0+0, Black25 )"
-        }
-    }
-
-    CGamesPage_List
-    {
-        render_bg
-        {
-                0="fill( x0+0, y0+0, x1-0, y0+1, Black25 )"
-                1="fill( x0+0, y0+19, x1-0, y0+20, Black25 )"
-        }
-    }
-
-    CGamesPage_Grid
-    {
-        render_bg
-        {
-                0="fill( x0, y0, x1, y0+1, Black25 )"
-        }
-    }
-
     bodycontent
     {
         font-size=16

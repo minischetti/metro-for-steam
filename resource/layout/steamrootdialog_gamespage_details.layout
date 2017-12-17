@@ -98,7 +98,7 @@
         place { control=gametitleheader region=details width=max align=left-center height=200 dir=down }
 
         //Panels
-        region  { name="detailsbody" region=details y=200 width=max margin=10 overflow=allow-vertical }
+        region { name="detailsbody" region=details y=200 width=max margin=10 overflow=allow-vertical }
         place { region=detailsbody control=gamesubheader,turnnotifications,friendsdetails,achievementsdetails,screenshotsdetails,communityfilesdetails,dlcdetails,clouddetails,newsdetails dir=down width=max spacing=10 }
 
         //Background Images
