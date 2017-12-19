@@ -3,6 +3,7 @@
 	colors
   {
     none="0 0 0 0"
+    clientBackground="10 10 10 255"
     accent="0 197 255 255"
 		accentTransparent="0 114 198 30.6"
 		white05="255 255 255 12.75"
@@ -20,8 +21,6 @@
     black75="0 0 0 191.25"
     black="0 0 0 255"
 		TextEntry="39 39 39 255"
-		ScrollBar="86 86 86 255"
-		ScrollBarH="110 110 110 255"
     Grey3="75 75 75 255"
     Header_Dark="20 20 20 255"
 		Red="255 0 0 255"

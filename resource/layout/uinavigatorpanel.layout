@@ -376,14 +376,14 @@
 
         //Hidden
         place { control="fullscreen,EVCert,BetaFlagBigPicture,URLStatusImage,label_community_new,subnavgroup_library,label_library_zoom,label_zoom_separator,label_library_view" margin-left=-9999 }
-
     }
+
     layout [$OSX||$LINUX] //Both OSX and Linux use OS provided menu bar, so this moves top elements left to hide the blank space
     {
 
         //Header
         region { name=secondary align=top y=60 height=60 x=0 margin-right=0 }
-        place { control="back,forward" x=0 y=1 height=38 width=40 margin-left=0 spacing=0 }
+        place { control="back,forward" height=60 width=40 }
         place { control="label_store,label_library,label_news,label_friends,label_community,label_me,label_console" x=81 y=0 spacing=1 height=60 }
 
         //URLBar
@@ -392,12 +392,12 @@
 
         //Search
         place { control="label_search_icon" region=secondary height=40 width=40 }
-        place { control="library_search" region=secondary margin-left=40 height=40 width=300 }
-        place { control="library_filters" region=secondary align=right height=40 width=40 }
+        place { control="library_search" region=secondary margin-left=40 height=40 width=260 }
+        place { control="library_filters" region=secondary x=260 height=40 width=40 }
 
         //Filters
         place { control="library_zoom" region=secondary align=right end-right="library_filters_list" y=10 height=26 width=100 margin-right=8 }
-        place { control="library_filters_list,library_filters_details,library_filters_grid,library_music_menu,library_music_player_icon" align=right width=28 height=38 spacing=1 margin-right=1 y=60 }
+        place { control="library_filters_list,library_filters_details,library_filters_grid,library_music_menu,library_music_player_icon" align=right width=30 height=40 y=60 }
         place { control="library_music_player_icon" region=secondary align=right y=7 height=24 spacing=1 width=24 }
         place { control="library_music_add_button,library_music_menu" region=secondary align=right end-right=library_Music_player_icon y=7 height=24 margin-right=0 }
 

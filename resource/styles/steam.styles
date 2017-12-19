@@ -14,11 +14,10 @@ styles
 {
     "CSteamRootDialog"
     {
-        bgcolor=black
         render_bg
         {
-            0="fill(x0, y0, x1, y1, black)"
-            1="gradient(x0, y0, x1, y0+200, accentTransparent, none)"
+            //0="fill(x0, y0, x1, y1, black)"
+            //1="gradient(x0, y0, x1, y0+200, accentTransparent, none)"
             //8="image(x1 - 821, y1 - 375, x1, y1, none)"
             2="fill(x0, y0+59, x1, y0+60, white05)"
             3="fill(x0, y0+100, x1, y0+101, white05)"
@@ -361,13 +360,15 @@ styles
     }
     Frame
     {
-        bgcolor="black"
+        bgcolor="clientBackground"
         render
         {
-            0="fill( x0 + 0, y0 + 0, x1 + 0, y0 + 1, black )"	// Top
-            1="fill( x0 + 1, y1 - 1, x1 + 0, y1 + 0, black )"	// Bottom
-            2="fill( x0 + 0, y0 + 1, x0 + 1, y1 + 0, black )"	// Left
-            3="fill( x1 - 1, y0 + 1, x1 + 0, y1 - 1, black )"	// Right
+            0="gradient(x0, y0, x1, y0+200, accentTransparent, none)"
+
+            // 0="fill( x0 + 0, y0 + 0, x1 + 0, y0 + 1, black )"	// Top
+            // 1="fill( x0 + 1, y1 - 1, x1 + 0, y1 + 0, black )"	// Bottom
+            // 2="fill( x0 + 0, y0 + 1, x0 + 1, y1 + 0, black )"	// Left
+            // 3="fill( x1 - 1, y0 + 1, x1 + 0, y1 - 1, black )"	// Right
         }
     }
 
@@ -846,8 +847,7 @@ styles
     
     "GameItem_Shortcut"
     {
-      textcolor=text
-      selectedtextcolor=white
+      textcolor=accent
     }
       
     "GameItem_Shortcut:hover"

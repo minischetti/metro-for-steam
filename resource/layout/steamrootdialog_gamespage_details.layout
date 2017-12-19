@@ -10,14 +10,6 @@
             render_bg {}
         }
 
-        CGamesPage_Details
-        {
-            bgcolor="none"
-            inset="0 0 0 0"
-            render {}
-            render_bg {}
-        }
-
         "GamesPage_Details ListPanel"
         {
             bgcolor="none"
@@ -43,7 +35,7 @@
         
         "GamesPage_Details ListPanelInterior:scrollbar"
         {     
-            bgcolor=none			
+            bgcolor=none
             render_bg {}
             minimum-width=246
         }
@@ -75,7 +67,7 @@
         {
             render_bg
             {
-                0="fill(x0+300, y1+60, x0+301, y1+100, white05)"
+                //0="fill(x0+300, y0+1, x0+301, y1, white05)"
             }
             render {}
         }
@@ -104,13 +96,10 @@
         //Background Images
         place { control=headerimagea align=left margin-left=300 height=550 width=1024 }
         place { control=headerimageb align=left margin-left=300 height=550 width=1024 }
-
-        //?
-        place { control=DetailsBorder y=1 x=1 width=max height=max }
         
         //Hidden
         region { name=hidden width=1 overflow=none }
-        place { control=welcomedetails,nonsteamdetails,linkslabel,sendguestpasslink,gamehublink,gamesubheaderright,achievementslink,forumlink,ogglink,manuallink,newslink,storelink,dlclink,cdkeylink,guidelink,guideslink,supportlink,recommendlink,tagslabel,*taglink,edittagslink region=hidden dir=down height=36 width=160 margin-top=0 align=right spacing=0 }
+        place { control=DetailsBorder,welcomedetails,nonsteamdetails,linkslabel,sendguestpasslink,gamehublink,gamesubheaderright,achievementslink,forumlink,ogglink,manuallink,newslink,storelink,dlclink,cdkeylink,guidelink,guideslink,supportlink,recommendlink,tagslabel,*taglink,edittagslink region=hidden dir=down height=36 width=160 margin-top=0 align=right spacing=0 }
 
     }
 }

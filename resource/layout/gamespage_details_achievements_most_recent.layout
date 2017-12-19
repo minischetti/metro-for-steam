@@ -1,101 +1,79 @@
 "resource/layout/gamespage_details_achievements_most_recent.layout"
 {
-	controls
-	{
-		mostrecent_area { controlname="CAchievementsMostRecentPanel" style="mostrecent" }
+    colors
+    {
+        GameDetailsAchievements.ProgressBarMargins "0"
+        Tooltip.Anchor=Parent
+    }
+    styles
+    {
+        mostrecent
+        {
+            minimum-height="96"
+            render_bg
+            {
+                0="fill(x0,y1,x1,y1+1,white10)"
+            }
+        }
 
-		mostrecent_label { controlname="Label" style="mostrecent_label" labeltext="#steam_achievement_mostrecent" } 
-		mostrecent_background { controlname="Label" style=achievementimagebg zpos="0" labeltext="" mouseinputenabled=0 }
-		mostrecent_image { controlname="ImagePanel" zpos=-1 style="mostrecent_image" }
-		mostrecent_name { controlname="Label" style="mostrecent_name" labeltext="" }
-		mostrecent_unlockedsofar { controlname="Label" style="mostrecent_unlockedsofar" labeltext="#steam_achievement_unlockedsofar" }
+        achievementimagebg
+        {
+            bgcolor=none
+            inset="0 0 0 0"
+            image="graphics/achievementbg_recent"
+        }
 
-		progressbackground { controlname="ImagePanel" style="progressbackground" }
-		progressbarimage { controlname="ImagePanel" style="progressbarimage" }
+        mostrecent_name
+        {
+            font-size=18
+            textcolor=White
+        }
 
-	}
-	colors
-	{
-		// ProgressBarMarings must be the combined left+right margin of the actual bar from it's container
-		GameDetailsAchievements.ProgressBarMargins "0"
-		
-		Tooltip.Anchor=Parent
-	}
-	styles
-	{
-		mostrecent
-		{
-			minimum-height="96"
-			render_bg
-			{
-				0="fill(x0,y1,x1,y1+1,white10)"
-			}
-		}
+        mostrecent_label
+        {
+            textcolor=White35
+            bgcolor="none"
+            font-family=basefont
+            font-size=18
+            font-weight=400
+            font-style=regular
+        }
 
-		achievementimagebg
-		{
-			bgcolor=none
-			inset="0 0 0 0"
-      image="graphics/achievementbg_recent"    
-     		
-		}
-		
-		mostrecent_name
-		{
-			font-size=18
-			textcolor=White
-		}
+        mostrecent_unlockedsofar
+        {
+            textcolor="White75"
+            bgcolor="none"
+            font-family=boldfont
+            font-size=16
+            font-style=uppercase
+        }
 
-		mostrecent_label
-		{
-			textcolor=White35
-			bgcolor="none"
-			font-family=basefont
-			font-size=18
-			font-weight=400
-			font-style=regular
-		}
+        progressbackground
+        {
+            bgcolor=white05
+        }
 
-		mostrecent_unlockedsofar
-		{
-			textcolor="White75"
-			bgcolor="none"
-			font-family=basefont
-			font-size=16 
-			font-style=uppercase
-		}
+        progressbarimage
+        {
+            bgcolor=white05
+            render
+            {
+                0="fill(x1, y0, x1+1, y1, accent)"
+            }
+        }
+    }
 
-		progressbackground
-		{
-			bgcolor=Black25
-			render_bg
-			{
-        //0="fill( x0, y0, x1, y1, Black25 )"  // top
-			}
-		}
+    layout
+    {
+        region { name=body margin=0 width=max height=max }
 
-		progressbarimage
-		{
-			bgcolor=accent
-			render 
-			{
-				//5="fill( x0, y0, x1, y1, accent )"  // top
-			}
-		}
-	}
+        place { region=body control=mostrecent_label,mostrecent_name x=74 y=24 width=max spacing=10 }
+        place { region=body control=mostrecent_unlockedsofar margin-left=8 x=72 y=56 width=max height=24 dir=down }
 
-	layout
-	{
-		region { name=body margin=0 width=max height=max }
+        place { region=body control=mostrecent_background x=0 y=9 width=0 height=0 }
+        place { region=body control=mostrecent_image x=0 y=16 width=64 height=64 }
 
-		place { region=body control=mostrecent_name x=74 y=12 width=max dir=down }
-		place { region=body control=mostrecent_label x=74 y=32 width=max }
-		place { region=body control=mostrecent_unlockedsofar margin-left=8 x=72 y=56 width=max height=24 dir=down }
-
-		place { region=body control=mostrecent_background x=0 y=9 width=0 height=0 }
-		place { region=body control=mostrecent_image x=0 y=16 width=64 height=64 }
-
-		place { region=body control=progressbackground x=72 y=56 height=24 width=max dir=down }
-		place { region=body control=progressbarimage x=72 y=56 height=24 dir=down }
-	}
+        place { region=body control=progressbackground x=72 y=56 height=24 width=max dir=down }
+        place { region=body control=progressbarimage x=72 y=56 height=24 dir=down }
+    }
 }
