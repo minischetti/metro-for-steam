@@ -61,13 +61,12 @@
      layout
      {
         //Frame Buttons
-        region { name=frame-controls width=30 height=max align=right y=10 }
-        place { region=frame-controls control="frame_close,frame_maximize,frame_minimize" align=top width=30 height=10 spacing=5 dir=down }
+        place { region=frame-controls control="frame_minimize,frame_maximize,frame_close" align=right width=30 height=40 }
 
-        place { control="frame_captiongrip" width=max height=60 }
+        place { control="frame_captiongrip" width=max height=40 }
 
         //Header
-        region { name=top align=top y=60 height=60 }
+        region { name=top align=top y=40 height=40 }
         place { control="addFriendsButton" height=39 width=27 align=right margin-right=1 end-right=frame_minimize }
         place { control="MenuBar" height=38 width=38 x=1 y=1 }
 

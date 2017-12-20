@@ -2,11 +2,83 @@
 {
     styles
     {
+        "CSteamRootDialog FrameCloseButton"
+        {
+            render_bg
+            {
+                0="image(x0+10,y0+24,x1,y1,graphics/metro/icons/caption/close)"
+            }
+        }
+
+        "CSteamRootDialog FrameCloseButton:hover"
+        {
+            render_bg
+            {
+                0="image(x0+10,y0+24,x1,y1,graphics/metro/icons/caption/close_h)"
+            }
+        }
+
+        "CSteamRootDialog FrameCloseButton:active"
+        {
+            render_bg
+            {
+                0="image(x0+10,y0+24,x1,y1,graphics/metro/icons/caption/close_p)"
+            }
+        }
+
+        "CSteamRootDialog FrameMinimizeButton"
+        {
+            render_bg
+            {
+                0="image(x0+10,y0+24,x1,y1,graphics/metro/icons/caption/minimize)"
+            }
+        }
+
+        "CSteamRootDialog FrameMinimizeButton:hover"
+        {
+            render_bg
+            {
+                0="image(x0+10,y0+24,x1,y1,graphics/metro/icons/caption/minimize_h)"
+            }
+        }
+
+        "CSteamRootDialog FrameMinimizeButton:active"
+        {
+            render_bg
+            {
+                0="image(x0+10,y0+24,x1,y1,graphics/metro/icons/caption/minimize_p)"
+            }
+        }
+
+        "CSteamRootDialog FrameMaximizeButton"
+        {
+            render_bg
+            {
+                0="image(x0+10,y0+24,x1,y1,graphics/metro/icons/caption/maximize)"
+            }
+        }
+
+        "CSteamRootDialog FrameMaximizeButton:hover"
+        {
+            render_bg
+            {
+                0="image(x0+10,y0+24,x1,y1,graphics/metro/icons/caption/maximize_h)"
+            }
+        }
+
+        "CSteamRootDialog FrameMaximizeButton:active"
+        {
+            render_bg
+            {
+                0="image(x0+10,y0+24,x1,y1,graphics/metro/icons/caption/maximize_p)"
+            }
+        }
+
         FrameCloseButton
         {
             render_bg
             {
-                0="image(x0+10,y0,x1,y1,graphics/metro/icons/caption/close)"
+                0="image(x0+10,y0+14,x1,y1,graphics/metro/icons/caption/close)"
             }
         }
 
@@ -14,7 +86,7 @@
         {
             render_bg
             {
-                0="image(x0+10,y0,x1,y1,graphics/metro/icons/caption/close_hover)"
+                0="image(x0+10,y0+14,x1,y1,graphics/metro/icons/caption/close_h)"
             }
         }
 
@@ -22,31 +94,55 @@
         {
             render_bg
             {
-                0="image(x0+10,y0,x1,y1,graphics/metro/icons/caption/close_pressed)"
+                0="image(x0+10,y0+14,x1,y1,graphics/metro/icons/caption/close_p)"
             }
         }
 
-        FrameButton
+        FrameMinimizeButton
         {
             render_bg
             {
-                0="image(x0+10,y0,x1,y1,graphics/metro/icons/caption/button)"
+                0="image(x0+10,y0+14,x1,y1,graphics/metro/icons/caption/minimize)"
             }
         }
 
-        FrameButton:hover
+        FrameMinimizeButton:hover
         {
             render_bg
             {
-                0="image(x0+10,y0,x1,y1,graphics/metro/icons/caption/button_hover)"
+                0="image(x0+10,y0+14,x1,y1,graphics/metro/icons/caption/minimize_h)"
             }
         }
 
-        FrameButton:active
+        FrameMinimizeButton:active
         {
             render_bg
             {
-                0="image(x0+10,y0,x1,y1,graphics/metro/icons/caption/button_pressed)"
+                0="image(x0+10,y0+14,x1,y1,graphics/metro/icons/caption/minimize_p)"
+            }
+        }
+
+        FrameMaximizeButton
+        {
+            render_bg
+            {
+                0="image(x0+10,y0+14,x1,y1,graphics/metro/icons/caption/maximize)"
+            }
+        }
+
+        FrameMaximizeButton:hover
+        {
+            render_bg
+            {
+                0="image(x0+10,y0+14,x1,y1,graphics/metro/icons/caption/maximize_h)"
+            }
+        }
+
+        FrameMaximizeButton:active
+        {
+            render_bg
+            {
+                0="image(x0+10,y0+14,x1,y1,graphics/metro/icons/caption/maximize_p)"
             }
         }
     }
