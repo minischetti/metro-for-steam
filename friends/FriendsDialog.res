@@ -7,7 +7,7 @@
             bgcolor=black
             render_bg
             {
-                0="fill(x0, y0+59, x1, y0+60, white05)"
+                0="fill(x0, y0+39, x1, y0+40, white05)"
             }
         }
 
@@ -45,13 +45,15 @@
             bgcolor="none"
             render_bg
             {
-            0="fill(x0,y1,x1,y1+1,Black25)"
+                0="fill(x0,y1,x1,y1+1,Black25)"
             }
         }
+
         PageTab:hover
         {
             textcolor=White75
         }
+
         PageTab:selected
         {
             textcolor=White
@@ -61,8 +63,7 @@
      layout
      {
         //Frame Buttons
-        place { region=frame-controls control="frame_minimize,frame_maximize,frame_close" align=right width=30 height=40 }
-
+        place { control="frame_minimize,frame_maximize,frame_close" align=right width=40 height=40 margin-right=1 }
         place { control="frame_captiongrip" width=max height=40 }
 
         //Header
