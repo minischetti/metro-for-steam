@@ -5,6 +5,7 @@ steam.styles
     include "controls.styles"
     include "settings.styles"
     include "caption.styles"
+    include "header.styles"
     colors
     {
         ScrollBar.Wide "16"
@@ -1164,33 +1165,6 @@ styles
         }
     }
 
-    "MenuBar MenuButton"
-    {
-        minimum-width=38
-        render_bg
-        {
-            0="image(x0+11,y0+13,x1,y1,graphics/metro/icons/navbar/menu)"
-        }
-        bgcolor=none
-        image=none
-    }
-
-    "MenuBar MenuButton:hover"
-    {
-        render
-        {
-            0="fill(x0,y0,x1,y1,white05)"
-        }
-    }
-
-    "MenuBar MenuButton:selected"
-    {
-        render
-        {
-            0="fill(x0,y0,x1,y1,white10)"
-        }
-    }
-
     Notification
     {
         font-family=basefont
@@ -1563,180 +1537,136 @@ styles
             inset="1 -1 1 1"
     }
 
-        BackButton
-        {
-            bgcolor=none
-            image="graphics/metro/icons/header/back"
-            padding-left=10
-        }
+    BackButtonSm
+    {
+        bgcolor=none
+        image="graphics/metro/icons/header/back"
+    }
 
-        BackButton:hover
-        {
-            image="graphics/metro/icons/header/back_h"
-        }
+    BackButtonSm:hover
+    {
+        image="graphics/metro/icons/header/back_h"
+    }
 
-        BackButton:active
-        {
-            image="graphics/metro/icons/header/back_p"
-        }
+    BackButtonSm:active
+    {
+        image="graphics/metro/icons/header/back_p"
+    }
 
-        BackButton:disabled
-        {
-            image="graphics/metro/icons/header/back"
-        }
+    BackButtonSm:disabled
+    {
+        image="graphics/metro/icons/header/back_d"
+    }
 
-        BackButtonSm
-        {
-            bgcolor=none
-            image="graphics/metro/icons/header/back"
-        }
+    ForwardButtonSm
+    {
+        bgcolor=none
+        image="graphics/metro/icons/header/forward"
+    }
 
-        BackButtonSm:hover
-        {
-            image="graphics/metro/icons/header/back_h"
-        }
+    ForwardButtonSm:hover
+    {
+        image="graphics/metro/icons/header/forward_h"
+    }
 
-        BackButtonSm:active
-        {
-            image="graphics/metro/icons/header/back_p"
-        }
+    ForwardButtonSm:active
+    {
+        image="graphics/metro/icons/header/forward_p"
+    }
 
-        BackButtonSm:disabled
-        {
-            image="graphics/metro/icons/header/back_d"
-        }
+    ForwardButtonSm:disabled
+    {
+        image="graphics/metro/icons/header/forward"
+    }
 
-        ForwardButton
-        {
-            bgcolor=none
-            image="graphics/metro/icons/header/forward"
-            padding-left=10
-        }
+    HomeButton
+    {
+        image=graphics/metro/urlbar/home
+        bgcolor=TextEntry
+    }
 
-        ForwardButton:hover
-        {
-            image="graphics/metro/icons/header/forward_h"
-        }
+    HomeButton:hover
+    {
+        image=graphics/metro/urlbar/home_h
+    }
 
-        ForwardButton:active
-        {
-            image="graphics/metro/icons/header/forward_p"
-        }
+    HomeButton:active
+    {
+        image=graphics/metro/urlbar/home_p
+        bgcolor=accent
+    }
 
-        ForwardButton:disabled
-        {
-            image="graphics/metro/icons/header/forward"
-        }
+    ReloadButton
+    {
+        image=graphics/metro/urlbar/reload
+        inset-left=1
+        bgcolor=none
+    }
 
-        ForwardButtonSm
-        {
-            bgcolor=none
-            image="graphics/metro/icons/header/forward"
-        }
+    ReloadButton:hover
+    {
+        image=graphics/metro/urlbar/reload_h
+    }
 
-        ForwardButtonSm:hover
-        {
-            image="graphics/metro/icons/header/forward_h"
-        }
+    ReloadButton:active
+    {
+        image=graphics/metro/urlbar/reload_p
+    }
+    StopButton
+    {
+        image=graphics/metro/urlbar/stop
+        inset-left=1
+        bgcolor=none
+    }
 
-        ForwardButtonSm:active
-        {
-            image="graphics/metro/icons/header/forward_p"
-        }
+    StopButton:hover
+    {
+        image=graphics/metro/urlbar/stop_h
+    }
 
-        ForwardButtonSm:disabled
-        {
-            image="graphics/metro/icons/header/forward"
-        }
+    StopButton:active
+    {
+        image=graphics/metro/urlbar/stop_p
+    }
 
-        HomeButton
-        {
-            image=graphics/metro/urlbar/home
-            bgcolor=TextEntry
-        }
+    turnnotifications
+    {
+    }
 
-        HomeButton:hover
-        {
-            image=graphics/metro/urlbar/home_h
-        }
+    friendsdetails
+    {
+        bgcolor=black45
 
-        HomeButton:active
-        {
-            image=graphics/metro/urlbar/home_p
-            bgcolor=accent
-        }
+    }
+    achievementsdetails
+    {
+        bgcolor=black45
 
-        ReloadButton
-        {
-            image=graphics/metro/urlbar/reload
-            inset-left=1
-            bgcolor=none
-        }
+    }
+    dlcdetails
+    {
+        bgcolor=black45
 
-        ReloadButton:hover
-        {
-            image=graphics/metro/urlbar/reload_h
-        }
+    }
+    clouddetails
+    {
+        bgcolor=black45
 
-        ReloadButton:active
-        {
-            image=graphics/metro/urlbar/reload_p
-        }
-        StopButton
-        {
-            image=graphics/metro/urlbar/stop
-            inset-left=1
-            bgcolor=none
-        }
+    }
+    communityfilesdetails
+    {
+        bgcolor=black45
 
-        StopButton:hover
-        {
-            image=graphics/metro/urlbar/stop_h
-        }
+    }
+    newsdetails
+    {
+        bgcolor=black45
 
-        StopButton:active
-        {
-            image=graphics/metro/urlbar/stop_p
-        }
-
-        turnnotifications
-        {
-        }
-
-        friendsdetails
-        {
-            bgcolor=black45
-
-        }
-        achievementsdetails
-        {
-            bgcolor=black45
-
-        }
-        dlcdetails
-        {
-            bgcolor=black45
-
-        }
-        clouddetails
-        {
-            bgcolor=black45
-
-        }
-        communityfilesdetails
-        {
-            bgcolor=black45
-
-        }
-        newsdetails
-        {
-            bgcolor=black45
-
-        }
-        screenshotsdetails
-        {
-            bgcolor=black45
-        }
+    }
+    screenshotsdetails
+    {
+        bgcolor=black45
+    }
 
     gamedetails-headerlabel
     {

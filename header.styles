@@ -1,0 +1,227 @@
+"header.styles"
+{
+    styles
+    {
+        BackButton
+        {
+            bgcolor=none
+            image="graphics/metro/icons/header/back"
+            padding-left=10
+        }
+
+        BackButton:hover
+        {
+            image="graphics/metro/icons/header/back_h"
+        }
+
+        BackButton:active
+        {
+            image="graphics/metro/icons/header/back_p"
+        }
+
+        BackButton:disabled
+        {
+            image="graphics/metro/icons/header/back"
+        }
+
+        ForwardButton
+        {
+            bgcolor=none
+            image="graphics/metro/icons/header/forward"
+            padding-left=10
+        }
+
+        ForwardButton:hover
+        {
+            image="graphics/metro/icons/header/forward_h"
+        }
+
+        ForwardButton:active
+        {
+            image="graphics/metro/icons/header/forward_p"
+        }
+
+        ForwardButton:disabled
+        {
+            image="graphics/metro/icons/header/forward"
+        }
+
+        "MenuBar MenuButton"
+        {
+            minimum-width=40
+            image=graphics/metro/icons/navbar/menu
+            padding-left=10
+        }
+
+        "MenuBar MenuButton:hover"
+        {
+            render
+            {
+            }
+        }
+
+        "MenuBar MenuButton:selected"
+        {
+            render
+            {
+            }
+        }
+
+        BigPictureBG
+        {
+        }
+
+        view_friends
+        {
+            image=graphics/metro/icons/header/friends
+        }
+
+        view_friends:hover
+        {
+            image=graphics/metro/icons/header/friends_h
+        }
+
+        view_friends:active
+        {
+            image=graphics/metro/icons/header/friends_p
+        }
+
+        support_alert
+        {
+            bgcolor=none
+            lightfont
+            font-weight=300
+            font-size=24
+            textcolor=white
+            inset-left=-13
+            render_bg
+            {
+                0="fill(x0,y1-2,x1,y1,red)"
+            }
+        }
+
+        support_alert:hover
+        {
+            render_bg
+            {
+                1="fill(x0,y0,x1,y1,white05)"
+                0="fill(x0,y1-2,x1,y1,red)"
+            }
+        }
+
+        support_alert:active
+        {
+            render_bg
+            {
+            1="fill(x0,y0,x1,y1,white10)"
+            0="fill(x0,y1-2,x1,y1,red)"
+            }
+        }
+
+        inboxmenuitem
+        {
+            textcolor=white45
+        }
+
+        inboxmenuitem:hover
+        {
+            textcolor=white
+        }
+
+        inboxmenuitem_active
+        {
+            textcolor=white
+        }
+
+        AccountBalanceStyle
+        {
+            image=graphics/metro/icons/header/notifications
+        }
+
+        AccountBalanceStyle:hover
+        {
+        }
+
+        inbox_button
+        {
+            render_bg
+            {
+                0="image(x0,y0,x1,y1,graphics/metro/icons/header/notifications)"
+            }
+        }
+
+        inbox_button:hover
+        {
+            render_bg
+            {
+                0="image(x0,y0,x1,y1,graphics/metro/icons/header/notifications_h)"
+            }
+        }
+
+        inbox_button:selected
+        {
+            render_bg
+            {
+                0="image(x0,y0,x1,y1,graphics/metro/icons/header/notifications_p)"
+            }
+        }
+
+        inbox_button_active
+        {
+            render_bg
+            {
+                0="image(x0,y0,x1,y1,graphics/metro/icons/header/notifications)"
+                1="fill(x0,y1,x1,y1+1,accent)"
+            }
+        }
+
+        inbox_button_active:hover
+        {
+            render_bg
+            {
+                0="image(x0,y0,x1,y1,graphics/metro/icons/header/notifications_h)"
+                1="fill(x0,y1,x1,y1+1,accent)"
+            }
+        }
+
+        inbox_button_active:selected
+        {
+            render_bg
+            {
+                0="image(x0,y0,x1,y1,graphics/metro/icons/header/notifications_p)"
+                1="fill(x0,y1,x1,y1+1,accent)"
+            }
+        }
+
+        parental_lock_button
+        {
+            minimum-width=29
+            bgcolor=none
+            padding-right=4
+            render_bg
+            {
+                0="image(x0+9,y0+13,x1,y1,graphics/metro/icons/navbar/parent_unlocked)"
+                1="fill(x0,y1,x1,y1+1,red)"
+            }
+        }
+
+        parental_lock_button:hover
+        {
+            bgcolor=white05
+        }
+
+        parental_lock_button:active
+        {
+            bgcolor=white10
+        }
+
+        parental_lock_button:selected
+        {
+            render_bg
+            {
+                0="image(x0+9,y0+13,x1,y1,graphics/metro/icons/navbar/parent_locked"
+                1="fill(x0,y1,x1,y1+1,green)"
+            }
+        }
+    }
+}
