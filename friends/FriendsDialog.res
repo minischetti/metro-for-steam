@@ -63,7 +63,7 @@
      layout
      {
         //Frame Buttons
-        place { control="frame_minimize,frame_maximize,frame_close" align=right width=40 height=40 margin-right=1 }
+        place { control="frame_minimize,frame_maximize,frame_close" align=right width=40 height=40 }
         place { control="frame_captiongrip" width=max height=40 }
 
         //Header

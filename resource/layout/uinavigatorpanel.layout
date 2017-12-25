@@ -317,7 +317,7 @@
 
         MusicAddButton:hover
         {
-            bgcolor=none
+            bgcolor=none 
             render_bg
             {
                 5="image(x0+3,y0+5,x1,y1,graphics/icon_collapse_over)"

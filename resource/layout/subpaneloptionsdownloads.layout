@@ -1,72 +1,24 @@
 "resource/layout/subpaneloptionsdownloads.layout"
 {
-	controls
-	{
-		ThrottleRatesLabel { controlname=label	labeltext=#Steam_ThrottleRatesLabel	}
-		RegionLabel {	controlname=label	labeltext=#Steam_RegionLabel	style=highlight 	}
-		LibrariesLabel {	controlname=label	labeltext=#Steam_LibrariesLabel	style=highlight }
-		RestrictionsLabel {	controlname=label	labeltext=#Steam_DownloadRestrictionsLabel	style=highlight 	}
-		RegionInfoLabel {	controlname=label labeltext=#Steam_RegionInfo wrap=1		}
-		ManageInstalledappsLabel { controlname=label labeltext=#SteamUI_ContentMgr_ManageInstalledAppsInfo }
+    styles
+    {
+        Combobox
+        {
+            minimum-height=24
+        }
+    }
 
-		ThrottleRates
-		{
-			controlname=combobox
-		}
+    layout
+    {
+        place { control="LibrariesLabel,ManageInstalledappsLabel,ManageInstalledApps,Divider1,RegionLabel,RegionInfoLabel,DownloadRegionCombo,Divider2,RestrictionsLabel,ThrottleRatesLabel,ThrottleRates,AutoUpdateTimeRestrictCheckbox" width=360 dir=down spacing=8 }
+        place { control="AutoUpdateTimeRestrictStartLabel,AutoUpdateTimeRestrictStart" start=AutoUpdateTimeRestrictCheckbox width=176 height=24 dir=down margin-top=8 }
+        place { control="AutoUpdateTimeRestrictEndLabel,AutoUpdateTimeRestrictEnd" start=AutoUpdateTimeRestrictCheckbox x=184 width=176 height=24 dir=down margin-top=8 }
+        place { control="AllowDownloadsDuringGameplayCheckbox" start=AutoUpdateTimeRestrictStart width=max dir=down margin-top=8 }
+        place { control="ThrottleDownloadsWhileStreamingCheckbox" start=AllowDownloadsDuringGameplayCheckbox width=max dir=down margin-top=8 }
+        place { control="DownloadRatesInBitsCheckbox" start=ThrottleDownloadsWhileStreamingCheckbox width=max dir=down margin-top=8 }
+        place { control="FlushDownloadConfig" start=DownloadRatesInBitsCheckbox width=360 dir=down margin-top=8 }
 
-		DownloadRegionCombo
-		{
-			controlname=combobox
-		}
-
-		ManageInstalledApps
-		{
-			controlname=button
-			labeltext = #SteamUI_ContentMgr_ManageInstalledApps
-			command=ManageInstalledApps
-		}
-
-		AutoUpdateTimeRestrictCheckbox { controlname=checkbutton labeltext=#Steam_AutoUpdateTimeRestrictionLabel }
-		AutoUpdateTimeRestrictStartLabel { controlname=label labeltext=#Steam_AutoUpdateTimeRestrictionStart style=padded }
-		AutoUpdateTimeRestrictEndLabel { controlname=label labeltext=#Steam_AutoUpdateTimeRestrictionEnd style=padded }
-		AutoUpdateTimeRestrictStart { controlname=combobox }
-		AutoUpdateTimeRestrictEnd { controlname=combobox }
-
-
-		Divider1 { ControlName=Divider	}
-		Divider2 { ControlName=Divider	}
-	}
-
-	colors
-	{
-	}
-
-	styles
-	{
-		highlight
-		{
-			font-size=28
-			font-family=basefont
-			font-weight=300
-			textcolor=white
-		}
-		Combobox
-		{
-			minimum-height=24
-		}
-	}
-
-	layout
-	{
-		place { control="LibrariesLabel,ManageInstalledappsLabel,ManageInstalledApps,Divider1,RegionLabel,RegionInfoLabel,DownloadRegionCombo,Divider2,RestrictionsLabel,ThrottleRatesLabel,ThrottleRates,AutoUpdateTimeRestrictCheckbox" width=360 dir=down spacing=8 }
-		place { control="AutoUpdateTimeRestrictStartLabel,AutoUpdateTimeRestrictStart" start=AutoUpdateTimeRestrictCheckbox width=176 height=24 dir=down margin-top=8 }
-		place { control="AutoUpdateTimeRestrictEndLabel,AutoUpdateTimeRestrictEnd" start=AutoUpdateTimeRestrictCheckbox x=184 width=176 height=24 dir=down margin-top=8 }
-		place { control="AllowDownloadsDuringGameplayCheckbox" start=AutoUpdateTimeRestrictStart width=max dir=down margin-top=8 }
-		place { control="ThrottleDownloadsWhileStreamingCheckbox" start=AllowDownloadsDuringGameplayCheckbox width=max dir=down margin-top=8 }
-		place { control="DownloadRatesInBitsCheckbox" start=ThrottleDownloadsWhileStreamingCheckbox width=max dir=down margin-top=8 }
-		place { control="FlushDownloadConfig" start=DownloadRatesInBitsCheckbox width=360 dir=down margin-top=8 }
-
-		//Hidden
-		place { control="FlushDownloadConfigLabel" width=0 height=0 }
-	}
+        //Hidden
+        place { control="FlushDownloadConfigLabel" width=0 height=0 }
+    }
 }

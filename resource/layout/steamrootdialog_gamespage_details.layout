@@ -1,81 +1,5 @@
 "resource/layout/steamrootdialog_gamespage_details.layout"
 {
-    styles
-    {
-        emptylisttext
-        {
-            textcolor="White"
-            font-size="24"
-            font-family=basefont
-            render_bg {}
-        }
-
-        "GamesPage_Details ListPanel"
-        {
-            bgcolor="none"
-            render_bg {}
-            render {}
-        }
-
-        "GamesPage_Details ListPanel"
-        {
-            inset-top=0
-            padding-left=8
-            padding-right=0
-        }
-        
-        "GamesPage_Details ListPanelInterior"
-        {
-            bgcolor="none"
-            inset="0 0 0 0"
-            render {}
-            render_bg {} 
-            minimum-width=262
-        }
-        
-        "GamesPage_Details ListPanelInterior:scrollbar"
-        {     
-            bgcolor=none
-            render_bg {}
-            minimum-width=246
-        }
-
-        "GamesPage_Details ListPanelDragger"
-        {
-            bgcolor="none"
-            render {}
-            render_bg {}
-        }
-
-        "GamesPage_Details ListPanelColumnHeader"
-        {
-            bgcolor="none"
-            font-size=14
-            inset="0 0 0 0"
-            render {}
-            render_bg {}
-
-        }
-        
-        DetailsBorderPanel
-        {
-            bgcolor=none
-            render {}
-        }
-        
-        CGamesPage_Details
-        {
-            render_bg
-            {
-                //0="fill(x0+300, y0+1, x0+301, y1, white05)"
-            }
-            render {}
-        }
-        
-        headerimage {}
-
-    }
-
     layout
     {
         region { name="details" y=0 x=300 width=max height=max overflow=scroll-vertical }
@@ -100,6 +24,5 @@
         //Hidden
         region { name=hidden width=1 overflow=none }
         place { control=DetailsBorder,welcomedetails,nonsteamdetails,linkslabel,sendguestpasslink,gamehublink,gamesubheaderright,achievementslink,forumlink,ogglink,manuallink,newslink,storelink,dlclink,cdkeylink,guidelink,guideslink,supportlink,recommendlink,tagslabel,*taglink,edittagslink region=hidden dir=down height=36 width=160 margin-top=0 align=right spacing=0 }
-
     }
 }
