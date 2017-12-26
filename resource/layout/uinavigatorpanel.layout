@@ -291,7 +291,7 @@
             textcolor="accent"
             render_bg
             {
-                1="fill(x0, y0, x1, y0-1, accent)"
+                1="fill(x0,y0,x1-1,y0+1,accent)"
             }
         }
 
@@ -333,7 +333,7 @@
     {
         //Header
         region { name=secondary align=top y=60 height=60 }
-        place { control="back,forward" x=39 y=1 height=60 width=40 margin-left=0 spacing=0 }
+        place { control="back,forward" x=39 y=1 height=60 width=40 }
         place { control="label_store,label_library,label_news,label_friends,label_community,label_me,label_console" x=120 height=60 }
 
         //URLBar
@@ -382,9 +382,9 @@
     {
 
         //Header
-        region { name=secondary align=top y=60 height=60 x=0 margin-right=0 }
+        region { name=secondary align=top y=60 height=60 }
         place { control="back,forward" height=60 width=40 }
-        place { control="label_store,label_library,label_news,label_friends,label_community,label_me,label_console" x=81 y=0 spacing=1 height=60 }
+        place { control="label_store,label_library,label_news,label_friends,label_community,label_me,label_console" x=81 spacing=1 height=60 }
 
         //URLBar
         place { control="URLBar" region=secondary align=left height=40 width=max end-right=PageLoadThrobber }

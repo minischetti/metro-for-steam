@@ -1215,7 +1215,7 @@ steam.styles
             render_bg
             {
                 0="fill(x0+1,y0,x1-1,y1-1,white05)"
-                1="fill(x0+1, y1-1, x1-1, y1, accent)"
+                1="fill(x0+1,y0,x1-1,y0+1,accent)"
             }
         }
 
