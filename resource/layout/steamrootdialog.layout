@@ -17,7 +17,7 @@
         place { control="UINavigatorPanel" width=max height=max x=1 margin-right=1 }
 
         //Avatar
-        place { control="ParentalLockButton,account_balance,UIStatusPanel,InboxButton,view_friends" align=right y=15 width=30 height=30 margin-right=110 spacing=10 }
+        place { control="ParentalLockButton,account_balance,UIStatusPanel,InboxButton,view_friends" align=right width=30 height=60 margin-right=110 spacing=10 }
 
         //Controls
         place { control="MenuBar" region=top height=60 width=40 }
