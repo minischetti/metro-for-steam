@@ -1,71 +1,30 @@
 "resource/layout/gamespage_grid_chrome.layout"
 {
-	controls
-	{
-		"chromeborder"
-		{
-			ControlName					Panel
-			style						ChromeBorderItem
-			mouseinputenabled			0
-		}
+    styles
+    {
+
+        ChromeBorderItem
+        {
+            alpha=63.75
+            bgcolor=accent
+        }
+
+        GridNavDivider
+        {
+            textcolor=none
+            bgcolor=none
+        }
+
+        CUILaunchButton
+        {
+        textcolor=none
+        }
+    }
 
 
-		"launch"
-		{
-			zpos="1"
-			// this control's White and command will be clobbered by code based on the installation state
-			ControlName					URLLabel
-			labelText					"#steam_launch"
-			style						CUILaunchButton
-			command						launch
-		}
-
-
-		"divider"
-		{
-			zpos="1"
-			//
-			ControlName					Label
-			labelText					"|"
-			style						GridNavDivider
-
-		}
-
-		"details"
-		{
-			zpos="1"
-			ControlName					URLLabel
-			labelText					"#steam_details"
-			style						CUIDetailsButton
-			command						details
-		}
-	}
-
-	styles
-	{
-
-		ChromeBorderItem
-		{
-			alpha=63.75
-			bgcolor=accent
-		}
-
-		GridNavDivider
-		{
-			textcolor=none
-			bgcolor=none
-		}
-
-		CUILaunchButton
-		{
-		textcolor=none
-		}
-	}
-
-
-	layout
-	{
-		place { control=chromeborder width=max height=max }
-		place { control=launch,details,divider width=0 height=0 }
-	}
+    layout
+    {
+        place { control=chromeborder width=max height=max }
+        place { control=launch,details,divider width=0 height=0 }
+    }
 }

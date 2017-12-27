@@ -1,19 +1,5 @@
 "resource/layout/musicpage_detail_content.layout"
 {
-	controls
-	{
-		AlbumList { tabposition=1 }
-		ArtistList { tabposition=1 }
-		PlaylistList { tabposition=1 }
-		DetailsBorder { controlname=EditablePanel style="DetailsBorderPanel" zpos="-1" }
-		EmptyDatabaseText { controlname="RichText" text="#Music_NoLibrary" style="EmptyDatabaseText" }
-		CrawlingText { controlname="RichText" style="CrawlingText" }
-	}
-
-	styles
-	{
-	}
-
 	layout
 	{
 		region	{ name="details" y=1 x=275 width=max height=max overflow=scroll-vertical margin-left=1 margin-top=1 margin-bottom=1 margin-right=-1 dir=down }

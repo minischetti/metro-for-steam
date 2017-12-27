@@ -8,7 +8,7 @@
             padding=3
         }
 
-        CFriendPanel:hover 
+        CFriendPanel:hover
         {
         render_bg {}
         }
@@ -18,12 +18,12 @@
     layout
     {
         place {	control="AvatarOverlayImage" width=34 height=34 align=right }
-        place {	control="AvatarImage" width=34 height=34	align=right	}
+        place {	control="AvatarImage" width=34 height=34 align=right	}
         place { control="MenuButton,NameLabel,FriendsNameInstanceLabel,ClanStatusImage" margin-right=60 y=6 align=right }
-        
-        place { control="StatusLabel"		margin-right=60 y=19 align=right }
-        place { control="GameLabel"			margin-right=60 y=31 align=right }
-        
-        place { control="ControlPanelLink" margin-right=60 y=31 align=right  }
+
+        place { control="StatusLabel" margin-right=60 y=19 align=right }
+        place { control="GameLabel" margin-right=60 y=31 align=right }
+
+        place { control="ControlPanelLink" margin-right=60 y=31 align=right }
     }
 }

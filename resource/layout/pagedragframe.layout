@@ -1,25 +1,20 @@
 "resource/layout/pagedragframe.layout"
 {
-	controls
-	{
-		DragPropertySheet { controlname="PropertySheet" }
-	}
-	
-	styles
-	{
-		PageDragFrame
-		{			
-			bgcolor="Header_Dark"
-		}
-		
-		PageDragPanel
-		{
-			bgcolor="black"
-		}
-	}
-		
-	layout
-	{
-	  place { control="DragPropertySheet" y=8 width=max height=max }
-	}
+    styles
+    {
+        PageDragFrame
+        {
+            bgcolor="Header_Dark"
+        }
+
+        PageDragPanel
+        {
+            bgcolor="black"
+        }
+    }
+
+    layout
+    {
+      place { control="DragPropertySheet" y=8 width=max height=max }
+    }
 }

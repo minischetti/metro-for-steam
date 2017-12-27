@@ -1,52 +1,41 @@
 "resource/layout/gamespage_details_screenshots.layout"
 {
-	controls
-	{
-		screenshotsdetails { controlname="CGamesPage_Details_Screenshots" style="screenshotsdetails" }
+    colors
+    {
+        // Extra spacing beyond the flowing elements to account for header and button at the bottom
+        GameDetailsScreenshots.ExtraVerticalSpacing "0"
 
-		headerlabel { controlname="Label" style="gamedetails-headerlabel" labeltext="#Steam_Screenshots" }
+        RichText.InsetX "0"
+        RichText.InsetY "4"
+    }
 
-		screenshotsarea { controlname="CScreenshotsPanel" }
+    styles
+    {
+        Button
+        {
+            bgcolor=none
+            image=graphics/metro/icons/screenshots
+            inset-left=-6
+        }
 
-		viewall	{ controlname="Button" labeltext="#Steam_ViewAllScreenshots" command="ViewAllScreenshots" }
-	}
+        Button:hover
+        {
+            image=graphics/metro/icons/screenshots_h
+        }
 
-	colors
-	{
-		// Extra spacing beyond the flowing elements to account for header and button at the bottom
-		GameDetailsScreenshots.ExtraVerticalSpacing "0"
+        Button:active
+        {
+            image=graphics/metro/icons/screenshots_p
+        }
+    }
 
-		RichText.InsetX "0"
-		RichText.InsetY "4"
-	}
+    layout
+    {
+        region { name=body width=max height=max }
 
-	styles
-	{
-		Button
-		{
-			bgcolor=none
-			image=graphics/metro/icons/screenshots
-			inset-left=-6
-		}
-		
-		Button:hover
-		{
-			image=graphics/metro/icons/screenshots_h
-		}
+        place { control=headerlabel width=0 height=0 }
+        place { control=viewall x=16 y=16 width=36 height=36 align=left margin-right=16 }
 
-		Button:active
-		{
-			image=graphics/metro/icons/screenshots_p
-		}
-	}
-
-	layout
-	{
-		region { name=body width=max height=max }
-
-		place { control=headerlabel width=0 height=0 }
-		place { control=viewall x=16 y=16 width=36 height=36 align=left margin-right=16 }
-
-		place { region=body x=68 control=screenshotsarea y=1 width=max }
-	}
+        place { region=body x=68 control=screenshotsarea y=1 width=max }
+    }
 }

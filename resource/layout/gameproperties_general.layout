@@ -1,128 +1,32 @@
 "resource/layout/gameproperties_general.layout"
 {
-	controls
-	{
-		"GamePropertiesGeneral"
-		{
-			"ControlName"		"CSubGamePropertiesGeneralPage"
-		}
-		"HomepageLabel"
-		{
-			"ControlName"		"URLLabel"
-			"labelText"		"#Steam_DeveloperUnknownThirdParty"
-			"URLText"		"http://www.half-life2.com"
-		}
-		"DeveloperLabel"
-		{
-			"ControlName"		"URLLabel"
-			"labelText"		"#Steam_DeveloperUnknownThirdParty"
-			"URLText"		"http://www.half-life2.com"
-		}
-		"ManualLabel"
-		{
-			"ControlName"		"URLLabel"
-			"labelText"		"#Steam_Game_DefaultManual"
-			"URLText"		"http://www.half-life2.com/manual/HL2_quickrefcard.pdf"
-		}
-		"HomepageLabelName"
-		{
-			"ControlName"		"Label"
-			"labelText"		"#Steam_Game_Homepage"
-			"textAlignment"		"west"
-		}
-		"DeveloperLabelName"
-		{
-			"ControlName"		"Label"
-			"labelText"		"#Steam_Game_Developer"
-		}
-		"ManualLabelName"
-		{
-			"ControlName"		"Label"
-			"labelText"		"#Steam_Game_Manual"
-		}
+    styles
+    {
+        Label
+        {
+            font-size=24
+            font-family=basefont
+            textcolor=white
+        }
+        LabelDull
+        {
+            font-family=basefont
+            font-size=16
+            textcolor=White45
+        }
+    }
 
-		"EnableOverlayCheck"
-		{
-			"ControlName"		"CheckButton"
-			"labelText"		"#Overlay_SettingsEnable"
-			"Default"		"0"
-		}
+    layout
+    {
+        region { name=main margin=16 }
+        place { control=HomepageLabelName,HomePageLabel,DeveloperLabelName,DeveloperLabel,ManualLabelName,ManualLabel,NoManualLabel,Divider1 spacing=0 dir=down region=main height=24 }
 
-		"AllowOtherDownloadsCheck"
-		{
-			"ControlName"		"CheckButton"
-			"labelText"		"#Steam_Game_AllowOtherDownloads"
-			"Default"		"0"
-		}
+        place {controls=ExternalSignupLabel,ExternalSignupButton x=260 margin-top=34 dir=down margin-left=20 width=260 height=24 spacing=0 region=main }
 
-		"LaunchOptionsButton"
-		{
-			"ControlName"		"Button"
-			"labelText"		"#Steam_Game_SetLaunchOptions"
-			"Command"		"SetLaunchOptions"
-		}
-		"CreateDesktopShortcutButton"
-		{
-			"ControlName"		"Button"
-			"labelText"		"#Steam_Game_CreateDesktopShortcut"
-			"Command"		"CreateDesktopShortcut"
-		}
-		"NoManualLabel"
-		{
-			"ControlName"		"Label"
-			"fieldName"		"NoManualLabel"
-			"style"		"LabelDull"
-			"labelText"		"#Steam_Game_NoManual"
-		}
-		"Divider1"
-		{
-			"ControlName"		"Divider"
-		}
-		"ExternalSignupButton"
-		{
-			"ControlName"		"Button"
-			"labelText"		"#Steam_ExternalSignupPropertiesButton"
-			"Command"		"ExternalSignup"
-		}
-		"ExternalSignupLabel"
-		{
-			"ControlName"		"Label"
-			"labelText"		"#Steam_ExternalSignupPropertiesLabel"
-		}
-	}
+        place {control=Divider1 start=ManualLabelName dir=down margin-top=8 region=main width=max }
 
+        place { start=Divider1 controls=EnableOverlayCheck,EnableDesktopGameTheater start=Divider1 dir=down height=24 dir=down margin-top=8 spacing=0 width=max region=main }
+        place { controls=LaunchOptionsButton,CreateDesktopShortcutButton align=bottom dir=right spacing=8 height=28 region=main }
 
-	colors
-	{
-	}
-
-	styles
-	{
-		Label
-		{
-			font-size=24
-			font-family=basefont
-			textcolor=white
-		}
-		LabelDull
-		{
-			font-family=basefont
-			font-size=16
-			textcolor=White45
-		}
-	}
-
-	layout
-	{
-		region { name=main margin=16 }
-		place { control=HomepageLabelName,HomePageLabel,DeveloperLabelName,DeveloperLabel,ManualLabelName,ManualLabel,NoManualLabel,Divider1 spacing=0 dir=down region=main height=24 }
-
-		place {controls=ExternalSignupLabel,ExternalSignupButton x=260 margin-top=34 dir=down margin-left=20 width=260 height=24 spacing=0 region=main }
-
-		place {control=Divider1 start=ManualLabelName dir=down margin-top=8 region=main width=max }
-
-		place { start=Divider1 controls=EnableOverlayCheck,EnableDesktopGameTheater start=Divider1 dir=down height=24 dir=down margin-top=8 spacing=0 width=max region=main }
-		place { controls=LaunchOptionsButton,CreateDesktopShortcutButton align=bottom dir=right spacing=8 height=28 region=main }
-
-	}
+    }
 }

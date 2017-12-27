@@ -1,11 +1,7 @@
 "resource/layout/downloadspage.layout"
 {
-	styles
-	{
-	}
-
-	layout
-	{
-		place { control="downloadsummarypanel,panel_list" dir=down width=max height=max spacing=0 }
-	}
+    layout
+    {
+        place { control="downloadsummarypanel,panel_list" dir=down width=max height=max spacing=0 }
+    }
 }

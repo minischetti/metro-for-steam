@@ -34,6 +34,7 @@
         BackupGames						{	text="#steam_menu_backupgames"			command="backupgames" }
         Divider {}
         Support							{	text="#steam_menu_support"				command="Support" }
+        NewForYou						{	text="#SteamUI_GameProperties_UpdateNews"		shellcmd="steam://open/newforyou" }
         Divider {}
         Settings		{	text="#steam_menu_settings"		command="Settings" }
         Restart 		{	text="#Steam_MustRestart_Button"				command="RestartSteam" }
@@ -57,13 +58,6 @@
         // check for updates appears in the system-managed "steam" menu on the mac
         CheckForUpdates		[!$OSX]		{	text="#steam_menu_checkforupdates"		command="CheckForUpdates" }
 
-        // one of these will be invisible
-        UpdateVideoDrivers	[$WINDOWS||$LINUX]	{	text="#steam_menu_updatevendorgraphicscard"		command="UpdateVideoDrivers" }
-        Divider				[$WINDOWS||$LINUX]	{}
-
-        CheckForVideoDriverUpdates	[$WINDOWS||$LINUX]	{	text="#steam_menu_checkforvideodriverupdates"	command="CheckForVideoDriverUpdates" }
-        Divider				[$WINDOWS||$LINUX]	{}
-
         BackupGames						{	text="#steam_menu_backupgames"			command="backupgames" }
         Divider				[!$OSX]		{}
         Settings			[!$OSX]		{	text="#steam_menu_settings"				command="Settings" }
@@ -79,8 +73,8 @@
         GamesList						{	text="#steam_menu_games_list"			shellcmd="steam://nav/games/list" }
         GamesGrid						{	text="#steam_menu_games_grid"			shellcmd="steam://nav/games/grid" }
         Divider							{}
-        MiniMode			[!$OSX]		{	text="#steam_menu_minimode"				shellcmd="steam://open/minigameslist" }
-        LargeMode			[!$OSX]		{	text="#steam_menu_largemode"			shellcmd="steam://open/largegameslist" }
+        MiniMode			    		{	text="#steam_menu_minimode"				shellcmd="steam://open/minigameslist" }
+        LargeMode			    		{	text="#steam_menu_largemode"			shellcmd="steam://open/largegameslist" }
         BigPictureMode					{ text="#steam_menu_bigpicturemode" 		shellcmd="steam://open/bigpicture" }
         Divider							{}
         StartVR							{	text="#steam_menu_startvr"				shellcmd="steam://run/250820" }
@@ -158,9 +152,6 @@
         SystemInfo						{	text="#steam_menu_systeminfo"			command="SystemInfo" }
         About							{	text="#steam_about"						command="About" }
         Divider							{}
-        SkinVersion			{	text="Metro For Steam - 4.3"		shellcmd="" }
-        Website			{	text="Official Website"		shellcmd="steam://openurl/http://metroforsteam.com/" }
-        Group			{	text="Steam Community Group"		shellcmd="steam://openurl/http://steamcommunity.com/groups/metroforsteam" }
-        Donate			{	text="Donate via Patreon or PayPal!"		shellcmd="steam://openurl/http://metroforsteam.com/#donate" }
+        Website			{	text="Metro - 5"		shellcmd="steam://openurl/http://metroforsteam.com/" }
     }
 }

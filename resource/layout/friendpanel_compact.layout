@@ -2,27 +2,26 @@
 {
     styles
     {
+        CFriendPanel
+        {
+            inset="0 0 0 0"
+            bgcolor=none
+            font-family=basefont
+            font-size=14
+            font-weight=400
+            textcolor="White45"
+        }
 
-    CFriendPanel
-    {
-        inset="0 0 0 0"
-        bgcolor=none
-        font-family=basefont
-        font-size=14
-        font-weight=400
-        textcolor="White45"
-    }
+        SelfPanel:hover
+        {
+            render_bg {}
+        }
 
-    SelfPanel:hover
-    {
-        render_bg {}
-    }
-
-    menuButtonStyle
-    {
-        image=none
-        render_bg {}
-    }
+        menuButtonStyle
+        {
+            image=none
+            render_bg {}
+        }
     }
 
     layout

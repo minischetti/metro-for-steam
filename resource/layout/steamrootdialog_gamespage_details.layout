@@ -7,9 +7,9 @@
         //List
         place { control=GamesList width=300 height=max }
 
-        //Empty List Text 
+        //Empty List Text
         place { control=emptylisttext x=300 margin-left=10 align=left-center width=max height=max }
-        
+
         //Header
         place { control=gametitleheader region=details width=max align=left-center height=200 dir=down }
 
@@ -20,7 +20,7 @@
         //Background Images
         place { control=headerimagea align=left margin-left=300 height=550 width=1024 }
         place { control=headerimageb align=left margin-left=300 height=550 width=1024 }
-        
+
         //Hidden
         region { name=hidden width=1 overflow=none }
         place { control=DetailsBorder,welcomedetails,nonsteamdetails,linkslabel,sendguestpasslink,gamehublink,gamesubheaderright,achievementslink,forumlink,ogglink,manuallink,newslink,storelink,dlclink,cdkeylink,guidelink,guideslink,supportlink,recommendlink,tagslabel,*taglink,edittagslink region=hidden dir=down height=36 width=160 margin-top=0 align=right spacing=0 }

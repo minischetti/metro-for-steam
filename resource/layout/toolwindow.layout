@@ -1,83 +1,76 @@
 "resource/layout/toolwindow.layout"
 {
-	controls
-	{
-		// the container
-		ToolWindowSheet	{	controlname="PropertySheet" }
-	} 
-	
-		
-	styles
-	{
-	
-		ToolWindow
-		{
-			minimum-width=450
-			minimum-height=400
-			render_bg
-			{
-				0="fill( x0, y0, x1, y0+80, Header_Dark )"
-			}
-		}
-		
-		Button
-	  {     
-	  	textcolor="none"
-			bgcolor="none"
-			//minimum-width=24
-			//minimum-height=24
-			render_bg 
-			{
-				0="image(x0+8,y0+8,x1,y1,graphics/new_tab)"
-			}
-	  }
-	  
-	  Button:hover
-		{
-			render_bg 
-			{
-				0="image(x0+8,y0+8,x1,y1,graphics/new_tab_hover)"
-			}
-		}
+    styles
+    {
+    
+        ToolWindow
+        {
+            minimum-width=450
+            minimum-height=400
+            render_bg
+            {
+                0="fill( x0, y0, x1, y0+80, Header_Dark )"
+            }
+        }
+        
+        Button
+      {     
+          textcolor="none"
+            bgcolor="none"
+            //minimum-width=24
+            //minimum-height=24
+            render_bg 
+            {
+                0="image(x0+8,y0+8,x1,y1,graphics/new_tab)"
+            }
+      }
+      
+      Button:hover
+        {
+            render_bg 
+            {
+                0="image(x0+8,y0+8,x1,y1,graphics/new_tab_hover)"
+            }
+        }
 
-	  MenuButton
-	  {
-	  	padding-right=8
-			minimum-width=24
-			minimum-height=24
-		 	bgcolor=none
-			render_bg {}
-		}
-	  
-	  TabMenuButtonFlash
-	  { 
-			render_bg
-			{
-				0="fill(x0+6,y0+6,x1-6,y1-6,accent)"
-			}
-	  }
-	  
-	  TabMenuItemFlash
-	  {
-	  	textcolor=accent
-	  }
-		
-		FrameButton
+      MenuButton
+      {
+          padding-right=8
+            minimum-width=24
+            minimum-height=24
+             bgcolor=none
+            render_bg {}
+        }
+      
+      TabMenuButtonFlash
+      { 
+            render_bg
+            {
+                0="fill(x0+6,y0+6,x1-6,y1-6,accent)"
+            }
+      }
+      
+      TabMenuItemFlash
+      {
+          textcolor=accent
+      }
+        
+        FrameButton
     {
-			//image="graphics/tab_close_def"
-			//inset-left=-6
-			//inset-top=0
+            //image="graphics/tab_close_def"
+            //inset-left=-6
+            //inset-top=0
     }
-		FrameButton:hover
+        FrameButton:hover
     {
-			//bgcolor=white10
-		}
-		
-		FrameButton:active
+            //bgcolor=white10
+        }
+        
+        FrameButton:active
     {
-			//bgcolor=white20
-		}
-		
+            //bgcolor=white20
+        }
+        
     FrameMinimizeButton
     {
         render_bg
@@ -172,13 +165,13 @@
             1="fill(x0,y0,x1,y1-1,White10)"
         }
     }
-	}
+    }
 
-	layout
-	{
-		//Original
-		place { control="frame_minimize,frame_maximize,frame_close" align=right width=28 height=28 y=1 margin-right=1 }
-		place { control="frame_captiongrip" height=80 width=max }
-		place { control="ToolWindowSheet" x=0 y=17 height=max width=max margin-top=-5 }
-	}
+    layout
+    {
+        //Original
+        place { control="frame_minimize,frame_maximize,frame_close" align=right width=28 height=28 y=1 margin-right=1 }
+        place { control="frame_captiongrip" height=80 width=max }
+        place { control="ToolWindowSheet" x=0 y=17 height=max width=max margin-top=-5 }
+    }
 }
