@@ -5,7 +5,8 @@
         Label
         {
             font-size=24
-            font-family=basefont
+            font-family=boldfont
+            font-style=uppercase
             textcolor=white
         }
         LabelDull
@@ -18,15 +19,15 @@
 
     layout
     {
-        region { name=main margin=16 }
-        place { control=HomepageLabelName,HomePageLabel,DeveloperLabelName,DeveloperLabel,ManualLabelName,ManualLabel,NoManualLabel,Divider1 spacing=0 dir=down region=main height=24 }
-
-        place {controls=ExternalSignupLabel,ExternalSignupButton x=260 margin-top=34 dir=down margin-left=20 width=260 height=24 spacing=0 region=main }
+        region { name=main margin=10 }
+        place { control=HomepageLabelName,HomePageLabel,DeveloperLabelName,DeveloperLabel,ManualLabelName,ManualLabel,NoManualLabel,Divider1 dir=down region=main height=24 }
 
         place {control=Divider1 start=ManualLabelName dir=down margin-top=8 region=main width=max }
 
-        place { start=Divider1 controls=EnableOverlayCheck,EnableDesktopGameTheater start=Divider1 dir=down height=24 dir=down margin-top=8 spacing=0 width=max region=main }
+        place { start=Divider1 controls=EnableOverlayCheck,EnableDesktopGameTheater,ExternalSignupLabel,ExternalSignupButton dir=down height=24 dir=down margin-top=8 spacing=0 width=max region=main }
         place { controls=LaunchOptionsButton,CreateDesktopShortcutButton align=bottom dir=right spacing=8 height=28 region=main }
 
+        region { name=hidden margin-left=-9999 }
+        place { region=hidden controls=FamilySharingUnsupportedLabel }
     }
 }

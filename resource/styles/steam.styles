@@ -1,11 +1,12 @@
 steam.styles
 {
-    //include "custom.styles"
+    include "custom.styles"
     include "colors.styles"
     include "controls.styles"
     include "settings.styles"
     include "caption.styles"
     include "header.styles"
+    include "details.styles"
     colors
     {
         ScrollBar.Wide "16"
@@ -17,12 +18,8 @@ steam.styles
         {
             render_bg
             {
-                //0="fill(x0, y0, x1, y1, black)"
-                //1="gradient(x0, y0, x1, y0+200, accentTransparent, none)"
-                //8="image(x1 - 821, y1 - 375, x1, y1, none)"
                 2="fill(x0, y0+59, x1, y0+60, white05)"
                 3="fill(x0, y0+100, x1, y0+101, white05)"
-                //99="fill(x0, y0, x1, y0+39, Header_Dark)"
             }
         }
 
@@ -449,30 +446,6 @@ steam.styles
             }
         }
 
-        CGamePropertiesDialog
-        {
-            render_bg
-            {
-                0="fill( x0, y0, x1, y1, black )"
-                1="fill( x0, y0, x1, y0+54, black )"
-                2="fill( x0, y0, x1, y0+53, Header_Dark )"
-                3="fill( x0, y1-44, x1, y1, black )"
-                4="fill( x0, y1-43, x1, y1, Header_Dark )"
-            }
-        }
-
-        ZooDialog
-        {
-            bgcolor=black
-            render{}
-            render_bg
-            {
-                0="fill( x0, y0, x1, y1, black )"
-                2="fill( x0, y0, x1, y0+60, black )"
-                3="fill( x0, y0, x1, y0+59, Header_Dark )"
-            }
-        }
-
         CLaunchOptionsDialog
         {
             bgcolor=black
@@ -836,17 +809,17 @@ steam.styles
         {
         textcolor=white
         }
-        
+
         "GameItem_Running"
         {
         textcolor=accent
         }
-        
+
         "GameItem_Shortcut"
         {
         textcolor=accent
         }
-        
+
         "GameItem_Shortcut:hover"
         {
             textcolor=white75
@@ -861,7 +834,7 @@ steam.styles
         {
         textcolor=white75
         }
-        
+
         "GameItem_Syncing:hover"
         {
             textcolor=white75
@@ -1895,18 +1868,18 @@ steam.styles
             padding-left=8
             padding-right=0
         }
-        
+
         "GamesPage_Details ListPanelInterior"
         {
             bgcolor="none"
             inset="0 0 0 0"
             render {}
-            render_bg {} 
+            render_bg {}
             minimum-width=262
         }
-        
+
         "GamesPage_Details ListPanelInterior:scrollbar"
-        {     
+        {
             bgcolor=none
             render_bg {}
             minimum-width=246
@@ -1928,13 +1901,13 @@ steam.styles
             render_bg {}
 
         }
-        
+
         "GamesPage_Details DetailsBorderPanel"
         {
             bgcolor=none
             render {}
         }
-        
+
         CGamesPage_Details
         {
             render_bg
@@ -1943,7 +1916,7 @@ steam.styles
             }
             render {}
         }
-        
+
         "GamesPage_Details headerimage" {}
     }
 }

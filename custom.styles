@@ -1,5 +1,8 @@
 "custom.styles"
 {
+    // detailViewLinks=true
+    // include "details.styles"
+
     colors
     {
         Focus="102 36 226 255"

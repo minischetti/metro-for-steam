@@ -1,0 +1,32 @@
+"resource/layout/steamrootdialog_gamespage_details.layout"
+{
+    layout
+    {
+        region { name="details" y=0 x=300 width=max height=max overflow=scroll-vertical }
+
+        //List
+        place { control=GamesList width=300 height=max }
+
+        //Empty List Text
+        place { control=emptylisttext x=300 margin-left=10 align=left-center width=max height=max }
+
+        //Header
+        place { control=gametitleheader region=details width=max align=left-center height=200 dir=down }
+
+        //Panels
+        region { name="detailsbody" region=details y=200 width=max width=max margin-right=180 margin=10 overflow=allow-vertical }
+        place { region=detailsbody control=gamesubheader,turnnotifications,friendsdetails,achievementsdetails,screenshotsdetails,communityfilesdetails,dlcdetails,clouddetails,newsdetails dir=down width=max spacing=10 }
+
+        //Sidebar
+        region	{ name="rightcolumn" region=details y=200 height=max width=max margin-right=8 overflow=allow-vertical }
+        place { control=linkslabel,sendguestpasslink,gamehublink,gamesubheaderright,achievementslink,forumlink,ogglink,manuallink,newslink,storelink,dlclink,cdkeylink,guidelink,guideslink,supportlink,recommendlink,tagslabel,*taglink,edittagslink region=rightcolumn dir=down height=36 width=160 margin-top=0 align=right spacing=0 }
+
+        //Background Images
+        place { control=headerimagea align=left margin-left=300 height=550 width=1024 }
+        place { control=headerimageb align=left margin-left=300 height=550 width=1024 }
+
+        //Hidden
+        region { name=hidden width=1 overflow=none }
+        place { controls=welcomedetails,nonsteamdetails region=hidden }
+    }
+}

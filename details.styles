@@ -1,0 +1,77 @@
+"details.styles"
+{
+    styles
+    {
+        rightcolumnheadertext
+        {
+            font-family=boldfont
+            font-style=uppercase
+            font-weight=400
+            font-size="18"
+            textcolor="White"
+        }
+
+        rightcolumnheadertext-red
+        {
+            font-family=boldfont
+            font-style=uppercase
+            font-weight=400
+            font-size="18"
+            textcolor="White"
+        }
+
+        rightcolumnheadertext-green
+        {
+            font-family=boldfont
+            font-style=uppercase
+            font-weight=400
+            font-size="18"
+            textcolor="White"
+        }
+
+        rightcolumnheadertext-blue
+        {
+            font-family=boldfont
+            font-style=uppercase
+            font-weight=400
+            font-size="18"
+            textcolor="White"
+        }
+
+        rightcolumnlink
+        {
+            font-size=16
+            font-style=regular
+            textcolor=White50
+            padding-left=8
+            render
+            {
+                //Top
+                0="fill(x0,y0,x1,y0+1,White05)"
+            }
+        }
+
+        rightcolumnlink:hover
+        {
+            textcolor=White75
+            render
+            {
+                //Top
+                0="fill(x0,y0,x1,y0+1,White05)"
+                1="fill(x0,y0+4,x1,y1-3,White05)"
+            }
+        }
+
+        rightcolumntag
+        {
+            inset="0 0 0 0"
+            font-size=16
+            font-style=uppercase
+            textcolor="White45"
+            padding-left=0
+            padding-top=0
+            font-family=boldfont
+            padding-bottom=0
+        }
+    }
+}
