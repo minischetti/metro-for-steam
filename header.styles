@@ -120,7 +120,7 @@
 
         inboxmenuitem
         {
-            textcolor=white45
+            textcolor=white50
         }
 
         inboxmenuitem:hover
@@ -130,7 +130,7 @@
 
         inboxmenuitem_active
         {
-            textcolor=white
+            textcolor=accent
         }
 
         AccountBalanceStyle

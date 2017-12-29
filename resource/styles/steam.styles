@@ -1041,33 +1041,26 @@ steam.styles
         Menu
         {
             bgcolor="black"
-            padding-right=0
-            inset="0 8 0 8"
+            inset="0 10 0 10"
             render_bg
             {
-                0="fill( x0 + 0, y0 + 0, x1 + 0, y0 + 1, black )"	// Top
-                1="fill( x0 + 1, y1 - 1, x1 + 0, y1 + 0, black )"	// Bottom
-                2="fill( x0 + 0, y0 + 1, x0 + 1, y1 + 0, black )"	// Left
-                3="fill( x1 - 1, y0 + 1, x1 + 0, y1 - 1, black )"	// Right
+                0="fill( x0 + 0, y0 + 0, x1 + 0, y0 + 1, black )" // Top
+                1="fill( x0 + 1, y1 - 1, x1 + 0, y1 + 0, black )" // Bottom
+                2="fill( x0 + 0, y0 + 1, x0 + 1, y1 + 0, black )" // Left
+                3="fill( x1 - 1, y0 + 1, x1 + 0, y1 - 1, black )" // Right
             }
-            render {}
-            corner_rounding=0
         }
 
         MenuItem
         {
             font-family=basefont
-            textcolor="White"
+            textcolor=white50
             font-size=16
         }
 
         MenuItem:hover
         {
-            textcolor="White"
-            render_bg
-            {
-                0="fill( x0+1, y0, x1-1, y1, White05 )"
-            }
+            textcolor=white
         }
 
         MenuItem:disabled
@@ -1093,10 +1086,7 @@ steam.styles
         SuperNavMenu
         {
             bgcolor=black
-            inset="0 8 0 8"
-
-            render {}
-
+            inset="0 10 0 10"
             render_bg
             {
                 0="fill( x0, y0, x0+1, y1, black )"
@@ -1108,11 +1098,9 @@ steam.styles
 
         SuperNavMenuItem
         {
-            padding=0
+            font-family=basefont
+            textcolor=white50
             font-size=16
-            textcolor=white
-            bgcolor=none
-            font-style="regular"
         }
 
         SuperNavMenuItem:hover
@@ -1130,7 +1118,7 @@ steam.styles
             textcolor="none"
             render_bg
             {
-                0="fill(x0+9,y0+1,x1-9,y1-1,White10)"
+                0="fill(x0+9,y0+1,x1-9,y1-1,white05)"
             }
         }
 
@@ -1152,7 +1140,6 @@ steam.styles
                 3="fill( x0 + 0, y0 + 1, x0 + 1, y1 + 0, black )"	// Left
                 //4="fill( x1 - 1, y0 + 1, x1 + 0, y1 - 1, black )"	// Right
             }
-            corner_rounding=10
         }
 
         Page
@@ -1165,7 +1152,7 @@ steam.styles
         PageTab
         {
             font-family=basefont
-            font-size=13
+            font-size=16
             textcolor="White50"
             bgcolor=none
             render_bg {}
@@ -1276,12 +1263,11 @@ steam.styles
 
         "CFriendPanel RichText URL"
         {
-        textcolor="white"
-        font-style=underline
-        font-size=14
+            textcolor="white"
+            font-style=underline
+            font-size=14
         }
 
-        // style of bold White in a rich White control
         "RichText bold"
         {
             font-size=16
@@ -1367,14 +1353,12 @@ steam.styles
         "TooltipWindow"
         {
             bgcolor=black
-            //bgcolor="Black"
-            //alpha=191.25
             render_bg
             {
-                0="fill( x0 + 0, y0 + 0, x1 + 0, y0 + 1, black )"	// Top
-                1="fill( x0 + 1, y1 - 1, x1 + 0, y1 + 0, black )"	// Bottom
-                2="fill( x0 + 0, y0 + 1, x0 + 1, y1 + 0, black )"	// Left
-                3="fill( x1 - 1, y0 + 1, x1 + 0, y1 - 1, black )"	// Right
+                0="fill( x0 + 0, y0 + 0, x1 + 0, y0 + 1, black )" // Top
+                1="fill( x0 + 1, y1 - 1, x1 + 0, y1 + 0, black )" // Bottom
+                2="fill( x0 + 0, y0 + 1, x0 + 1, y1 + 0, black )" // Left
+                3="fill( x1 - 1, y0 + 1, x1 + 0, y1 - 1, black )" // Right
             }
         }
 
@@ -1428,7 +1412,7 @@ steam.styles
 
         TreeView
         {
-            render_bg{}
+            render_bg {}
         }
 
         URLLabel
@@ -1503,7 +1487,7 @@ steam.styles
             selectedbgcolor=accent
             bgcolor=none
             render_bg {}
-                inset="1 -1 1 1"
+            inset="1 -1 1 1"
         }
 
         BackButtonSm
@@ -1704,8 +1688,6 @@ steam.styles
                 3="fill( x1 - 1, y0 + 1, x1 + 0, y1 - 1, black )"	// Right
             }
         }
-
-        // styles for White used in RichText controls in various places
 
         console_text_error
         {

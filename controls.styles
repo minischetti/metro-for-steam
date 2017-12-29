@@ -17,7 +17,8 @@
 
         Button:active
         {
-            bgcolor=accent
+            bgcolor=white20
+            textcolor=accent
         }
 
         Button:disabled
