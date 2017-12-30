@@ -92,14 +92,6 @@
             textcolor="255 0 0 255"
         }
 
-        WrapPanel
-        {
-            bgcolor="none"
-
-            render_bg {
-            }
-        }
-
         gameselector
         {
             bgcolor=none

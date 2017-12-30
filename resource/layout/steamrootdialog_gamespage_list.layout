@@ -5,9 +5,16 @@
         ListPanel.PostSectionLeading 12
     }
 
+    styles
+    {
+        RichText
+        {
+            inset-left=-9999
+        }
+    }
+
     layout
     {
-        // content pages
-        place { control="GamesList" width=max height=max margin=0 }
+        place { control="GamesList" width=max height=max }
     }
 }

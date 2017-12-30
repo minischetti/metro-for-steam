@@ -2,29 +2,16 @@
 {
     styles
     {
-
-        ChromeBorderItem
-        {
-            alpha=63.75
-            bgcolor=accent
-        }
-
-        GridNavDivider
-        {
-            textcolor=none
-            bgcolor=none
-        }
-
         CUILaunchButton
         {
-        textcolor=none
+            textcolor=accent
         }
     }
 
 
     layout
     {
-        place { control=chromeborder width=max height=max }
-        place { control=launch,details,divider width=0 height=0 }
+        place { control=launch height=max align=top-center }
+        place { control=chromeborder,details,divider margin-left=-9999 }
     }
 }

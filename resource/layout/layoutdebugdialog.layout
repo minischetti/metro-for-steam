@@ -6,15 +6,6 @@
         {
             minimum-width=500
             minimum-height=300
-            bgcolor=black
-        }
-        ListPanel
-        {
-            bgcolor=Header_Dark
-        }
-        RichText
-        {
-            bgcolor=Header_Dark
         }
         ComboBox
         {
@@ -35,7 +26,7 @@
         place { control="containerlabel,fileurl" region=bottom height=26 x=8 y=26 spacing=10 }
 
         //Hidden
-        place { control="wiki_link" height=0 }
+        place { control="wiki_link" margin-left=-9999 }
     }
 
 }

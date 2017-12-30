@@ -458,31 +458,15 @@ steam.styles
 
         ProgressBox
         {
-            //bgcolor=accent
             render
             {
                 1="image(x0+153,y0+24,x1,y0,graphics/login_logo)"
             }
         }
+
         "ProgressBox Label"
         {
-            inset="0 0 0 10"
-            textcolor=none
-            font-size=28
-            lightfont
-            font-weight=300
-        }
-
-        "ProgressBox FrameCloseButton"
-        {
-            render_bg {}
-        }
-
-        "ProgressBox Button"
-        {
-            textcolor=none
-            bgcolor=none
-            render_bg {}
+            inset-left=-9999
         }
 
         uparrow
@@ -519,10 +503,10 @@ steam.styles
 
         CFriendsListSectionAffordance
         {
-        inset="0 0 0 0"
-        font-size=16
-        font-weight=400
-        textcolor="White50"
+            inset="0 0 0 0"
+            font-size=16
+            font-weight=400
+            textcolor="White50"
         }
 
         CFriendsListSectionHeader
@@ -738,7 +722,7 @@ steam.styles
 
         FrameTitle
         {
-            textcolor=none
+            inset-left=-9999
         }
 
         GraphPanel
@@ -792,7 +776,7 @@ steam.styles
 
         "GameItem_Uninstalled"
         {
-        textcolor=white25
+            textcolor=white25
         }
 
         "GameItem_Installed"
@@ -802,27 +786,32 @@ steam.styles
 
         "GameItem_Uninstalled:hover"
         {
-        textcolor=white50
+            textcolor=white50
         }
 
         "GameItem_Installed:hover"
         {
-        textcolor=white
+            textcolor=white75
         }
 
         "GameItem_Running"
         {
-        textcolor=accent
+            textcolor=accent
         }
 
         "GameItem_Shortcut"
         {
-        textcolor=accent
+            textcolor=accent
         }
 
         "GameItem_Shortcut:hover"
         {
-            textcolor=white75
+            textcolor=white
+        }
+
+        GameItem_Mod
+        {
+            textcolor=accent
         }
 
         "GameItem_Mod:hover"
@@ -832,7 +821,7 @@ steam.styles
 
         "GameItem_Decrypting:hover"
         {
-        textcolor=white75
+            textcolor=white75
         }
 
         "GameItem_Syncing:hover"
@@ -844,21 +833,6 @@ steam.styles
         {
             textcolor=white75
         }
-
-        "GameItem_Uninstalled GamesGridImage"
-        {
-            alpha=84.15 // 33%
-        }
-
-        "GameItem_Updating GamesGridImage"
-        {
-            alpha=255
-            render
-            {
-                0="image(x1-18,y1-26,x1,y1,graphics/metro/icons/grid/downloads)"
-            }
-        }
-
 
         "GameItem_Updating:hover"
         {
@@ -951,15 +925,10 @@ steam.styles
         ListPanelSectionHeader
         {
             minimum-height=30
-            font-family=basefont
+            font-family=boldfont
             font-style=uppercase
-            font-weight=400
             font-size="16"
             textcolor=accent
-            render_bg
-            {
-                //0="fill(x0,y1-1,x1,y1,white10)"
-            }
         }
 
         ListPanelSectionCollapser
@@ -1889,16 +1858,5 @@ steam.styles
             bgcolor=none
             render {}
         }
-
-        CGamesPage_Details
-        {
-            render_bg
-            {
-                //0="fill(x0+300, y0+1, x0+301, y1, white05)"
-            }
-            render {}
-        }
-
-        "GamesPage_Details headerimage" {}
     }
 }

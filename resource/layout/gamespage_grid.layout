@@ -16,7 +16,6 @@
     // random/generic settings go in "colors"
     colors
     {
-        ClientBGT="26 26 26 191.25"
         // values defining the aspect ratio of the images in the grid view
         GridView.OriginalImageWidth "460"
         //GridView.OriginalImageHeight "225"
@@ -30,23 +29,17 @@
 
     styles
     {
-        "RichText"
-        {
-        font-size=36
-        }
         WrapPanel
         {
             inset-right=0
-            bgcolor="none"
-            render {}
-            render_bg {}
         }
 
-        emptylisttext
+        RichText
         {
-            textcolor="White"
-            font-size="15"
-            render_bg {}
+            render_bg
+            {
+                //0="image(x0,y0,x1,y1,graphics/metro/icons/empty_search)"
+            }
         }
 
 
@@ -59,28 +52,13 @@
         // updating
         // uninstalled
         // notinstalled (yes there are two)
-        GameItem_installed
-        {
-            alpha	255
-        }
-        GameItem_Uninstalled
-        {
-            //alpha 84.15 // 33%
-            render
-            {
-                //0="fill(x0-5,y0-5,x1+5,y1+5,ClientBGT)"
-                //0="image(x1-18,y1-26,x1,y1,graphics/metro/icons/grid_uninstalled)"
-            }
-        }
     }
 
     layout
     {
-        place
-        {
-            control=grid x=0 y=1 width=max height=max
-        }
+        place { control=grid width=max height=max }
 
-        place	{ control=emptylisttext x=0 y=0 margin=10 margin-top=9 width=max height=max }
+        //Hidden
+        place { control=emptylisttext margin-left=-9999 }
     }
 }

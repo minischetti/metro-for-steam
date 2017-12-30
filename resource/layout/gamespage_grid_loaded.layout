@@ -2,12 +2,7 @@
 {
     layout
     {
-        place
-        {
-            control = image
-            width = max
-            height = max
-        }
+        place { control=image width=max height=max }
     }
 }
 
