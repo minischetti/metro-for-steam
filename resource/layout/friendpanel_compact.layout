@@ -2,19 +2,11 @@
 {
     styles
     {
-        CFriendPanel
-        {
-            inset="0 0 0 0"
-            bgcolor=none
-            font-family=basefont
-            font-size=14
-            font-weight=400
-            textcolor="White45"
-        }
 
-        SelfPanel:hover
+
+        "SelfPanel"
         {
-            render_bg {}
+            minimum-height=52
         }
 
         menuButtonStyle
@@ -22,11 +14,17 @@
             image=none
             render_bg {}
         }
+
+        CFriendPanelCompact
+        {
+            minimum-height=28
+            inset-top=-1
+        }
     }
 
     layout
     {
-        place { control="ClanStatusImage,NameLabel,FriendsNameInstanceLabel,CompactSeparatorLabel,StatusLabel,GameLabel,AcceptLink,IgnoreLink,BlockLink,SuggestedImage,SuggestedLabel,SuggestedInvite,SuggestedIgnore" x=3 y=1 spacing=4 }
+        place { control="ClanStatusImage,NameLabel,FriendsNameInstanceLabel,CompactSeparatorLabel,StatusLabel,GameLabel,AcceptLink,IgnoreLink,BlockLink,SuggestedImage,SuggestedLabel,SuggestedInvite,SuggestedIgnore" x=3 align=left-center spacing=4 }
         place { control="MenuButton" width=0 height=0 }
     }
 }

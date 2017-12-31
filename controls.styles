@@ -18,7 +18,7 @@
         Button:active
         {
             bgcolor=white20
-            textcolor=accent
+            textcolor=accent 
         }
 
         Button:disabled
@@ -28,14 +28,13 @@
 
         ToggleButton:selected
         {
-            bgcolor=accent
+            textcolor=accent
         }
 
         TextEntry
         {
             font-family=basefont
             font-size=16
-            bgcolor="TextEntry"
             textcolor=White
             shadowtextcolor=white
             selectedtextcolor=White

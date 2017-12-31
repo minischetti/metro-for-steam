@@ -4,10 +4,10 @@
     {
         CFriendsDialog
         {
-            bgcolor=black
             render_bg
             {
                 0="fill(x0, y0+39, x1, y0+40, white05)"
+                1="fill(x0, y0+91, x1, y0+92, white05)"
             }
         }
 
@@ -33,11 +33,25 @@
             bgcolor=white10
         }
 
+        FriendsSearchIcon
+        {
+            render_bg
+            {
+                0="fill(x0,y0,x1,y0+1,white05)"
+            }
+        }
+        FriendsSearch
+        {
+            render_bg
+            {
+                0="fill(x0,y0,x1,y0+1,white05)"
+            }
+        }
 
         PageTab
         {
             inset-left=2
-            font-family=basefont
+            font-family=boldfont
             font-size=14
             textcolor="White45"
             font-style="Uppercase"
@@ -67,20 +81,18 @@
         place { control="frame_captiongrip" width=max height=40 }
 
         //Header
-        region { name=top align=top y=40 height=40 }
         place { control="addFriendsButton" height=39 width=27 align=right margin-right=1 end-right=frame_minimize }
         place { control="MenuBar" height=38 width=38 x=1 y=1 }
+        place { control="FriendPanelSelf" width=max height=52 x=10 y=40 margin-right=10 }
 
-        //Search
-        place { control="friends_search_icon" region=top height=38 width=38 x=1 }
-        place { control="friends_search" region=top start=friends_search_icon height=38 width=max }
 
         //Content
-        place { control="DownLabel" dir=down align=left y=130 margin=8 margin-bottom=36 width=max }
-        place { control="NoFriendsAddFriendButton" start=DownLabel dir=down align=left y=20 width=84 height=28 }
-        place { control="FriendsDialogSheet" margin-top=48 margin-bottom=1 y=80 align=left width=max height=max dir=down }
+        place { control="DownLabel" y=102 margin-left=10 margin-right=10 width=max }
+        place { control="NoFriendsAddFriendButton" start=DownLabel dir=down y=10 width=84 height=28 }
+        place { control="FriendsDialogSheet" y=92 width=max height=max end-down=friends_search }
 
-        //Footer
-        place { control="FriendPanelSelf" align=left width=max x=8 y=80 margin-right=8 }
+        //Search
+        place { control="friends_search_icon" align=bottom height=40 width=40 }
+        place { control="friends_search" start=friends_search_icon height=40 width=max }
      }
 }
