@@ -39,6 +39,7 @@
             shadowtextcolor=white
             selectedtextcolor=White
             selectedbgcolor=accent
+            bgcolor=TextEntry
             inset-left=6
         }
 

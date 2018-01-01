@@ -2,19 +2,20 @@
 {
     layout
     {
-        region { name=bottom height=6 align=bottom }
 
         //Caption Buttons
-        place { region=frame-controls control="frame_close" align=right width=40 height=60 }
-        place { region=frame-controls control="frame_minimize, frame_maximize" align=right margin-right=40 width=30 height=60 }
+        place { control="frame_close" align=right width=40 height=60 }
+        place { control="frame_minimize, frame_maximize" align=right margin-right=40 width=30 height=60 }
 
         //Frame Grips
         place { control="frame_captiongrip" width=max height=60 }
         place { control="rightGrip" align=right width=3 height=max }
+        
+        region { name=bottom height=6 align=bottom }
         place { control="frame_brGrip" region=bottom height=6 width=6 align=right }
 
         //Content
-        place { control="UINavigatorPanel" width=max height=max x=1 margin-right=1 }
+        place { control="UINavigatorPanel" width=max height=max }
 
         //Avatar
         place { control="ParentalLockButton,account_balance,UIStatusPanel,InboxButton,view_friends" align=right width=30 height=60 margin-right=110 spacing=10 }

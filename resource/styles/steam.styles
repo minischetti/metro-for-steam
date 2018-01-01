@@ -14,6 +14,20 @@ steam.styles
     }
     styles
     {
+        Button
+        {
+            render_bg
+            {
+                //0="image(x0,y0,x1,y1,graphics/metro/buttons/top_left)"
+                //1="image(x1-3,y0,x1,y1,graphics/metro/buttons/top_right)"
+                //2="image(x0,y1-3,x0,y1,graphics/metro/buttons/bottom_left)"
+                //3="image(x1-3,y1-3,x1,y1,graphics/metro/buttons/bottom_right)"
+
+                //4="fill(x0+3,y0,x1-3,y0+3,white05)"
+                //5="fill(x0,y0+3,x1,y1-3,white05)"
+                //6="fill(x0+3,y1-3,x1-3,y1,white05)"
+            }
+        }
         Frame
         {
             bgcolor="clientBackground"
@@ -1144,6 +1158,8 @@ steam.styles
             font-weight=400
             textcolor="white"
             bgcolor="none"
+            render {}
+            render_bg {}
         }
 
         ProgressBar

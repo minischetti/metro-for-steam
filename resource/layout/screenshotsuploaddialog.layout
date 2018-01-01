@@ -6,16 +6,11 @@
         {
             minimum-width=325
             minimum-height=240
-            render_bg
-            {
-                4="fill( x0, y1-36, x1, y1, black )"
-                5="fill( x0, y1-35, x1, y1, Header_Dark )"
-            }
         }
 
         visibility_options
         {
-            minimum-width=100
+            minimum-width=120
         }
         SlimProgressBar
         {
@@ -36,7 +31,7 @@
 
     layout
     {
-        region { name=bottom align=bottom height=36 margin-top=5 }
+        region { name=bottom align=bottom height=50 margin=10 }
 
         place { control="frame_minimize,frame_maximize,frame_close" align=right width=40 height=40 margin-right=1 }
 
@@ -49,11 +44,11 @@
         place { control="storage_remaining,storage_remaining_info" x=20 y=80 spacing=10 }
 
         //Facebook
-        place { control="share_to_facebook_check_button" x=20 align=bottom margin-bottom=40 }
+        place { control="share_to_facebook_check_button" x=20 align=bottom margin-bottom=50 }
 
         //Footer
-        place { control="visibility_options" region=bottom x=6 dir=right }
-        place { control="upload_button,cancel_button" region=bottom align=right margin-right=6 spacing=8 dir=right }
+        place { control="visibility_options" region=bottom height=30 }
+        place { control="upload_button,cancel_button" region=bottom align=right height=30 spacing=10 }
 
         //Hidden
         place { control="visiblity_label,facebook_logo,shared_to_facebook_ok_label,shared_to_facebook_no_multi_label,shared_to_facebook_no_private_label" width=0 height=0 }
