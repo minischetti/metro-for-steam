@@ -33,21 +33,6 @@
             bgcolor=white10
         }
 
-        FriendsSearchIcon
-        {
-            render_bg
-            {
-                0="fill(x0,y0,x1,y0+1,white05)"
-            }
-        }
-        FriendsSearch
-        {
-            render_bg
-            {
-                0="fill(x0,y0,x1,y0+1,white05)"
-            }
-        }
-
         PageTab
         {
             inset-left=2
@@ -61,6 +46,11 @@
             {
                 0="fill(x0,y1,x1,y1+1,Black25)"
             }
+        }
+
+        FriendsSearch
+        {
+            bgcolor=none
         }
 
         PageTab:hover
