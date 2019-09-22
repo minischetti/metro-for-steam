@@ -364,7 +364,7 @@
 		//Search
 		place { control="label_search_icon" region=top height=38 width=38 }
 		place { control="library_search" region=top margin-left=38 height=38 width=186 }
-    place { control="library_filters" region=top margin-left=224 height=38 width=38 start=DownloadsPage }
+    	place { control="library_filters" region=top margin-left=224 height=38 width=38 start=DownloadsPage }
 
 		//Filters
 		place { control="library_zoom" region=top align=right end-right="library_filters_list" y=10 height=26 width=100 margin-right=8 }
@@ -376,7 +376,8 @@
  	  	place { control=phonereminderbar margin-top=79 width=max height=40 }
 
 		// content pages - these are all pushed down by the email reminder bar (above) if it's visible
-    place { control=DownloadsPage       width=max height=max margin-top=0 margin-left=0 margin-right=0 margin-bottom=1 start=URLBar dir=down }
+    	place { control=DownloadsPage       width=max height=max margin-top=0 margin-left=0 margin-right=0 margin-bottom=1 start=URLBar dir=down }
+		place { control=NewLibraryPage		width=max height=max margin-top=0 margin-left=0 margin-right=0 margin-bottom=1 start=phonereminderbar dir=down }
 		place { control=GamesPage_List 		width=max height=max margin-top=0 margin-left=0 margin-right=0 margin-bottom=1 start=phonereminderbar dir=down }
 		place { control=GamesPage_Details 		width=max height=max margin-top=1 margin-left=0 margin-right=0 margin-bottom=1 start=phonereminderbar dir=down }
 		place { control=GamesPage_Grid 		width=max height=max margin-top=0 margin-left=0 margin-right=0 margin-bottom=0 start=phonereminderbar dir=down }
@@ -418,6 +419,10 @@
 		place { control="library_search" region=top margin-left=38 height=38 width=186 }
 		place { control="library_filters" region=top margin-left=224 height=38 width=38 }
 
+		// New
+		place { control=URLAnchor align=left y=54 height=28 width=max }
+		place { control=LibraryAnchor height=28 width=max start=URLAnchor dir=down }
+
 		//Filters
 		place { control="library_zoom" region=top align=right end-right="library_filters_list" y=10 height=26 width=100 margin-right=8 }
 		place { control="library_filters_list,library_filters_details,library_filters_grid,library_music_menu,library_music_player_icon" align=right width=28 height=38 spacing=1 margin-right=1 y=40 }
@@ -433,6 +438,7 @@
 		place { control=GamesPage_Details 		width=max height=max margin-top=1 margin-left=0 margin-right=0 margin-bottom=1 start=phonereminderbar dir=down }
 		place { control=GamesPage_Grid 		width=max height=max margin-top=0 margin-left=0 margin-right=0 margin-bottom=0 start=phonereminderbar dir=down }
 		place { control=WebPanel			width=max height=max margin-left=0 margin-bottom=1 y=0 start=URLBar dir=down }
+		place { control=NewLibraryPage		width=max height=max margin-top=0 margin-left=0 margin-right=0 margin-bottom=1 start=phonereminderbar dir=down }
 
 		place { control=MusicPage_Details width=max height=max margin-top=1 margin-left=0 margin-right=-1 margin-bottom=1 start=phonereminderbar dir=down }
 		place { control=ScreenshotsPage width=max height=max margin-top=1 margin-left=0 margin-right=-1 margin-bottom=1 start=phonereminderbar dir=down }
