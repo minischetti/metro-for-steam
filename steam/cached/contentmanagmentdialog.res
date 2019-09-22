@@ -131,17 +131,17 @@
 
 		CContentManagmentDialog
 		{
-			bgcolor=black
+			bgcolor=ClientBG
 			render_bg
 			{
 				//Top
-				0="fill( x0, y0, x1, y0+76, black )"
+				0="fill( x0, y0, x1, y0+76, FrameBorder )"
 				1="fill( x0, y0, x1, y0+75, Header_Dark )"
 				//Title
 				2="image(x0+16,y0+16,x1,y1, graphics/metro/labels/contentmanagement/contentmanagement)"
 				
 				//Bottom
-				3="fill( x0, y1-44, x1, y1, black )"
+				3="fill( x0, y1-44, x1, y1, FrameBorder )"
 				4="fill( x0, y1-43, x1, y1, Header_Dark )"
 			}
 		}

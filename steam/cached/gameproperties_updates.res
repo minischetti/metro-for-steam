@@ -206,7 +206,7 @@
 		
 		CSubGamePropertiesUpdatesPage
 		{
-			bgcolor=black
+			bgcolor=ClientBG
 			render_bg
 			{
 				0="image(x0+16,y0+24,x1,y1, graphics/metro/labels/gameproperties/automaticupdates)"

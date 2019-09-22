@@ -137,7 +137,7 @@
 	{
 		Label
 		{
-			lightfont
+			font-family=light
 			font-weight=300
 			font-size=32
 			textcolor=white
@@ -150,7 +150,7 @@
 		}
 		LabelBright
 		{
-			lightfont
+			font-family=light
 			font-weight=300
 			font-size=32
 			textcolor=white

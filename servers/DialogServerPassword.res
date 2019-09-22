@@ -143,12 +143,12 @@
 			render_bg
 			{
 				//0="fill(x0,y1-44,x1,y1,Header_Dark)"
-				//0="fill(x0+8,y1-44,x1-8,y1-43,white10)"
+				//0="fill(x0+8,y1-44,x1-8,y1-43,White12)"
 			}
 		}
 		LabelDull
 		{
-			font-family=basefont
+			font-family=semilight
 			font-size=24
 			textcolor=white
 		}

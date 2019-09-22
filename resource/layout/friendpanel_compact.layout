@@ -1,30 +1,45 @@
 "resource/layout/friendpanel_compact.layout"
 {
-    styles
+	// custom layout
+
+	controls
+	{
+		MenuButton
+		{style=menuButtonStyle	}
+		AvatarOverlayImage { zpos=2 }
+
+		AcceptLink { style="inviteLinkStyle" }
+		IgnoreLink { style="inviteLinkStyle" }
+		BlockLink { style="inviteLinkStyle" }
+	}
+	styles
+	{
+
+    CFriendPanel
     {
-
-
-        "SelfPanel"
-        {
-            minimum-height=52
-        }
-
-        menuButtonStyle
-        {
-            image=none
-            render_bg {}
-        }
-
-        CFriendPanelCompact
-        {
-            minimum-height=28
-            inset-top=-1
-        }
+      inset="0 0 0 0"
+      bgcolor=none
+      font-family=basefont
+      font-size=14
+      font-weight=400
+      textcolor="White45"
     }
 
-    layout
-    {
-        place { control="ClanStatusImage,NameLabel,FriendsNameInstanceLabel,CompactSeparatorLabel,StatusLabel,GameLabel,AcceptLink,IgnoreLink,BlockLink,SuggestedImage,SuggestedLabel,SuggestedInvite,SuggestedIgnore" x=3 align=left-center spacing=4 }
-        place { control="MenuButton" width=0 height=0 }
-    }
+		SelfPanel:hover
+		{
+			render_bg {}
+		}
+
+		menuButtonStyle
+		{
+			image=none
+			render_bg {}
+		}
+	}
+
+	layout
+	{
+		place { control="ClanStatusImage,NameLabel,FriendsNameInstanceLabel,CompactSeparatorLabel,StatusLabel,GameLabel,AcceptLink,IgnoreLink,BlockLink,SuggestedImage,SuggestedLabel,SuggestedInvite,SuggestedIgnore" x=3 y=1 spacing=4 }
+		place { control="MenuButton" width=0 height=0 }
+	}
 }

@@ -45,7 +45,7 @@
 		
 		status_label
 		{
-			font-family=basefont
+			font-family=semibold
 			textcolor=white
 			inset="0 0 0 0"
 		}

@@ -21,7 +21,7 @@
 		Label
 		{
 			textcolor=white
-			font-family=basefont
+			font-family=semibold
 			font-style=regular
 		}
 
@@ -37,7 +37,7 @@
 
 		Button:hover
     {
-			bgcolor=white10
+			bgcolor=White12
 			render_bg
 			{
 				0="image(x0,y0,x1,y1,graphics/tab_close_def)"
@@ -46,7 +46,7 @@
 		
 		Button:active
 		{
-			bgcolor=white20
+			bgcolor=White24
 			render_bg
 			{
 				0="image(x0,y0,x1,y1,graphics/tab_close_hov)"

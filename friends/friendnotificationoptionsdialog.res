@@ -230,14 +230,14 @@
 			render_bg
 			{
 				//Top
-				0="fill( x0, y0, x1, y0+39, black )"
+				0="fill( x0, y0, x1, y0+39, FrameBorder )"
 				1="fill( x0, y0, x1, y0+40, Header_Dark )"
 			}
 		}
 		
 		Label
 		{
-			font-family=basefont
+			font-family=semibold
 			font-style=uppercase
 			font-size=14
 			textcolor=white

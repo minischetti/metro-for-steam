@@ -265,7 +265,7 @@
 	{
 		Label
 		{
-			font-family=basefont
+			font-family=semibold
 			font-style=regular
 			font-size=14
 			textcolor=white

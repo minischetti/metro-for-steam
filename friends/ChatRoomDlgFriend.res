@@ -95,7 +95,7 @@
 
 		controlbutton:hover
     {
-			bgcolor=white10
+			bgcolor=White12
 			render_bg
 			{
 				0="image(x0,y0,x1,y1,graphics/tab_close_def)"
@@ -104,7 +104,7 @@
 
 		controlbutton:active
 		{
-			bgcolor=white20
+			bgcolor=White24
 			render_bg
 			{
 				0="image(x0,y0,x1,y1,graphics/tab_close_hov)"
@@ -113,13 +113,13 @@
 
 		Button
 		{
-		//bgcolor=accent
+		//bgcolor=focus
 		}
 
 		"RichText url"
 		{
 			font-style=uppercase
-			font-family=basefont
+			font-family=semibold
 		}
 	}
 

@@ -471,7 +471,7 @@
 			inset-right=0
 			render
 			{
-				0="fill(x0+8,y1-1,x1-8,y1,black)"
+				0="fill(x0+8,y1-1,x1-8,y1,ClientBG)"
 			}
 		}
 		ListPanelInterior:scrollbar
@@ -492,7 +492,7 @@
 		}
 		LabelDull
 		{
-			font-family=basefont
+			font-family=semilight
 			font-size=24
 			textcolor=white
 		}

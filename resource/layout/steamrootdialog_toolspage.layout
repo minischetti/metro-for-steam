@@ -1,11 +1,11 @@
 "resource/layout/steamrootdialog_toolspage.layout"
 {
+	
+	layout
+	{
+		// content pages
+		place { control="GamesList" 		width=max height=max }
 
-    layout
-    {
-        // content pages
-        place { control="GamesList" width=max height=max }
-
-    }
+	}
 
 }

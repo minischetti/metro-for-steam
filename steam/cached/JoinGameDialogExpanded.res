@@ -207,17 +207,17 @@
 	{
 		CJoinGameDialog
 		{
-			bgcolor=black
+			bgcolor=ClientBG
 			render_bg
 			{
-				0="fill( x0, y1-44, x1, y1, black )"
+				0="fill( x0, y1-44, x1, y1, FrameBorder )"
 				1="fill( x0, y1-43, x1, y1, Header_Dark )"
 			}
 		}
 		
 		Label
 		{
-			lightfont
+			font-family=light
 			font-weight=300
 			textcolor=white
 			font-size=32

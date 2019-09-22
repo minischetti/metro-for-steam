@@ -1,21 +1,30 @@
 "resource/layout/musicplayervolumepanel.layout"
 {
-    styles
-    {
-        CMusicPlayerVolumePanel
-        {
-            minimum-width = 100
-            minimum-height = 18
-        }
+	controls
+	{
+		VolumeSlider { controlname=Slider style="VolumeSlider" zpos="4" }
+	}
 
+	colors
+	{
+	}
 
-        VolumeSlider { bgcolor=none font-family=basefont font-size=16 }
-    }
+	styles
+	{
+		CMusicPlayerVolumePanel
+		{
+			minimum-width = 100
+			minimum-height = 18
+		}
 
-
-    layout
-    {
-        place { control="VolumeSlider" x=0 y=0 height=18 width=100 }
-    }
-
+	
+		VolumeSlider	{ bgcolor=none font-family=basefont font-size=16	}
+	}
+	
+	
+	layout
+	{
+		place { control="VolumeSlider" x=0 y=0 height=18 width=100 }
+	}
+	
 }

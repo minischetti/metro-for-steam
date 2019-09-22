@@ -92,7 +92,7 @@
 			render_bg
 			{
 				//Bottom
-				//0="fill( x0, y1-25, x1, y1, black )"
+				//0="fill( x0, y1-25, x1, y1, FrameBorder )"
 				//1="fill( x0, y1-24, x1, y1, Header_Dark )"
 				2="image( x0+24,y0+24,x1,y1, graphics/metro/notifications/overlaysplash)"
 			}

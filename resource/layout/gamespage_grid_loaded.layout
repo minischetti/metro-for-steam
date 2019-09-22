@@ -1,8 +1,23 @@
 "resource/layout/gamespage_grid_loaded.layout"
 {
-    layout
-    {
-        place { control=image width=max height=max }
-    }
+	controls
+	{
+		"image"
+		{
+			"ControlName"					"ImagePanel"
+			"style"							"GamesGridImage"
+			"scaling"						fit
+		}
+	}
+
+	layout
+	{
+		place
+		{
+			control = image
+			width = max
+			height = max
+		}
+	}
 }
 

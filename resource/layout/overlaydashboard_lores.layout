@@ -1,85 +1,153 @@
 "resource/layout/overlaydashboard_lores.layout"
 {
-styles
-    {
-        overlaymain
-        {
-            bgcolor = "0 0 0 127.5"
-        }
+	controls
+	{
+		BaseDashboardPanel
+		{
+			controlname="EditablePanel"
+			style="overlaymain"
+		}
+		TaskbarPanel
+		{
+			controlname="EditablePanel"
+		}
+		TopFadePanel
+		{
+			controlname="EditablePanel"
+			style=topfade
+			zpos=-1
+		}
+		BottomFadePanel
+		{
+			controlname="EditablePanel"
+			style=bottomfade
+			zpos=-1
+		}
+		Clock
+		{
+			controlname="Label"
+			labeltext="10:43"
+			style=topbar
+		}
+		ClockSuffix
+		{
+			controlname="Label"
+			labeltext="am"
+			style=clocksuffix
+		}
 
-        //Back Button
-        OverlayURLLabel
-        {
-            image=graphics/icon_button_back
-            textcolor=none
-        }
+		SessionText { controlname=label style=TimeStrings labeltext="#Overlay_Playtime_Session" }
+		TwoWeeksText { controlname=label style=TimeStrings }
+		ForeverText { controlname=label style=TimeStrings }
 
-        OverlayURLLabel:hover
-        {
-            image=graphics/icon_button_back_over
-            textcolor=none
-        }
+		GameName
+		{
+			controlname="Label"
+			labeltext="%gamename%"
+			style=topbar
+			textalignment=east
+		}
+		PowerMeterDim
+		{
+			controlname=	"ImagePanel"
+			image=			"resource/battery_dim"
+		}
+		PowerMeterBright
+		{
+			controlname=	"ImagePanel"
+			image=			"resource/battery_bright"
+		}
 
-        OverlayURLLabel:active
-        {
-            image=graphics/icon_button_back_down
-            textcolor=none
-        }
+		CloseButton	{ controlname="URLLabel" labeltext="#Overlay_Taskbar_Close" }
+		HotkeyLabel { controlname="Label" labeltext="%hotkey%" style=hotkey }
+		HotkeyExplain { controlname="Label" labeltext="#Overlay_Hotkey_Explain" margin-left=4 }
+	}
 
-        TopFade
-        {
-        }
+	colors
+	{
+		backgroundOverlayTop="0 0 0 127.5"
+	}
 
-        hotkey
-        {
-            font-size=20
-            textcolor=White45
-        }
+	styles
+	{
+		overlaymain
+		{
+			bgcolor = "0 0 0 127.5"
+		}
 
-        topbar
-        {
-            lightfont
-            font-size=32
-            textcolor=White
-            font-style=regular
-        }
+		//Back Button
+		OverlayURLLabel
+		{
+			image=graphics/icon_button_back
+			textcolor=none
+		}
 
-        clocksuffix
-        {
-            lightfont
-            font-size=32
-            textcolor=White
-            font-style=regular
-            font-style=uppercase
-        }
+		OverlayURLLabel:hover
+		{
+			image=graphics/icon_button_back_over
+			textcolor=none
+		}
 
-        timeStrings
-        {
-            font-family=basefont
-            font-size=12
-            textcolor=White
-            font-style=regular
-        }
+		OverlayURLLabel:active
+		{
+			image=graphics/icon_button_back_down
+			textcolor=none
+		}
 
-        bottomfade
-        {
-        }
-    }
+		TopFade
+		{
+		}
 
-    layout
-    {
-        //Time Panel
-        place { control="clock,clocksuffix" align=top-center y=20 }
-        place { control="SessionText" align=top-center start=clock dir=down }
+		hotkey
+		{
+			font-size=20
+			textcolor=White45
+		}
 
-        //Top-Center
-        place { control="TaskbarPanel" height=64 align=bottom margin-left=-24 }
+		topbar
+		{
+			font-family=light
+			font-size=32
+			textcolor=White
+			font-style=regular
+		}
 
-        //Battery Indicator
-        place { control="PowerMeterDim" region=overlay align=left width=95 }
+		clocksuffix
+		{
+			font-family=light
+			font-size=32
+			textcolor=White
+			font-style=regular
+			font-style=uppercase
+		}
 
-        //Hidden
-        place { control="BottomFadePanel,HotkeyExplain,CloseButton,gamename,HotkeyLabel,TopFadePanel,TwoWeeksText,ForeverText" width=0 height=0 }
-    }
+		timeStrings
+		{
+			font-family=basefont
+			font-size=12
+			textcolor=White
+			font-style=regular
+		}
+
+		bottomfade
+		{
+		}
+	}
+
+	layout
+	{
+		//Time Panel
+		place { control="clock,clocksuffix" align=top-center y=20 }
+		place { control="SessionText" align=top-center start=clock dir=down }
+
+		//Top-Center
+		place { control="TaskbarPanel" height=64 align=bottom margin-left=-24 }
+
+		//Battery Indicator
+		place { control="PowerMeterDim" region=overlay align=left width=95 }
+
+		//Hidden
+		place { control="BottomFadePanel,HotkeyExplain,CloseButton,gamename,HotkeyLabel,TopFadePanel,TwoWeeksText,ForeverText" width=0 height=0 }
+	}
 
 }

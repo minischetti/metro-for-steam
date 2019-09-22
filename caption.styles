@@ -1,115 +1,13 @@
 "caption.styles"
 {
-  styles
-  {
-      "CSteamRootDialog FrameCloseButton"
-      {
-          render_bg
-          {
-              0="image(x0+10,y0+24,x1,y1,graphics/metro/icons/caption/close)"
-          }
-      }
-
-      "CSteamRootDialog FrameCloseButton:hover"
-      {
-          render_bg
-          {
-              0="image(x0+10,y0+24,x1,y1,graphics/metro/icons/caption/close_h)"
-          }
-      }
-
-      "CSteamRootDialog FrameCloseButton:active"
-      {
-          render_bg
-          {
-              0="image(x0+10,y0+24,x1,y1,graphics/metro/icons/caption/close_p)"
-          }
-      }
-
-      "CSteamRootDialog FrameMinimizeButton"
-      {
-          render_bg
-          {
-              0="image(x0+10,y0+33,x1,y1,graphics/metro/icons/caption/minimize)"
-          }
-      }
-
-      "CSteamRootDialog FrameMinimizeButton:hover"
-      {
-          render_bg
-          {
-              0="image(x0+10,y0+33,x1,y1,graphics/metro/icons/caption/minimize_h)"
-          }
-      }
-
-      "CSteamRootDialog FrameMinimizeButton:active"
-      {
-          render_bg
-          {
-              0="image(x0+10,y0+33,x1,y1,graphics/metro/icons/caption/minimize_p)"
-          }
-      }
-
-      "CSteamRootDialog FrameMaximizeButton"
-      {
-          render_bg
-          {
-              0="image(x0+10,y0+24,x1,y1,graphics/metro/icons/caption/maximize)"
-          }
-      }
-
-      "CSteamRootDialog FrameMaximizeButton:hover"
-      {
-          render_bg
-          {
-              0="image(x0+10,y0+24,x1,y1,graphics/metro/icons/caption/maximize_h)"
-          }
-      }
-
-      "CSteamRootDialog FrameMaximizeButton:active"
-      {
-          render_bg
-          {
-              0="image(x0+10,y0+24,x1,y1,graphics/metro/icons/caption/maximize_p)"
-          }
-      }
-
-    "CSteamRootDialog FrameRestoreButton"
-    {
-      render_bg
-      {
-        0="image(x0+10,y0+24,x1,y1,graphics/metro/icons/caption/restore)"
-      }
-    }
-
-    "CSteamRootDialog FrameRestoreButton:framefocus"
-    {
-      render_bg
-      {
-        0="image(x0+10,y0+24,x1,y1,graphics/metro/icons/caption/restore)"
-      }
-    }
-
-    "CSteamRootDialog FrameRestoreButton:hover"
-    {
-      render_bg
-      {
-        0="image(x0+10,y0+24,x1,y1,graphics/metro/icons/caption/restore_h)"
-      }
-    }
-
-    "CSteamRootDialog FrameRestoreButton:active"
-    {
-      render_bg
-      {
-        0="image(x0+10,y0+24,x1,y1,graphics/metro/icons/caption/restore_p)"
-      }
-    }
+	styles
+	{
+		//Default Style
 
     FrameMinimizeButton
     {
       render_bg
-      {
+			{
         0="image(x0+15,y0+24,x1,y1,graphics/metro/icons/caption/minimize)"
       }
     }
@@ -117,7 +15,7 @@
     FrameMinimizeButton:framefocus
     {
       render_bg
-      {
+			{
         0="image(x0+15,y0+24,x1,y1,graphics/metro/icons/caption/minimize)"
       }
     }
@@ -125,23 +23,25 @@
     FrameMinimizeButton:hover
     {
       render_bg
-      {
+			{
         0="image(x0+15,y0+24,x1,y1,graphics/metro/icons/caption/minimize_h)"
+				1="fill(x0,y0,x1,y1-1,White05)"
       }
     }
 
     FrameMinimizeButton:active
     {
       render_bg
-      {
+			{
         0="image(x0+15,y0+24,x1,y1,graphics/metro/icons/caption/minimize_p)"
+				1="fill(x0,y0,x1,y1-1,White10)"
       }
     }
 
     FrameMaximizeButton
     {
       render_bg
-      {
+			{
         0="image(x0+15,y0+15,x1,y1,graphics/metro/icons/caption/maximize)"
       }
     }
@@ -149,31 +49,33 @@
     FrameMaximizeButton:framefocus
     {
       render_bg
-      {
+			{
         0="image(x0+15,y0+15,x1,y1,graphics/metro/icons/caption/maximize)"
       }
     }
 
-    FrameMaximizeButton:hover
+		FrameMaximizeButton:hover
     {
       render_bg
-      {
+			{
         0="image(x0+15,y0+15,x1,y1,graphics/metro/icons/caption/maximize_h)"
+				1="fill(x0,y0,x1,y1-1,White05)"
       }
     }
 
-    FrameMaximizeButton:active
+		FrameMaximizeButton:active
     {
       render_bg
-      {
+			{
         0="image(x0+15,y0+15,x1,y1,graphics/metro/icons/caption/maximize_p)"
+				1="fill(x0,y0,x1,y1-1,White10)"
       }
     }
 
     FrameRestoreButton
     {
       render_bg
-      {
+			{
         0="image(x0+15,y0+15,x1,y1,graphics/metro/icons/caption/restore)"
       }
     }
@@ -181,57 +83,61 @@
     FrameRestoreButton:framefocus
     {
       render_bg
-      {
+			{
         0="image(x0+15,y0+15,x1,y1,graphics/metro/icons/caption/restore)"
       }
     }
 
-    FrameRestoreButton:hover
+		FrameRestoreButton:hover
     {
       render_bg
-      {
+			{
         0="image(x0+15,y0+15,x1,y1,graphics/metro/icons/caption/restore_h)"
+				1="fill(x0,y0,x1,y1-1,White05)"
       }
     }
 
-    FrameRestoreButton:active
+		FrameRestoreButton:active
     {
       render_bg
-      {
+			{
         0="image(x0+15,y0+15,x1,y1,graphics/metro/icons/caption/restore_p)"
+				1="fill(x0,y0,x1,y1-1,White10)"
       }
     }
 
-    FrameCloseButton
+		FrameCloseButton
     {
       render_bg
-      {
+			{
         0="image(x0+15,y0+15,x1,y1,graphics/metro/icons/caption/close)"
       }
     }
 
-    FrameCloseButton:framefocus
+		FrameCloseButton:framefocus
     {
       render_bg
-      {
+			{
         0="image(x0+15,y0+15,x1,y1,graphics/metro/icons/caption/close)"
       }
     }
 
-    FrameCloseButton:hover
+		FrameCloseButton:hover
     {
       render_bg
-      {
+			{
         0="image(x0+15,y0+15,x1,y1,graphics/metro/icons/caption/close_h)"
+				1="fill(x0,y0,x1,y1-1,White05)"
       }
     }
 
-    FrameCloseButton:active
+		FrameCloseButton:active
     {
       render_bg
-      {
+			{
         0="image(x0+15,y0+15,x1,y1,graphics/metro/icons/caption/close_p)"
+				1="fill(x0,y0,x1,y1-1,White10)"
       }
     }
-  }
+	}
 }

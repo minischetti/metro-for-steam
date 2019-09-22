@@ -1,29 +1,47 @@
-"resource/layout/friendpanel_rightaligned.layout"
+"resource/layout/friendpanel_compact.layout"
 {
-    styles
-    {
-        menuButtonStyle
-        {
-            inset="-7 2 0 0"
-            padding=3
-        }
+	
+	controls
+	{
+		MenuButton
+		{
+		style=menuButtonStyle
+		}
+		AvatarOverlayImage
+		{
+			zpos=2
+		}
+	}
+	styles
+	{
+		menuButtonStyle
+		{
+		inset="-7 2 0 0"
+		padding=3
+		}
+		CFriendPanel:hover 
+		{
+		render_bg {}
+		}
 
-        CFriendPanel:hover
-        {
-        render_bg {}
-        }
+	}
+	
+	// custom layout
+	layout
+	{
+		place {	control="AvatarOverlayImage" width=34 height=34 align=right }
+		place {	control="AvatarImage" width=34 height=34	align=right	}
+		place { control="MenuButton,NameLabel,FriendsNameInstanceLabel,ClanStatusImage" margin-right=60 y=6 align=right }
+		
+		place { control="StatusLabel"		margin-right=60 y=19 align=right }
+		place { control="GameLabel"			margin-right=60 y=31 align=right }
+		
+		place { control="ControlPanelLink" margin-right=60 y=31 align=right  }
+	}
 
-    }
 
-    layout
-    {
-        place {	control="AvatarOverlayImage" width=34 height=34 align=right }
-        place {	control="AvatarImage" width=34 height=34 align=right	}
-        place { control="MenuButton,NameLabel,FriendsNameInstanceLabel,ClanStatusImage" margin-right=60 y=6 align=right }
 
-        place { control="StatusLabel" margin-right=60 y=19 align=right }
-        place { control="GameLabel" margin-right=60 y=31 align=right }
+	
+	
 
-        place { control="ControlPanelLink" margin-right=60 y=31 align=right }
-    }
 }
