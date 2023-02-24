@@ -1,0 +1,34 @@
+"resource/layout/joingamedialogexpanded.layout"
+{
+
+	colors
+	{
+	}
+	styles
+	{
+		highlight
+		{
+			textcolor=Focus
+		}
+	}
+	layout
+	{
+		region { name=box margin-top=40 margin-bottom=20 margin-left=20 margin-right=20 width=max height=max }
+		region { name=ssa margin-top=235 margin-left=20 margin-right=20 width=max height=max }
+
+		place { controls="InfoLabel" region=box margin-top=10 align=left width=320 }
+		place { controls="ThrobberThrobberThrobber" start=InfoLabel }
+		place { controls="ReadyToPlayInfoLabel" region=box y=2 start=InfoLabel dir=down }
+		place { controls="ReadyToPlayTimeLabel" x=6 start=ReadyToPlayInfoLabel margin-right=20 }
+
+		place { controls=Progress start=ReadyToPlayInfoLabel y=4 width=max dir=down margin-right=20 }
+		place { controls="OverrideThrottleCheckBox,AutoLaunchCheckBox" start=Progress y=4 width=max dir=down spacing=2 }
+
+		place { controls="SkipUpdateLabel" region=box start=AutoLaunchCheckBox dir=down width=max margin-right=145 margin-top=46 }
+		place { controls="Divider,SSAUpdateLabel,SSAUpdateURL" region=ssa margin-top=10 spacing=5 width=max dir=down }
+
+		//Bottom
+		region { name=bottom align=bottom height=44 margin=8 }
+		place {	control="NewsButton,PlayButton" region=bottom align=right spacing=8 height=28 }
+	}
+}

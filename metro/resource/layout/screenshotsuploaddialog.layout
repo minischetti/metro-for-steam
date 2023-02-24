@@ -1,0 +1,51 @@
+"resource/layout/screenshotsuploaddialog.layout"
+{
+
+	styles
+	{
+		visibility_options
+		{
+			minimum-width=100
+		}
+		SlimProgressBar
+		{
+			textcolor=Focus
+			render_bg
+			{
+				0="fill( x0, y0, x1, y0+2, Black )"
+			}
+			render{}
+		}
+		SlimProgressBarError
+		{
+			textcolor=Red
+		}
+	}
+	layout
+	{
+		region { name=bottom align=bottom height=36 margin-top=5 }
+
+		//Progress Bar
+		place { control="upload_info" x=20 y=44 width=max margin-right=20 }
+		place { start=upload_info control="upload_progress" y=10 dir=down width=max height=2 margin-right=20 }
+
+		//Content
+		place { control="upload_question" x=20 y=44 }
+		place { control="upload_size,upload_size_info" x=20 y=64 spacing=10 }
+		place { control="storage_remaining,storage_remaining_info" x=20 y=84 spacing=10 }
+
+		//Upload Failed
+		place { control="error_info" x=20 y=100 width=max margin-right=20 }
+
+		//Facebook
+		place { control="share_to_facebook_check_button" x=20 align=bottom margin-bottom=40 }
+
+		//Footer
+		place { control="visibility_options" region=bottom x=6 dir=right }
+		place { control="upload_button,cancel_button" region=bottom align=right margin-right=6 spacing=8 dir=right }
+
+		//Hidden
+		place { control="visiblity_label,facebook_logo" width=1 align=right}
+		place { control="shared_to_facebook_ok_label,shared_to_facebook_no_multi_label,shared_to_facebook_no_private_label" width=1 height=1 align=right } //kinda hard to hide them
+	}
+}

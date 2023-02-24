@@ -1,0 +1,37 @@
+"resource/layout/settingssubstreaming_pin.layout"
+{
+
+	styles
+	{
+		Password
+		{
+			font-size=40
+			bgcolor="Header_Dark"
+			minimum-height=50
+		}
+		Description
+		{
+			textcolor="White45"
+			font-family=semilight
+		}
+		//Hidden
+		Key
+		{
+			textcolor="none"
+			bgcolor="none"
+		}
+	}
+
+	layout
+	{
+		region { name="top" width=max height=260 margin=10 margin-top=40 }
+		place { control="Description,PIN1,PIN2" region="top" margin-top=4 margin-left=6 margin-right=6 width=max spacing=8 dir=down }
+
+		//Footer
+		region { name="bottom" align=bottom height=44 margin=8 }
+		place { control="OK,Cancel" region="bottom" width=84 height=28 align=right spacing=8 }
+
+		//Hidden
+		place { control=KeyImage }
+	}
+}
