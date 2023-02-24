@@ -1,0 +1,53 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+on:
+  push:
+    # Sequence of patterns matched against refs/tags
+    tags:
+      - '[0-9]+.[0-9]+.[0-9]+'
+
+  workflow_dispatch:
+
+jobs:
+  release_new_version:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+
+      - name: Create Archive
+        run: |
+          mkdir -p ./metroskin
+          cp -r metro/* metroskin
+
+          zip -r MetroSkin.zip metroskin
+
+          ls -lah
+
+          echo Metro folder
+          ls -lah ./metroskin
+          echo test, and deploy your project.
+
+          COMMIT_MESSAGE="$(git log -1 --pretty=%B)"
+          RELEASE_VERSION=${GITHUB_REF#refs/*/}
+
+          echo $COMMIT_MESSAGE
+          echo $RELEASE_VERSION
+
+      # - name: Create Release
+      #   id: create_release
+      #   uses: actions/create-release@latest
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   with:
+      #     tag_name: ${{ github.ref }}
+      #     release_name: Release ${{ github.ref }}
+      #     body: |
+      #       The commit message is: "${COMMIT_MESSAGE}"
+      #     draft: true
+      #     prerelease: false
+      #     dry_run: true
