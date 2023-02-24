@@ -1,0 +1,21 @@
+"resource/layout/streamingprogress.layout"
+{
+
+	colors
+	{
+	}
+	styles
+	{
+		highlight
+		{
+			textcolor=White
+		}
+	}
+	layout
+	{
+		region { name=box margin-top=40 margin-bottom=20 margin-left=20 margin-right=20 width=max height=max }
+
+		place { controls="ProgressLabel" region=box margin-top=15 dir=down align=left width=320 }
+		place { controls="ThrobberThrobberThrobber" region=box start=ProgressLabel dir=right align=left margin-top=0 margin-left=0 }
+	}
+}

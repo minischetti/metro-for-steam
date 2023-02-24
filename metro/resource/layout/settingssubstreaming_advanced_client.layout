@@ -1,0 +1,17 @@
+"resource/layout/settingssubstreaming_advanced_client.layout"
+{
+
+  styles
+  {
+  }
+  layout
+  {
+    place { control="DescriptionLabel,DescriptionLabelLocal,BandwidthLabel" y=44 dir=down width=max margin-left=16 margin-right=16 spacing=8 }
+    place { control="BandwidthLimit,ResolutionLabel,ResolutionLimit,AudioChannelsLabel,AudioChannelSelect,PerformanceOverlayLabel,PerformanceOverlay,ControllerOverlayHotkeyLabel,ControllerOverlayHotkey,EnableHardwareDecoding,EnableTouchController" start="BandwidthLabel" y=8 dir=down width=max height=28 margin-right=16 spacing=-2 }
+    
+    region { name=bottom align=bottom height=44 margin=8 }
+    region { name=support align=bottom height=80 margin=8 }
+    place { control="SupportInformationLabel" x=8 region=support }
+    place { control="OKButton" region=bottom align=right spacing=8 width=84 height=28 }
+	}
+}

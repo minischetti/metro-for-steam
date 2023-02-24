@@ -1,0 +1,16 @@
+"resource/layout/downloadspage.layout"
+{
+
+	styles
+	{
+		DownloadsPageStyle
+		{
+			bgcolor="none"
+			render{}
+		}
+	}
+	layout
+	{
+		place { control="downloadsummarypanel,panel_list" dir=down width=max height=max spacing=0 }
+	}
+}

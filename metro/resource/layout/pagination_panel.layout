@@ -1,0 +1,56 @@
+"resource/layout/pagination_panel.layout"
+{
+
+	colors
+	{
+		PaginationPanel.ExtraVerticalSpacing "25"
+	}
+
+	styles
+	{
+		//Hidden
+		CPaginationPanel
+		{
+			bgcolor="none"
+		}
+		paginationLinkDisabledStyle
+		{
+			textcolor=White
+			bgcolor="none"
+		}
+
+//////////////////////////////////////////////////
+//======This controls the "Showing..." text(it appears only if you use Parental Control)=====//
+		pagedescriptionstyle
+		{
+		 	textcolor=White
+			bgcolor="none"
+		}
+		PageButton
+		{
+			textcolor=White
+			bgcolor="none"
+			render_bg {}
+		}
+		JumpButton
+		{
+			textcolor=White
+			bgcolor="none"
+		}
+		paginationLinkStyle
+		{
+			textcolor=White
+			bgcolor="none"
+		}
+		spacerstyle
+		{
+			textcolor=White
+			bgcolor="none"
+		}
+	}
+
+	layout
+	{
+		place { control=pagination,pagedescription,PreviousLink,FirstLink,LeftSpacer,page1,page2,page3,page4,page5,page6,page7,page8,page9,page10,page11,page12,page13,page14,page15,page16,page17,page18,page19,page20,RightSpacer,LastLink,NextLink width=1 }
+	}
+}

@@ -1,0 +1,31 @@
+"resource/layout/parentallockdialog.layout"
+{
+
+	styles
+	{
+		Hey
+		{
+			textcolor="White"
+			font-family=semilight
+		}
+		//Hidden
+		Key
+		{
+			textcolor="none"
+			bgcolor="none"
+		}
+	}
+
+	layout
+	{
+		//Text
+		place { control="Instructions" x=16 y=44 width=max margin-right=16 }
+
+		//Footer
+		region { name=bottom align=bottom height=44 margin=8 }
+		place { control="OK,Cancel" region=bottom align=right spacing=8 width=84 height=28 }
+
+		//Hidden
+		place { control="KeyImage" }
+	}
+}

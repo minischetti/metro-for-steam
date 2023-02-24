@@ -1,0 +1,22 @@
+"resource/layout/announcement_text.layout"
+{
+
+	styles
+	{
+		announcementtextpanel
+		{
+			bgcolor=Focus
+		}
+
+		announcementtext
+		{
+			font-size=16
+			textcolor=White
+		}
+	}
+	
+	layout
+	{
+		place { control=announcementtext width=max margin=4 }
+	}
+}

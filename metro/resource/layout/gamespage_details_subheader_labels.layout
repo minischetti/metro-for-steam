@@ -1,0 +1,33 @@
+"resource/layout/gamespage_details_subheader_labels.layout"
+{
+
+	styles
+	{
+		headertext
+		{
+			textcolor=lastplayedLaunchPanel
+		}
+		headertext-blue
+		{
+			textcolor=lastplayedLaunchPanel
+		}
+		headertext-green
+		{
+			textcolor=lastplayedLaunchPanel
+		}
+		headertext-red
+		{
+			textcolor=lastplayedLaunchPanel
+		}
+		valuetext
+		{
+			textcolor=timeLaunchPanel
+		}
+		Label
+		{
+		}
+	}
+	layout
+	{
+	}
+}

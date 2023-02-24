@@ -1,0 +1,45 @@
+"resource/layout/overlaytaskbar.layout"
+{
+
+	styles
+	{
+		taskbar
+		{
+			textcolor=OverlaySideButtons
+			font-family=basefont
+			font-style=regular
+		}
+		taskbar:hover
+		{
+			textcolor=OverlaySideButtons_h
+			font-family=basefont
+			font-style=regular
+		}
+
+		//Hidden
+		online_friends
+		{
+			textcolor="none"
+			bgcolor="none"
+		}
+		view_friends // there is a posibility to make this a working friends button(the circle one)
+		{
+			textcolor="none"
+			bgcolor="none"
+		}
+		ImagePanel
+		{
+			inset-right=-99
+		}
+	}
+
+	layout
+	{
+		//Links
+		place { control="WebBrowserButton,MusicPlayerButton,SettingsButton" y=48 align=right dir=right spacing=30 margin-right=95 }
+		place { control="FriendPanel" y=43 width=44 height=44 margin-right=30 align=right dir=right }
+
+		//Hidden
+		place { control="SteamLogo,view_friends,online_friends" align=right margin-right=-999 }
+	}
+}

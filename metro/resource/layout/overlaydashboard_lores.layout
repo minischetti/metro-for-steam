@@ -1,0 +1,58 @@
+resource/layout/overlaydashboard_lores.layout 
+{
+
+	styles
+	{
+		overlaymain
+		{
+			bgcolor="OverlayBackground"
+		}
+
+		//Hidden
+		hotkey
+		{
+			textcolor="none"
+			bgcolor="none"
+		}
+		TopFade
+		{
+			textcolor="none"
+			bgcolor="none"
+			render_bg{}
+		}
+		bottomfade
+		{
+			textcolor="none"
+			bgcolor="none"
+			render_bg{}
+		}
+		topbar
+		{
+			textcolor="none"
+			bgcolor="none"
+		}
+		//Close Button
+		URLLabel
+		{
+			textcolor="none"
+			bgcolor="none"
+		}
+		URLLabel:hover
+		{
+			bgcolor=OverlayHover05
+		}
+	}
+	layout
+	{
+		//Links
+		place { control="TaskbarPanel" align=right width=500 height=115 }
+
+		//Battery Indicator
+		region { name="powermeter" align=bottom width=max height=110 margin-bottom=45 }
+		place { control="PowerMeterDim" region=powermeter align=center width=200 }
+		place { control=CloseButton x=20 y=27 width=210 height=60 }
+
+		//Hidden
+		place { control="BottomFadePanel,HotkeyExplain,gamename,TopFadePanel" align=right margin-right=-999 }
+	}
+}

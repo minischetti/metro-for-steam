@@ -1,0 +1,10 @@
+"resource/layout/gamespage_details_compat_subheader.layout"
+{
+
+	layout
+	{
+		region { name=body margin=8 width=max height=max }
+
+		place { control=compatdescription x=52 y=12 region=body width=max }
+	}
+}

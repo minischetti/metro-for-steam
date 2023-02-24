@@ -1,0 +1,21 @@
+"resource/layout/overlay_playtimedetails.layout"
+{
+
+	colors
+	{
+	}
+	styles
+	{
+		Intro
+		{
+			textcolor=White
+		}
+	}
+	layout
+	{
+		region { name=box margin-top=10 margin-bottom=10 margin-left=10 margin-right=10 width=max height=max }
+		place { control="TitleText" region=box }
+		place { control=IntroText region=box y=40 }
+		place { controls=SessionText,TwoWeeksText,ForeverText region=box y=70 dir=down spacing=5 }
+	}
+}
